@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1783767682177,
+  "lastUpdate": 1783770957986,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux Clang": [
@@ -8010,6 +8010,2008 @@ window.BENCHMARK_DATA = {
             "value": 559.2313720003402,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 559.137920000012 us\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Rudolf Polzer",
+            "username": "divVerent",
+            "email": "divVerent@gmail.com"
+          },
+          "committer": {
+            "name": "Rudolf Polzer",
+            "username": "divVerent",
+            "email": "divVerent@gmail.com"
+          },
+          "id": "c93f49c459ac3ab8feb4bf747293ccff9c7da3f2",
+          "message": "Run benchmarks 9 times and take the median.",
+          "timestamp": "2026-07-11T05:15:01Z",
+          "url": "https://github.com/divVerent/boringssl/commit/c93f49c459ac3ab8feb4bf747293ccff9c7da3f2"
+        },
+        "date": 1783770957011,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.363740076587846,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.363630459353287 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.5490649060037679,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5490639654503436 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 12.742735395818167,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.742081346678903 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.598407147422505,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5982721659132273 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 7.088558659784161,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.08827320579024 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.502176018489503,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.502179529901119 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.6746175986208054,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6745644550812924 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 13.497117805844026,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.497096114913516 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.7111533794754428,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.7109142588591864 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 7.516549991950811,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.515748081361689 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 2.1941672827504917,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1941647766434254 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.1498218202478852,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14981461564154558 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 24.619208721650864,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.61782345700692 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.5195121616878884,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5193771730495716 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 12.375504036907616,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.372491704373196 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 2.1958153928113475,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1957017642821732 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.1496814005890036,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14967455698508705 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 24.619355649259507,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.6193025830264 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.5205253958674405,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5205012050959011 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 12.378167903852264,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.376903764582273 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 2.1983494203036757,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.198218336632449 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.1520790588511341,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.15207201888892097 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 24.62685109001329,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.62078744726332 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.5219711119789551,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5218823693457941 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 12.38034929328748,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.378432685515735 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.2671498465967685,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.2670666196048153 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2398860347476685,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.23987511945283727 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.480101239855598,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.480112300420762 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.43271502027763525,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.43271468077355196 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.366226712735423,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.36589007592043 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.957880638978974,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9578722041152146 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.16455952309382196,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.16455245838446864 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 21.549909342771667,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.54992396490781 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.48526117713261296,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4852607742904097 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 10.845283590182255,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.845305738401855 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.29366805306940413,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.29366764241338106 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.09736846425671193,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09735600373669698 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 2.0609963969044642,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.060890483674827 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.11961127435469322,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1196111131487097 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 1.077443054473624,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.0774030418250387 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.5147454416971574,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5147453570455968 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.18037923835031655,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18035733148091393 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 3.880745362421431,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.880262279195968 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.2514035945747087,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25138157268930417 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 2.0230620030648607,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0229363055481704 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.3092116172833755,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3091753907746548 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.10014966995816285,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10014949120787957 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 2.1722505160647807,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1722483887741078 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.12405781426957901,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12404613621882914 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 1.1370881492316327,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1370878333444243 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.423697835467065,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.4233765137806578 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.5533174981300893,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5532744522312617 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 13.446593215456808,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.446027099750165 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.6093165720589309,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.609315089743301 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 7.434201199130523,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.434200562425117 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.3086366158765386,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.308570557076252 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.24470843003613163,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24470854180095974 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.832810756243738,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.831434104259618 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.4410214256127156,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4410153071710678 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.533617761157448,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.533296003739429 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 2.444834491064106,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.4448299357718493 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.19471272476064472,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.19469534021282353 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 27.026520386458937,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 27.025381642512524 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.5937780359269395,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5937776246782384 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 13.602167781977638,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.601148094268634 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.32520352234970734,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.32514689215429643 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.1025015831234791,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10250149240845738 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 2.2875378792926515,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.2875481434654477 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.12811941968362464,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12811441519378175 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 1.1869609718798442,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1867850055221054 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.5767706049735382,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5767726545424837 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.19930816651060582,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.19930832866318474 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 4.4096939584640396,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.409452957834559 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.2806013644990897,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2805803725147048 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 2.2973318422387634,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.2970667715343374 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.7600448603005658,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7600424803572893 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.18172975423034163,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18171395281173877 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 6.9338075228942,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.933453452115839 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.2792396831604298,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2792393099621495 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 3.563472572871031,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.5631116466477106 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 46.187432253793986,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 46.183753139460684 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.8593491059943257,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.859255517118616 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 535.092332060984,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 535.0423893129771 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 10.583543794793254,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.582393134667358 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 268.3185973281778,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 268.318635496147 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.8594809926796629,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8594811032229234 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.28097919252897197,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2809435326551242 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 7.0351242787576975,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.035107771812171 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.3764180024925635,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3764175593063802 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 3.6677217234241803,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.667717666151693 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.1658863900377794,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1658375075510437 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.2427735859562896,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24275571638383278 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 23.5903441131971,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23.587699848409358 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.5969197588244016,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5969194944524394 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 11.909052215322875,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.907955268304958 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.2356550975790963,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.2355444651890433 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.24167921319348912,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2416796786059023 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 24.239115457866188,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.23907097109668 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.6136133746135443,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6135730826159649 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 12.238206818179526,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.237356643356675 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 2.1747204941958063,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1747240175084466 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.1472760377963387,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14726324530133947 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 24.405422869092334,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.403221370053412 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.5146610686183583,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.514633735028279 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 12.262814124438076,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.262423820775094 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 2.175634236165827,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1754920205743016 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.14732038153306998,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14732015030090684 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 24.411463656955057,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.409471326478524 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.5143955091380117,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5143952083287104 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 12.25909167323487,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.25906654408504 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 2.1724805094082726,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.172258845610916 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.14605308251886748,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14602865243074678 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 24.411032083695087,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.410644986921078 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.5149991555977533,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5149738675830169 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 12.25946188890967,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.259014981601673 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.2653966477422387,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.2652844628068054 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.23787313298322887,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.23787333286928028 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.489550285306839,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.488817582025371 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.43953536741413807,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4394656567692936 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.372812445941454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.372423043656497 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 2.2033104806321484,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.203207864018685 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.15478371406254354,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.15477001797493917 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 24.64010567961815,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.639139968344388 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.520038646679629,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5199755790692702 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 12.395516952882838,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.39549520035318 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.29351415469008624,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.29345918213406047 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.08854433375649043,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08854425022371411 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 2.1166088115513,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.116410292484225 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.11284896031629146,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11284360752144318 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 1.082190213884007,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.0821395547155848 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.5685700336752173,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5684644816987008 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.13137665895075,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.13136978040293973 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 4.5818240398152295,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.581594970696085 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.23455023152607948,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2345502901402535 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 2.363753280352042,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.3634888907679947 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.30899963671595154,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.30898199880760363 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.09305173115379711,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09304767654630891 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 2.1731507617278534,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.173145652477915 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.11729315071923081,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11727492915836543 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 1.1515180880788551,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1515170989837824 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.595344239844429,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.595341630423801 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.2501372476979019,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25011303099495524 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 28.69146443942927,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.69010637426048 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.684392389492667,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.684392344305357 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 14.469009402762131,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.467217916927568 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.3051827519042696,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3050383436010142 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.24300969300010516,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24298388202477378 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.837527556171027,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.837517285648646 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.44560675528038524,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.44560660238832395 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.533384794779233,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.533375000000647 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 2.680374527402778,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.6802432117623463 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.18583618433197208,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18583599708372894 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 30.04471606529085,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30.04244888315886 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.629369462880797,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6293083868476592 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 15.108897996553509,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.106228888411572 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.32927222561405106,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3292450688019337 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.09894747794249677,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09894719431096198 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 2.3768938714761054,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.376894059677052 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.12295004563663037,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12294003358644282 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 1.232824726795907,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.232823174255341 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.6424514144238355,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6423974599972665 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.14937564456900873,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1493601333282155 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 5.247016547842086,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.246573170731499 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.2560307988045964,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25601101616484867 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 2.6959662649218292,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.6959623435787483 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.8097620785217131,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8096535681292736 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.17846569650275235,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.17844294936956515 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 6.973477548790161,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.973505824372841 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.2781917530842069,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.278173644536131 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 3.5975753104194084,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.597567289647003 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 46.162575797430684,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 46.16076224926107 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.5587455716234737,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5586032953812068 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 547.0931828793005,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 547.046610894951 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 9.589165156507883,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.58834136463419 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 274.06247173488686,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 274.05100389863554 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.9267331485999966,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.9267322602885574 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.29553465148155733,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.29548749340933167 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 7.088347993904052,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.0880189436258245 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.39385679994830475,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.39383961470378864 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 3.7165750059682603,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.7165716370002877 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.015880304324848618,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.015879905097928085 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.020858669059026072,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.020858137688191062 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.020526513934866885,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.02052651041653708 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.025176703971061167,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.025176690674156576 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.015878282875130028,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.015877548760616183 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.0208587070146433,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.02085777983684948 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.01772619170504943,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.017724407740765342 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.020805779950243127,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.02080408848205214 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 2.493528758739421,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.493522282908877 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 35.6724002541125,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.672419567975005 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 14.91488410278866,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.912971958627866 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDH/p224/threads:1",
+            "value": 385.36048351641125,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 385.32351648350885 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDH/p256/threads:1",
+            "value": 59.90901241437957,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 59.90264255137416 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDH/p384/threads:1",
+            "value": 988.985609928964,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 988.9261631206243 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDH/p521/threads:1",
+            "value": 2327.038349998626,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2326.85288333343 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 213.54563774737392,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 213.53568340945105 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 19.579348538847935,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.579148111189493 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 550.848722222027,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 550.8290436507889 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 1302.2555794389723,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1302.127981308431 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 214.03390092873818,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 214.02376780187768 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 55.24520826772162,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 55.24522480315326 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 557.7124216869374,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 557.7122208835083 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 1345.2914380953491,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1345.2899904761819 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 15.896110404360321,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.89540470240598 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 16.062382922631055,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 16.060345558741542 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 55.79653711090633,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 55.796417797295994 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 26.569565909087792,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.569544318183645 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 8.040724021126998,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.040705993799497 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 137.2186457925857,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 137.2075244618383 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 2.2610555959119005,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.2610517054902104 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.22554456271605072,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.22551652664501975 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 26.057701957113185,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.05580913326842 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.43041852755853366,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4304186845353356 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 13.052658181818398,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.051617715615652 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.8540996535485263,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8540134920830647 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.061971487211936495,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.061971440787158744 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 9.704655714973773,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.704158175642442 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.21234936982535213,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.21234903173085687 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 4.883021828578193,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.882785480158811 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 0.9124119349104737,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.9123780865302575 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.06488338685159667,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.06487623774990475 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 10.350020196792045,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.349802396983195 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.22848758360650148,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.22846448911440234 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 5.208609925116338,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.208604113110775 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 2.650096414266,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.6499230020979536 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.27457315078609457,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.27457303297984414 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 30.61189351445688,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30.60765687993019 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.7539551327239585,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7537535582257923 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 15.45250132421689,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.452451445597202 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 28.631443014710708,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.627665032679634 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 76.85964873765029,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 76.8558320526888 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 1.3436139947878247,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3433642216002615 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 61.28258417137207,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 61.27510231744988 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 115.8083000000035,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 115.80827933883009 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 161.54183391003582,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 161.53163667822278 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 4.469886746141597,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.4695382825450025 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 6.59893806311736,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.5989218359354895 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 8.719011835793985,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.718594842086993 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 210.40651973679374,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 210.39382236844403 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 324.69073120729075,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 324.6410296127322 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 384.12461194028185,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 384.0773880597226 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 51.22084468865855,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 51.218712820501246 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 82.82655555557159,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 82.82256619386274 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 138.80803465344616,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 138.79836336634034 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 51.23408757787571,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 51.23419567608262 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 82.81504824298268,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 82.81494937462799 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 138.92757313434498,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 138.92188358209498 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 37.30671705718624,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 37.310163921260845 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 25.602090278389515,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 25.585335526459275 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 78.62219181159078,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 78.61533202466721 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 41.843533751503294,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 41.843479689371115 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 45.391672715980974,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 45.38621322114392 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 20.582949425809886,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20.566827539628207 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 41.916102933540415,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 41.938529623051544 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 28.258476765050716,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.255186682838275 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 19.518717231241308,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.518371500224543 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 56.24138973534454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 56.24135685646378 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 28.478096714962348,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.47515058151202 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 31.962052980276226,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 31.955615894017612 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 13.354105990028154,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.343158270698572 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 28.55403853214172,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.56166850153052 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 742.6911693121756,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 742.6529735449963 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 2161.7864769233656,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2161.687061538067 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 4788.418034483412,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4788.420034482842 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 19.359867161711882,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.35984075907725 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 40.63572637680436,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 40.63437971015189 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 70.57985671040335,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 70.57559838546727 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAKeyGen/2048",
+            "value": 81503.74199999533,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 81491.99633334093 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAKeyGen/3072",
+            "value": 237346.5279999891,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 237322.71599999422 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAKeyGen/4096",
+            "value": 690897.5459999738,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 690822.0889999939 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 93.49744976398712,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 93.49739986512452 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 173.27626470584875,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 173.26765073527486 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 275.9022631578181,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 275.88547953218045 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 642.5533271888103,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 642.5529631336934 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1976.863464788711,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1976.8620281689743 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 4494.325096774696,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4493.748548386081 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 16.935564161709593,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 16.929731334223888 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 36.31852389611146,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 36.315213246765566 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 63.17923139376276,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 63.17640685611233 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.8641827888057709,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8641815928986598 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.6349892973434392,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6349884039436231 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 3.1507785752838693,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.150771757717448 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.662060444558213,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.662062320570652 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.878455751910115,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8784570503095663 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 35089.29925000359,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35089.29350000045 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 269760.18199997046,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 269747.0700000224 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 267.0089489437003,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 266.99627992959336 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 124.64883022221332,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 124.63576888886665 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 27616.717800015067,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 27616.69899999788 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 27649.03099998719,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 27644.69740000095 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 4478.638290320745,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4478.510774193425 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.5180397115657615,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5180397078639156 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.02116180792810695,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.021161416781389726 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 6.071188199569163,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.07095305856729 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.10979941701611293,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10979928138379164 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 3.0454949418045656,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.045493592950984 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 990.1477535205665,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 990.0419084510439 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 990.6667588654002,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 990.6130851063268 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 514.9053076924674,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 514.8814578754791 us\nthreads: 1"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 3.952710096522308,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.952502278581468 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 627.3529820625824,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 627.3524708521285 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 6269.734681818695,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6269.3459090907445 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.15154457991272974,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.15154417540851428 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.15232252200872848,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.15232186348952334 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 7094.442799999001,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7094.436999999231 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 25231.476500001314,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 25231.410333333315 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 6066.8582173933755,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6066.397695653212 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 21785.793666670845,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21783.895833335027 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1720.2622716046822,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1720.1651234565225 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1720.9837160492125,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1720.8068148148768 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 627.0387219734043,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 627.0276053812095 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 6275.801772726586,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6274.724363636479 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.14433743979349445,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14431813593292314 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.14547620330397226,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14546885841732524 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 7075.496249996149,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7075.478650000378 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 25217.853666674728,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 25217.768333334334 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 6066.067260867978,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6065.762217391355 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 21786.985999995068,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21785.505499999876 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1720.1980617292738,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1720.0608518518166 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1720.3069146337216,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1720.3008902434126 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 631.9981846847445,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 631.9428018018401 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 6319.453363635768,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6319.137000000359 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.13706305614997724,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1370627012608273 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.13713198819519237,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.13713157006791632 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 2432.5373684213873,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2432.539122806999 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 9020.67381250049,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9020.501124998858 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 2342.579249999706,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2342.3821666665863 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 8898.931187498958,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8898.511187499735 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 558.5214820715905,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 558.4905418325061 us\nthreads: 1"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 558.6080576131467,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 558.6076502058372 us\nthreads: 1"
           }
         ]
       }
