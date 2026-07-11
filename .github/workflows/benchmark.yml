@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Install Dependencies
-        run: sudo apt-get update && sudo apt-get -y install build-essential cmake ninja-build
+        run: sudo apt-get update && sudo apt-get -y install build-essential cmake jq ninja-build
       - name: Configure
         run: cmake -B build -GNinja -DCMAKE_BUILD_TYPE=Release
         env:
@@ -40,7 +40,10 @@ jobs:
       - name: Build
         run: ninja -C build bssl_bench
       - name: Benchmark
-        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_out=benchmark.json --benchmark_out_format=json --benchmark_time_unit=us
+        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
+      - name: Keep Medians Only
+        run: |
+          jq '.benchmarks = ([.benchmarks[] | select(.aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -81,7 +84,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
       - name: Install Dependencies
-        run: sudo apt-get update && sudo apt-get -y install build-essential cmake ninja-build clang-20
+        run: sudo apt-get update && sudo apt-get -y install build-essential cmake jq ninja-build clang-20
       - name: Configure
         run: cmake -B build -GNinja -DCMAKE_BUILD_TYPE=Release
         env:
@@ -90,7 +93,10 @@ jobs:
       - name: Build
         run: ninja -C build bssl_bench
       - name: Benchmark
-        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_out=benchmark.json --benchmark_out_format=json --benchmark_time_unit=us
+        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
+      - name: Keep Medians Only
+        run: |
+          jq '.benchmarks = ([.benchmarks[] | select(.aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
