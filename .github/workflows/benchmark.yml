@@ -43,7 +43,7 @@ jobs:
         run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
       - name: Keep Medians Only
         run: |
-          jq '.benchmarks = ([.benchmarks[] | select(.aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
+          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -96,7 +96,7 @@ jobs:
         run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
       - name: Keep Medians Only
         run: |
-          jq '.benchmarks = ([.benchmarks[] | select(.aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
+          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
