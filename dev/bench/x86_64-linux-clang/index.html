@@ -420,7 +420,7 @@
                     <td>${stddev.toFixed(4)}</td>
                     <td>${((stddev / mean) * 100).toFixed(2)}%</td>
                     <td>${f == null ? '(undefined)' : f.toFixed(4)}</td>
-                    <td>${(pAlert * 100).toFixed(2)}%</td>
+                    <td>${pAlert < 0.00005 ? '' : (pAlert * 100).toFixed(2)}%</td>
                   </tr>
                   `;
         }
