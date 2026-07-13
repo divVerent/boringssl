@@ -56,8 +56,8 @@ jobs:
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: dev/bench/x86_64-linux-gcc
           auto-push: false
-          alert-threshold: 310%
-          comment-on-alert: false
+          alert-threshold: 258%
+          comment-on-alert: true
           alert-comment-cc-users: '@divVerent'
           max-items-in-chart: 90
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -109,8 +109,8 @@ jobs:
           gh-pages-branch: gh-pages
           benchmark-data-dir-path: dev/bench/x86_64-linux-clang
           auto-push: false
-          alert-threshold: 270%
-          comment-on-alert: false
+          alert-threshold: 225%
+          comment-on-alert: true
           alert-comment-cc-users: '@divVerent'
           max-items-in-chart: 90
           github-token: ${{ secrets.GITHUB_TOKEN }}
