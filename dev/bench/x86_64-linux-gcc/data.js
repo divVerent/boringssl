@@ -1628,24 +1628,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 61.31872285464928 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 53489.29600000929,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 53485.133666659596 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 213903.77400001624,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 213901.5839999843 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 326546.8699999587,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 326503.60299999197 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 92.08286184210797,
             "unit": "us/iter",
@@ -3628,24 +3610,6 @@ window.BENCHMARK_DATA = {
             "value": 70.66231300402505,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.66249596774807 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 72129.3009999897,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 72130.0069999984 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 212152.7799999967,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 212153.15399999212 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 707643.1999999783,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 707576.7150000018 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -5632,24 +5596,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.55801258810101 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 59326.69000000601,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 59322.52249999692 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 271087.6259999395,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 271036.11799998366 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 617536.4970000032,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 617418.8450000031 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.50199440448813,
             "unit": "us/iter",
@@ -7632,24 +7578,6 @@ window.BENCHMARK_DATA = {
             "value": 65.28329362492285,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 65.28140437411753 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 79253.31000001279,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 79251.06549998872 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 161370.7000000204,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 161350.27499996114 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 493133.77899994754,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 493103.0120000059 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -9636,24 +9564,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 61.39947854641443 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 72854.81900000453,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 72855.14833333196 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 385441.66399998404,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 385389.1320000003 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 519683.2690000406,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 519615.3410000193 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 92.32102445471959,
             "unit": "us/iter",
@@ -11636,24 +11546,6 @@ window.BENCHMARK_DATA = {
             "value": 61.379230634567726,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 61.37134442011378 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 68370.6657499954,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 68371.75124999817 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 222222.7009999642,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 222179.8260000014 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 566766.3520000587,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 566717.1499999881 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -13640,24 +13532,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.66096922300453 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 59775.012333318504,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 59775.14766666067 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 259377.30599997623,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 259363.17400001487 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 765475.8570000126,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 765393.164999999 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.82809999995516,
             "unit": "us/iter",
@@ -15640,24 +15514,6 @@ window.BENCHMARK_DATA = {
             "value": 70.97917450686533,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.97902731412434 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 84671.2896666683,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 84668.55566666709 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 292367.4709999773,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 292357.74300002505 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 874021.3620000076,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 873949.4860000008 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -17644,24 +17500,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.74760101009227 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 62803.81199999852,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 62797.292499993775 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 199438.79599998126,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 199438.50500001758 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 434088.38999999943,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 434064.1789999893 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.66756048394036,
             "unit": "us/iter",
@@ -19644,24 +19482,6 @@ window.BENCHMARK_DATA = {
             "value": 63.93755994610811,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 63.938445891324214 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 83918.85700001467,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 83920.00050000093 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 344540.2379999792,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 344544.152000001 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 598363.341000038,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 598281.1390000506 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -21648,24 +21468,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 79.17431575963745 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 80426.28099997273,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 80417.00800004037 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 264348.3720000291,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 264341.00099999824 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 941015.2479999852,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 940982.1950000036 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 119.16999315655023,
             "unit": "us/iter",
@@ -23648,24 +23450,6 @@ window.BENCHMARK_DATA = {
             "value": 79.2016606436949,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 79.18945285149611 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 85023.873199998,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 85018.54180000238 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 189984.45100004348,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 189932.56599998177 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 470594.63900001225,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 470591.7199999874 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -25652,24 +25436,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 79.03671952595948 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 79951.02766667136,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 79948.25099999996 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 247983.46099998977,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 247988.75799996266 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 745108.1180000188,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 745067.9149999999 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 119.0535825491774,
             "unit": "us/iter",
@@ -27652,24 +27418,6 @@ window.BENCHMARK_DATA = {
             "value": 70.61969929365101,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.61641977800417 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 67145.60399999906,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 67145.7466666728 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 215094.39200008273,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 215067.32900002136 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 744732.5249999608,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 744695.4920000053 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -29656,24 +29404,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 79.39950509626833 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 90540.34799999044,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 90542.35600001448 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 385202.23099999386,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 385185.550000017 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 731022.9400000026,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 730992.974000003 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 119.24984778913937,
             "unit": "us/iter",
@@ -31656,24 +31386,6 @@ window.BENCHMARK_DATA = {
             "value": 79.02739086296734,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 79.01932994924402 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 86253.40849999929,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 86252.73000001244 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 244059.85199996395,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 244057.88699999673 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 513702.9329999905,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 513676.93199999566 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -33660,24 +33372,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 61.36659755030824 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 45715.63200002516,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 45715.215000001306 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 239818.40400000464,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 239796.5284999941 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 426027.85699995136,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 425965.85800001206 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 92.5883408042213,
             "unit": "us/iter",
@@ -35660,24 +35354,6 @@ window.BENCHMARK_DATA = {
             "value": 78.9919672870978,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 78.9933542019159 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 78145.83800001173,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 78139.9524999955 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 216544.37499998382,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 216521.87600000162 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 676571.4489999937,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 676548.1229999964 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -37664,24 +37340,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.51958215724184 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 82820.85199999757,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 82815.92500000558 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 199198.14500002528,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 199189.50299998527 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 465950.8170000208,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 465904.3770000153 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.91291811421203,
             "unit": "us/iter",
@@ -39664,24 +39322,6 @@ window.BENCHMARK_DATA = {
             "value": 70.80871018144518,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.80882661289746 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 57456.02799999006,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 57455.93949998807 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 319324.5100000013,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 319304.10100000014 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 485957.41700000875,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 485955.4220000036 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -41668,24 +41308,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.63021908127432 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 74542.5660000194,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 74537.98899999243 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 244299.2359999607,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 244298.62900001355 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 732280.9419999885,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 732190.3210000186 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.85486374695883,
             "unit": "us/iter",
@@ -43668,24 +43290,6 @@ window.BENCHMARK_DATA = {
             "value": 70.85678498985486,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.85132200811785 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 67082.29233333895,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 67067.23533333065 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 162821.20200003192,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 162790.4250000256 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 574387.8499999937,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 574353.4920000001 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -45672,24 +45276,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 61.336835087718995 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 61313.29599998026,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 61312.84849999474 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 256963.40799999004,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 256937.26200000814 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 486155.5819999807,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 486125.39200001943 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 92.307603597616,
             "unit": "us/iter",
@@ -47672,24 +47258,6 @@ window.BENCHMARK_DATA = {
             "value": 71.00371015227664,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 71.00418477159623 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 84236.642999997,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 84233.77899998741 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 157141.18000002485,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 157134.8809999904 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 428706.3369999942,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 428670.90199999325 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -49676,24 +49244,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 78.99609475465171 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 92092.93999998637,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 92095.58699996023 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 330085.0009999863,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 330077.8079999986 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 1035930.6770000104,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 1035857.429000032 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 118.96439337297721,
             "unit": "us/iter",
@@ -51676,24 +51226,6 @@ window.BENCHMARK_DATA = {
             "value": 70.6593718466175,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.63584006054604 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 70865.10400000634,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 70843.3479999826 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 189203.09499992526,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 189204.07699999944 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 776576.8450000223,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 776433.247 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -53680,24 +53212,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.78389747474006 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 45504.011000048195,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 45504.550000032395 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 259685.45400002087,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 259638.1149999729 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 609693.5099999427,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 609654.6530000069 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.75256560710875,
             "unit": "us/iter",
@@ -55680,24 +55194,6 @@ window.BENCHMARK_DATA = {
             "value": 70.90153795545409,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.89159412956003 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 78492.22400000144,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 78481.54639999621 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 201366.95299993333,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 201330.93699996607 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 470065.5010000219,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 470033.930999989 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -57684,24 +57180,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.80461988894395 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 74906.27600000011,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 74899.0024999987 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 270903.5309999876,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 270903.4709999969 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 379755.8589999994,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 379732.9820000073 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.93156097561933,
             "unit": "us/iter",
@@ -59684,24 +59162,6 @@ window.BENCHMARK_DATA = {
             "value": 70.7293220081556,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.71657099390166 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 96409.87099999165,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 96406.11300000046 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 207791.42199998547,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 207777.045499995 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 550434.813000038,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 550389.7650000056 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -61688,24 +61148,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.515492447129 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 73032.72799998695,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 73027.63449999361 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 296286.11500004353,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 296274.1709999932 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 473409.13200002885,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 473358.63400002156 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.69886816719468,
             "unit": "us/iter",
@@ -63688,24 +63130,6 @@ window.BENCHMARK_DATA = {
             "value": 70.62667087329011,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.62759010600698 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 62435.6000000148,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 62436.68100000833 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 184342.17800006538,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 184320.0089999755 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 485610.90700002294,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 485572.0819999761 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
@@ -65694,24 +65118,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.54924899193679 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 66497.64099995537,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 66488.27300000448 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 227743.06400003753,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 227702.8229999587 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 907239.197000024,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 907141.0359999845 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.00593109104555,
             "unit": "us/iter",
@@ -67698,24 +67104,6 @@ window.BENCHMARK_DATA = {
             "extra": "iterations: 9\ncpu: 70.51683526448596 us\nthreads: 1"
           },
           {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 83846.90400002152,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 83841.33299999045 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 318300.43999991636,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 318294.22700002394 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 480348.5219999857,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 480322.61800000235 us\nthreads: 1"
-          },
-          {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
             "value": 113.86336115567123,
             "unit": "us/iter",
@@ -69698,24 +69086,6 @@ window.BENCHMARK_DATA = {
             "value": 70.7153054013175,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 70.71166380616711 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/2048",
-            "value": 64916.23566665794,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 64911.03300000608 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/3072",
-            "value": 365890.74599999096,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 365890.75099999487 us\nthreads: 1"
-          },
-          {
-            "name": "BM_SpeedRSAKeyGen/4096",
-            "value": 439617.5480000011,
-            "unit": "us/iter",
-            "extra": "iterations: 9\ncpu: 439590.1719999529 us\nthreads: 1"
           },
           {
             "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
