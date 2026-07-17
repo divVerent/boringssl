@@ -43,7 +43,23 @@ jobs:
         run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
       - name: Keep Medians Only
         run: |
-          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
+          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
+      - name: Gather System Info
+        run: |
+          set -x
+          export AZURE_VMSIZE=$(curl -s --connect-timeout 5 -H "Metadata:true" "http://169.254.169.254/metadata/instance/compute/vmSize?api-version=2021-02-01&format=text" || true)
+          CPU_DATA=$(lscpu -J | jq -r '
+            (.lscpu | map({(.field | rtrimstr(":")): .data}) | add) as $cpu
+            | {
+                cpu_model: $cpu["Model name"],
+                cpu_cores: $cpu["CPU(s)"],
+                cpu_bogomips: $cpu["BogoMIPS"]
+              } | @json
+          ')
+          export CPU_MODEL=$(echo "$CPU_DATA" | jq -r '.cpu_model')
+          export CPU_CORES=$(echo "$CPU_DATA" | jq -r '.cpu_cores')
+          export CPU_BOGOMIPS=$(echo "$CPU_DATA" | jq -r '.cpu_bogomips')
+          jq '.benchmarks[].threads |= "\(.)\nazure_vmsize: \(env.AZURE_VMSIZE)\ncpu_model: \(env.CPU_MODEL)\ncpu_cores: \(env.CPU_CORES)\ncpu_bogomips: \(env.CPU_BOGOMIPS)"' benchmark_median.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -96,7 +112,23 @@ jobs:
         run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
       - name: Keep Medians Only
         run: |
-          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark.json
+          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
+      - name: Gather System Info
+        run: |
+          set -x
+          export AZURE_VMSIZE=$(curl -s --connect-timeout 5 -H "Metadata:true" "http://169.254.169.254/metadata/instance/compute/vmSize?api-version=2021-02-01&format=text" || true)
+          CPU_DATA=$(lscpu -J | jq -r '
+            (.lscpu | map({(.field | rtrimstr(":")): .data}) | add) as $cpu
+            | {
+                cpu_model: $cpu["Model name"],
+                cpu_cores: $cpu["CPU(s)"],
+                cpu_bogomips: $cpu["BogoMIPS"]
+              } | @json
+          ')
+          export CPU_MODEL=$(echo "$CPU_DATA" | jq -r '.cpu_model')
+          export CPU_CORES=$(echo "$CPU_DATA" | jq -r '.cpu_cores')
+          export CPU_BOGOMIPS=$(echo "$CPU_DATA" | jq -r '.cpu_bogomips')
+          jq '.benchmarks[].threads |= "\(.)\nazure_vmsize: \(env.AZURE_VMSIZE)\ncpu_model: \(env.CPU_MODEL)\ncpu_cores: \(env.CPU_CORES)\ncpu_bogomips: \(env.CPU_BOGOMIPS)"' benchmark_median.json > benchmark.json
       - name: Append benchmark result
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
           (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
