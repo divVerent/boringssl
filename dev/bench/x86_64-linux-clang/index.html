@@ -183,10 +183,9 @@
             const badAnomalyColor  = '#ff0000';
             function colorOf(item, normalSuffix, anomalySuffix) {
               const anomaly = dataset[item.dataIndex].bench.anomaly;
-              return
-                anomaly == null ? color + normalSuffix :
-                anomaly > 0     ? badAnomalyColor + anomalySuffix :
-                anomaly < 0     ? goodAnomalyColor + anomalySuffix ;
+              return anomaly == null ? color + normalSuffix :
+                     anomaly > 0     ? badAnomalyColor + anomalySuffix :
+                  /* anomaly < 0 ?  */ goodAnomalyColor + anomalySuffix;
             }
             const data = {
               labels: dataset.map(d => d.commit.id.slice(0, 7)),
