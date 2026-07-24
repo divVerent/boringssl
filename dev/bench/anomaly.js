@@ -1,4 +1,4 @@
-if (module) {
+if (typeof module != 'undefined') {
   const common = require("./common.js");
   for (const [key, value] of Object.entries(common)) {
     global[key] = value;

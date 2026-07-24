@@ -50,6 +50,6 @@ function tCDF(t, df) {
   }
 }
 
-if (module) {
+if (typeof module != 'undefined') {
   module.exports = {PERCENTILE_THRESHOLD, cpuTypeOf, normalCDF, tCDF};
 }
