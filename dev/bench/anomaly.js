@@ -1,3 +1,10 @@
+if (module) {
+  const common = require("./common.js");
+  for (const [key, value] of Object.entries(common)) {
+    global[key] = value;
+  }
+}
+
 const EXCLUDE_FUTURE = false;
 
 ((data, filter) => {

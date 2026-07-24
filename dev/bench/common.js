@@ -49,3 +49,7 @@ function tCDF(t, df) {
     return 0.5 + (theta + sin * sum) / Math.PI;
   }
 }
+
+if (module) {
+  module.exports = {PERCENTILE_THRESHOLD, cpuTypeOf, normalCDF, tCDF};
+}
