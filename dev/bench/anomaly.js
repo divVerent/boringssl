@@ -6,6 +6,7 @@ if (typeof module != 'undefined') {
 }
 
 const EXCLUDE_FUTURE = false;
+const NOISE_FLOOR = 0.01;  // Even if not seen, observe a min stddev of 1%.
 
 ((data, filter) => {
   for (const [platform, runs] of Object.entries(data.entries)) {
@@ -45,6 +46,10 @@ const EXCLUDE_FUTURE = false;
         const mean = baselineVals.reduce((a, b) => a + b, 0) / n;
         const sqSum = baselineVals.reduce((acc, val) => acc + Math.pow(val - mean, 2), 0);
         const stdDev = Math.sqrt(sqSum / (n - 1));
+        const noiseFloor = mean * NOISE_FLOOR;
+        if (stdDev < noiseFloor) {
+          stdDev = noiseFloor;
+        }
 
         // Compute Prediction Standard Error & t-statistic
         const se = stdDev * Math.sqrt(1 + 1 / n);
