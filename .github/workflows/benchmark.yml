@@ -75,7 +75,7 @@ jobs:
           alert-threshold: 258%
           comment-on-alert: true
           alert-comment-cc-users: '@divVerent'
-          max-items-in-chart: 90
+          max-items-in-chart: 256
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Store Commit
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
@@ -144,7 +144,7 @@ jobs:
           alert-threshold: 225%
           comment-on-alert: true
           alert-comment-cc-users: '@divVerent'
-          max-items-in-chart: 90
+          max-items-in-chart: 256
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Store Commit
         if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
