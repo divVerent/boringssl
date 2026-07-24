@@ -6,7 +6,7 @@ if (typeof module != 'undefined') {
 }
 
 const EXCLUDE_FUTURE = false;
-const NOISE_FLOOR = 0.01;  // Even if not seen, observe a min stddev of 1%.
+const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
 
 ((data, filter) => {
   for (const [platform, runs] of Object.entries(data.entries)) {
@@ -60,10 +60,9 @@ const NOISE_FLOOR = 0.01;  // Even if not seen, observe a min stddev of 1%.
         const pVal = 2.0 * (1.0 - tCDF(Math.abs(tStat), df));
 
         // Evaluate anomaly threshold & set field in-place
-        const alpha = 1.0 - Math.pow(PERCENTILE_THRESHOLD, 1.0/currentRun.benches.length);
+        const alpha = 1.0 - Math.pow(PERCENTILE_THRESHOLD, 1.0 / currentRun.benches.length);
         if (pVal < alpha) {
-          bench.anomaly = true;
-          bench.extra = "anomaly: true\n" + bench.extra;
+          bench.anomaly = tStat;
           if (i == runs.length - 1) {
             console.info(
               `🚨 ANOMALY DETECTED: [${platform}] "${benchName}" changed significantly at run index ${i}.\n` +
@@ -73,7 +72,7 @@ const NOISE_FLOOR = 0.01;  // Even if not seen, observe a min stddev of 1%.
             );
           }
         } else {
-          bench.anomaly = false;
+          bench.anomaly = null;
         }
       }
     }

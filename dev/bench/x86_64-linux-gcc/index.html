@@ -179,7 +179,15 @@
             parent.appendChild(canvas);
 
             const color = toolColors[dataset.length > 0 ? dataset[0].tool : '_'];
-            const anomalyColor = '#000000';
+            const goodAnomalyColor = '#00ff00';
+            const badAnomalyColor  = '#ff0000';
+            function colorOf(item, normalSuffix, anomalySuffix) {
+              const anomaly = dataset[item.dataIndex].bench.anomaly;
+              return
+                anomaly == null ? color + normalSuffix :
+                anomaly > 0     ? badAnomalyColor + anomalySuffix :
+                anomaly < 0     ? goodAnomalyColor + anomalySuffix ;
+            }
             const data = {
               labels: dataset.map(d => d.commit.id.slice(0, 7)),
               datasets: [
@@ -189,10 +197,10 @@
                   borderColor: color,
                   backgroundColor: color + '60', // Add alpha for #rrggbbaa
                   pointBorderColor: item => {
-                    return dataset[item.dataIndex].bench.anomaly ? anomalyColor : color;
+                    return colorOf(item, '', '');
                   },
                   pointBackgroundColor: item => {
-                    return dataset[item.dataIndex].bench.anomaly ? anomalyColor + '60' : color + 'ff'; // Add alpha for #rrggbbaa
+                    return colorOf(item, '60', 'ff');
                   },
                 }
               ],
