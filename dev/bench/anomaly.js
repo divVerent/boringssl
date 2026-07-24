@@ -20,7 +20,7 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
         const newVal = bench.value;
         const cpu = cpuTypeOf(bench);
         const baselineVals = [];
-        let totalVals = 0;
+        let otherVals = 0;
         for (let h = 0; h < runs.length; h++) {
           if (h == i) {
             continue;
@@ -33,13 +33,13 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
                 if (h < i) {
                   baselineVals.push(prevBench.value);
                 }
-                ++totalVals;
+                ++otherVals;
               }
             }
           }
         }
 
-        if (baselineVals.length < 2 || baselineVals.length < totalVals * MIN_FRACTION) {
+        if (baselineVals.length < 2 || baselineVals.length < otherVals * MIN_FRACTION) {
           bench.anomaly = null;
           continue;
         }
