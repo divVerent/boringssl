@@ -106,8 +106,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
     <script src="data.js"></script>
-    <script src="../math.js"></script>
+    <script src="../common.js"></script>
     <script src="../filter.js"></script>
+    <script src="../anomaly.js"></script>
     <script id="main-script">
       'use strict';
       (function() {
@@ -178,6 +179,7 @@
             parent.appendChild(canvas);
 
             const color = toolColors[dataset.length > 0 ? dataset[0].tool : '_'];
+            const anomalyColor = '#000000';
             const data = {
               labels: dataset.map(d => d.commit.id.slice(0, 7)),
               datasets: [
@@ -186,6 +188,12 @@
                   data: dataset.map(d => d.bench.value),
                   borderColor: color,
                   backgroundColor: color + '60', // Add alpha for #rrggbbaa
+                  pointBorderColor: item => {
+                    return dataset[item.dataIndex].bench.anomaly ? anomalyColor : color;
+                  },
+                  pointBackgroundColor: item => {
+                    return dataset[item.dataIndex].bench.anomaly ? anomalyColor + '60' : color + 'ff'; // Add alpha for #rrggbbaa
+                  },
                 }
               ],
             };

@@ -1,18 +1,4 @@
 ((data, filter) => {
-  function parseExtra(extra) {
-    out = {};
-    for (const line of extra.split(/\n/)) {
-      const m = /^(?<key>\w+): (?<value>.*)$/.exec(line);
-      out[m.groups.key] = m.groups.value;
-    }
-    return out;
-  }
-  
-  function cpuTypeOf(bench) {
-    const extra = parseExtra(bench.extra);
-    return `${extra.azure_vmsize} ${extra.cpu_model}`;
-  }
-
   allFilters = {};
   function keepBench(subentry, bench) {
     cpuType = cpuTypeOf(bench);
