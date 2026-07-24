@@ -45,7 +45,7 @@ const NOISE_FLOOR = 0.01;  // Even if not seen, observe a min stddev of 1%.
         const n = baselineVals.length;
         const mean = baselineVals.reduce((a, b) => a + b, 0) / n;
         const sqSum = baselineVals.reduce((acc, val) => acc + Math.pow(val - mean, 2), 0);
-        const stdDev = Math.sqrt(sqSum / (n - 1));
+        let stdDev = Math.sqrt(sqSum / (n - 1));
         const noiseFloor = mean * NOISE_FLOOR;
         if (stdDev < noiseFloor) {
           stdDev = noiseFloor;
