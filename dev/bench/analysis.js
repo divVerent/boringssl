@@ -15,7 +15,7 @@
     const runs = data.entries[env].sort((a, b) => a.date - b.date);
     let previousRun = {};
     runs.forEach(run => {
-      if (!run.benches) return;
+      if (!run.benches || run.benches.length == 0) return;
       const currentRun = {};
       run.benches.forEach(bench => {
         const name = env + " | " + bench.name;
