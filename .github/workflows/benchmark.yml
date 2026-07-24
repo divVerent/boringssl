@@ -176,6 +176,8 @@ jobs:
         uses: actions/checkout@v7
         with:
           ref: gh-pages
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get -y install nodejs
       - name: Clean Up
         run: |
           rm -f bench-*
@@ -192,3 +194,13 @@ jobs:
         run: |
           git commit -a -m"Update benchmark results for commit ${GITHUB_SHA}."
           git push
+      - name: Run Anomaly Detection
+        run: |
+          set -ex
+          {
+            cd dev/bench
+            node -e 'window = {}; require("./x86_64-linux-gcc/data.js"); require("./anomaly.js");'
+            node -e 'window = {}; require("./x86_64-linux-clang/data.js"); require("./anomaly.js");'
+          } | {
+            ! grep .
+          }
