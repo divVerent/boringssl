@@ -5,7 +5,7 @@ if (typeof module != 'undefined') {
   }
 }
 
-const EXCLUDE_FUTURE = false;
+const MIN_FRACTION = 0.5; // Time fraction in which to not show anomalies.
 const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
 
 ((data, filter) => {
@@ -20,11 +20,9 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
         const newVal = bench.value;
         const cpu = cpuTypeOf(bench);
         const baselineVals = [];
+        let totalVals = 0;
         for (let h = 0; h < runs.length; h++) {
           if (h == i) {
-            continue;
-          }
-          if (EXCLUDE_FUTURE && h > i) {
             continue;
           }
           const prevRun = runs[h];
@@ -32,13 +30,16 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
             if (prevBench.name === benchName) {
               const prevCPU = cpuTypeOf(prevBench);
               if (cpu == prevCPU) {
-                baselineVals.push(prevBench.value);
+                if (h < i) {
+                  baselineVals.push(prevBench.value);
+                }
+                ++totalVals;
               }
             }
           }
         }
 
-        if (baselineVals.length < 2) {
+        if (baselineVals.length < 2 || baselineVals.length < totalVals * MIN_FRACTION) {
           bench.anomaly = null;
           continue;
         }
