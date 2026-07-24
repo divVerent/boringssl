@@ -60,7 +60,7 @@ const EXCLUDE_FUTURE = false;
           bench.anomaly = true;
           bench.extra = "anomaly: true\n" + bench.extra;
           if (i == runs.length - 1) {
-            console.error(
+            console.info(
               `🚨 ANOMALY DETECTED: [${platform}] "${benchName}" changed significantly at run index ${i}.\n` +
               `   New Value:  ${newVal.toFixed(4)} ${bench.unit || ''}\n` +
               `   Baseline:   ${mean.toFixed(4)} ± ${stdDev.toFixed(4)} (n = ${n} samples)\n` +
