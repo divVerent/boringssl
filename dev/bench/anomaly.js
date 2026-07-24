@@ -39,7 +39,7 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
         }
 
         if (baselineVals.length < 2) {
-          bench.anomaly = false;
+          bench.anomaly = null;
           continue;
         }
         const n = baselineVals.length;
