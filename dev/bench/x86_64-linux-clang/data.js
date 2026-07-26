@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785078371826,
+  "lastUpdate": 1785084797155,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux Clang": [
@@ -232132,6 +232132,1990 @@ window.BENCHMARK_DATA = {
             "value": 563.143370967734,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 563.0998911290511 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Rudolf Polzer",
+            "username": "divVerent",
+            "email": "divVerent@gmail.com"
+          },
+          "committer": {
+            "name": "Rudolf Polzer",
+            "username": "divVerent",
+            "email": "divVerent@gmail.com"
+          },
+          "id": "f4b2d3a001f201890c15bb75ac8a99bb99bbdd4d",
+          "message": "Keep longer charts.\n\nUseful to denoise anomaly detection.",
+          "timestamp": "2026-07-24T13:14:44Z",
+          "url": "https://github.com/divVerent/boringssl/commit/f4b2d3a001f201890c15bb75ac8a99bb99bbdd4d"
+        },
+        "date": 1785084766909,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.381810907298327,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.3814788093093266 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.5751459942630632,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5749830403845194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 12.715140005444358,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.714485436888893 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.6371512224852856,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6370519233924257 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 7.083624103083056,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.083703082364696 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.777051589896372,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.777072095096622 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.7624277479593675,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7623759999127846 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 15.472324709791852,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.4713006080677 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.847416049920289,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.847429704093675 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 8.551416458240194,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.551298542058621 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.6685853995807927,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6685988937631044 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.11696597029978577,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11695111684738034 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 18.765164611263707,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.76267788203974 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.3912307647207008,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.39123290895374613 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 9.431355685719277,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.43150346731273 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.6694698957561322,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6688890770732394 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.11686379487644159,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11685758654767756 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 18.768418196432535,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.76670414042626 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.3913278044718095,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.39128844557365194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 9.429150741239468,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.428351886790331 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.6688806886597847,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.668851239374061 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.11795231044296875,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11795299312936497 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 18.76188081512705,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.761952808684967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.39299649799018904,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3929501774780411 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 9.430928013469181,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.430636835015921 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.4254170481775428,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.4251599796073111 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2615679733686853,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26156473769604527 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 14.178470081139743,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.177458113590362 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.48690212316597825,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4869079208815293 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 7.21130993971269,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.2109320863586515 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.3260636631868363,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3259237687242849 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.12424871004780491,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1242261862293568 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 14.381747100482617,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.381866468234582 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.3390685477137503,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3390713402460672 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 7.246215365501663,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.245085732035674 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.2530799981934194,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2530814759947516 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.08131461310190385,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08130466560581759 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 1.918182174728201,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9175925085745722 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.09668863028907698,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09667992881745391 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 0.989256685099185,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.9892654518610328 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.40121653363212484,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4011872698579669 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.169404257937297,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.16939317456047934 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.593505713068966,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.5933814885461435 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.22525881778638354,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.22520484081015205 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.380401966203154,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3802439493840395 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.26556646117278454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2655546009085625 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.08282943118119566,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08281618127604207 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 2.0454907913287945,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.044766831159654 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.09958500687167765,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09956288497554168 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 1.0706389023368628,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.0706464408941587 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.4298510730505813,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.429753683736211 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.5764741379310357,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5764046212819228 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 13.318217217787183,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.317675123527165 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.6486514064631486,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6485373959264016 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 7.378328119242125,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.378391794385501 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.47372702813504,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.473634888437787 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.26590621771025635,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26590781804511576 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 14.701738359902565,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.698587562919064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.4945430146475457,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4944094704667195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 7.488622765358593,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.488100165430065 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 1.6831190913788592,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.682907372037644 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.14527618023120314,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1452637741232677 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 18.45837667983939,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.45841805006773 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.41795363222687454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.41794311376358173 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 9.292997279726574,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.293054538217046 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.2808961882369252,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2808193191451451 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.08495820305692661,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08492926241438666 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 2.193111937812292,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.193006123582027 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.10322246195616573,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1032230400705549 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 1.124491407308992,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1244388421151514 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.4531752239761891,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.453109906073921 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.1835297745874508,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18350858302736245 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 3.06323216091464,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.0630586062870253 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.24356850792214946,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24355264100733245 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.6195356263659335,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6194320007397691 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.8261833868828563,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8260840501105138 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.17285670192467517,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.17284657406675283 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 7.871146774103638,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.870319400145361 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.2850137695909113,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.28500082434357843 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 4.017536615437098,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.017267719921923 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 45.24415670435651,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 45.235905331177676 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.8300033052453957,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8299004899081386 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 522.5981082091168,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 522.6017500000387 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 10.46206540241853,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.460786844855487 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 262.4919831460081,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 262.47494194755996 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.9272352442291327,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.927243387400286 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.26945357055011326,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26941173735262103 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 7.970228004322308,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.968618040154133 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.38166164211675646,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.38166389252600136 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 4.119216968379444,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.118916686258423 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.8324646891730667,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.83246777846105 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.2288954180857461,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2288970948741912 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 19.69581802792123,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.692823529413232 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.5239934363050217,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5239983929487142 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 9.962636564032584,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.961576477280314 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.0894610081481386,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0893220521086313 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.2626457327795151,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26262253339319447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 22.316862376556237,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 22.317044918765255 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.6011646985947104,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.601081041551073 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 11.293566782341985,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.291993382293548 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.6667761962662415,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6666058460291504 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.11349079505083755,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11349157291104636 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 18.77112578700374,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.77136490287714 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.38887601010182454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.388849602194941 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 9.436118811881144,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.435156125817127 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.6662146519274064,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6662298296980174 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.11353364055298959,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11352739411507042 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 18.76779410188454,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.766573592493042 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.3897689855031733,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.38977380571811676 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 9.432160922639184,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.432220273823914 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.6672652228721037,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6669475762332806 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.11348164483411644,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11347314530989025 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 18.76514492560049,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.76457259686418 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.38981040247873305,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.38977735206588365 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 9.431860380410022,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.431161607984814 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.4222292539990478,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.422156505636705 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2560041394348427,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25600498817430833 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 14.162024348350867,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.162100525357602 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.486230205584109,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4862332789276487 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 7.212141776062239,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.211292767053215 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 1.6891623000036722,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6891706314279333 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.11877691357987993,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11876101760646793 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 18.786073691270506,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.786242953018508 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.3982615516712182,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3982409844082257 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 9.447464143562403,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.447546313162345 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.2583828600236972,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25835093609304555 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.07464835642728308,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.07464229427025906 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 1.913499153786938,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9133184278619524 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.09685446555709945,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09685054746054719 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 0.9949505200437441,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.994956880442931 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.428194366395627,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.42817376356993253 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.10996253738916738,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10993879938213345 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.9755969296755334,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.975365084083453 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.19935760379161482,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1993382431220919 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.5652140925952764,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5652280913436019 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.27504706977766025,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2750234366712527 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.07802326020316681,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.07801798455499427 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 2.0890872228882085,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0891070701025267 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.10065757572500053,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10063128642091294 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 1.0530064527556526,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.0528530804592195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.1286925502745477,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.1282143662400426 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.23603777188253122,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.23603935383652944 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 23.23655684647132,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23.231589875522296 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.5844923071140706,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5844964386720626 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 11.73657392979574,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.735549384268959 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.468630785067862,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.468638537005667 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2588791398350189,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25888077792752745 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 14.689884381557517,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.688147798740538 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.4939387625461117,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4939431668996089 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 7.472553035961886,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.47264827659762 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 2.0384894124494384,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0385097004072175 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.13977151315469916,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.139749772505943 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 22.851507343354708,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 22.85176778721034 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.4770196639742421,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.47696151041133994 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 11.486411252566507,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.486494127310271 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.2900240586229865,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2899987085540182 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.08192839803620874,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.0819290322618179 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 2.224415720713891,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.224276482770013 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.10455392306063963,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10453805043551079 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 1.1405463860765594,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1403280880226045 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.49409125766043105,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4939937622683808 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.12249742050916614,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12249617656781656 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 3.575928633415651,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.5753883812343625 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.22431684113882244,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.22429266703261252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.8708552462862973,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8707919515971985 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.8613729990769885,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8613062688404963 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.1689766150597628,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.16897087058507185 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 7.9353499432483785,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.9353964245184665 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.28264924463497465,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2826375236619454 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 4.048450107453011,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.0484860022066265 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 45.81669633507468,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 45.813938481671215 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.5153113936374725,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5152400779053892 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 543.4843035020558,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 543.4235797665166 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 9.493266924173998,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.491677712273072 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 272.32259611654297,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 272.29078446605376 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.9808409321384863,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.980762377345518 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.2843475270904806,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.28433438439684416 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 8.034345525649321,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.034405221991255 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.39772099899454133,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.397691544959315 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 4.166240017851363,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.165968223743339 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.010677811218877706,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.01067791738244153 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.014136318157669133,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.014133661543130172 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.029120016499942534,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.02911925277538537 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.03230744134845487,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.03230771621109982 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.010671132105051225,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.010671203684526048 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.0142454436464785,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.01424445580618405 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.019359981360523477,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.019355010787679587 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.025010449617762734,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.025010648306168642 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 3.2902387304722867,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.2902537643516085 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 32.70047524520998,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 32.698312470804936 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 13.33550290227758,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.335548291939562 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDH/p224/threads:1",
+            "value": 319.3085863636404,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 319.2819499999964 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDH/p256/threads:1",
+            "value": 59.13154921840122,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 59.132011406848605 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDH/p384/threads:1",
+            "value": 918.476789473444,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 918.2705986840894 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDH/p521/threads:1",
+            "value": 2187.850093750221,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2187.629546874348 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 175.99830440252293,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 175.99953836482214 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 19.530398792811855,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.52862142055462 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 513.081032967014,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 513.0853992673251 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 1229.7088421048516,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1229.4815701753885 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 175.09678750002422,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 175.09806750000578 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 54.148298806304716,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 54.14870119368206 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 518.6041459851733,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 518.6081459854005 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 1266.3645765763472,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1266.0458198199096 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 14.258670372255844,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.257976542580211 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 14.428233034706157,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.426643805991903 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 52.08566641452131,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 52.08142624812278 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 25.724344409773767,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 25.72458454194779 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 7.189690978787555,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.1878669051883435 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 119.01484863948187,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 119.00667517005829 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 2.3393430527418726,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.339350183285072 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.2506594186685478,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25063312468788174 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 26.736431117067678,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.730887909570438 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.4620000593964022,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.46196673134276967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 13.39098909090971,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.390254545455583 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.8626103310979645,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8626141893891636 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.061957540149629224,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.06195425683658817 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 9.791854264324327,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.791487721262031 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.21496148419214603,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.21496308844237016 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 4.931711165814575,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.931740214524807 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 1.0937333582939415,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.0936571972356282 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.08492408323238361,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08490456039409143 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 12.398443913659627,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.396728326256735 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.27245737575889034,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2724468356205997 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 6.235513221150338,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.233953303062632 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 2.436871771233885,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.4364341549110256 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.26735948312545227,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2673583809045224 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 28.01589809809816,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 28.016103503504908 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.699241714699219,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6991937719889232 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 14.145829567332532,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.145956125240806 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 24.210743896097302,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.210935757575196 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 73.9454820675083,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 73.9458686708877 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 1.2257245073136653,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.2256220110361675 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 64.79105874062152,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 64.77383317667552 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 121.66339530840656,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 121.63137880104256 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 169.81812969706053,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 169.81154545453938 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 4.454276078653461,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.454303254110897 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 6.5888975974413695,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.588940758850557 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 8.756764050567305,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.755279008636291 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 221.8807904600257,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 221.86533390115358 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 353.76028611106375,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 353.7635805555637 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 410.91430389610355,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 410.8956883116703 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 54.02712934361985,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 54.024323938231966 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 86.97872523366767,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 86.9739626168142 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 145.56399375651256,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 145.5663246618054 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 54.017966820989685,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 54.002849922847645 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 86.97142563784216,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 86.97230740508826 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 145.56263958335572,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 145.5634708333283 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 40.61289727202985,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 40.61752437614559 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 27.639177944967532,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 27.62910337341172 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 83.8215531660553,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 83.82201015532557 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 43.507140634714666,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 43.50479091475738 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 46.92504263178479,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 46.92620409508241 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 19.63850883543513,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19.622123141764032 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 43.23203365214931,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 43.24346156239406 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 30.932280398987587,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30.933553266843344 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 20.93492886999043,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20.92770200659035 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 60.94731086957084,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 60.943346956519136 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 30.256984246864874,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30.256633146306186 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 35.157469730987295,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.156733986284145 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 14.49406635567556,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.491948159730226 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 29.980622032131674,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 29.992033582857403 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 687.0653088236735,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 687.0684754902886 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 1985.888394366032,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1985.8977042254066 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 4397.370548388373,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4396.122064516447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 18.175820526111075,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.17476700790114 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 37.95825603470344,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 37.9559324654189 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 66.04096538821416,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 66.0411772684687 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 88.52715572236927,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 88.52097686054933 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 164.70080327870812,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 164.70193208430567 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 260.03533148152906,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 260.0378648148088 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 592.2078135593678,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 592.0490635593145 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1809.0092987012652,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1808.7069870129474 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 4066.8677941185065,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4066.6353823523336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 15.800693133044312,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.79975220239751 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 33.8051458737861,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 33.8025730582531 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 58.36135242476059,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 58.361910535119705 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.7873892280130959,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7873356937885471 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.5890136633273322,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5889790257417883 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 2.788480646829728,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.7885084135571447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.6172433588216628,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6172456246095692 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.677706321845841,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.6776025152851608 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 43149.710000003935,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 43150.05233333598 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 328745.97,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 328693.2500000148 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 325.9264722839539,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 325.9232217294715 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 117.60014932885835,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 117.59141862416817 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 29140.696200011014,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 29138.792200001262 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 29155.464199993734,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 29152.643999998418 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 4347.41690624918,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4347.103531250341 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.6136764395199007,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6136086241885776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.02176461107927783,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.021764765277169 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 7.270053781862462,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.270103670248673 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.12780217487756726,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12780302393990636 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 3.6443535358798016,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.643501554377389 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 956.2085479451712,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 956.0846849316388 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 956.3708972603132,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 956.1044109587215 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 478.2951979521839,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 478.29983276453873 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 3.589378659910136,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.589390765765993 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 585.3620962341924,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 585.2948158995908 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 5848.112708334223,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5848.1509999999125 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.12696246895855837,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12696255820119012 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.1281499663703159,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12813660086520112 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 6573.011523809804,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6572.741000000058 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 23628.776666669182,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23628.828500003845 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 5669.188480001139,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5668.86744000044 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 20505.327857157292,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20504.396142850317 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1624.411779069961,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1624.3029767442592 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1624.3756395352268,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1624.3790000001668 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 585.4679181817863,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 585.401513636344 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 5853.857708335871,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5853.8937500003385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.11848045298082946,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11845892698448367 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.1191790677916723,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11917018916855057 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 6585.887333332471,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6584.882285714178 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 23626.30600000178,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23623.65866666494 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 5674.098079999794,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5673.6991200000375 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 20519.02414285678,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20516.644428572105 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1624.3385813949803,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1624.346895348785 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1627.1229186043531,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1626.6323488372602 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 587.0449243697792,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 586.9922436974805 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 5871.371374998565,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5870.4382499996655 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.11252872012734644,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11252864841866687 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.1118014571619975,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11179249152696251 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 2253.5609677420107,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2253.1895322580635 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 8474.762529411184,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8474.108352940595 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 2176.2743437498957,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2176.0089375000293 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 8309.918647061002,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8310.061882353386 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 515.9966900368848,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 516.0016088560737 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 515.8297416974451,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 515.8004317343193 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
           }
         ]
       }
