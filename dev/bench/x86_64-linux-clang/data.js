@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785245740156,
+  "lastUpdate": 1785262600561,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux Clang": [
@@ -275780,6 +275780,1990 @@ window.BENCHMARK_DATA = {
             "value": 491.3509192982402,
             "unit": "us/iter",
             "extra": "iterations: 9\ncpu: 491.34823508770364 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.28"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "github-actions[bot]",
+            "username": "github-actions[bot]",
+            "email": "github-actions[bot]@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "github-actions[bot]",
+            "username": "github-actions[bot]",
+            "email": "github-actions[bot]@users.noreply.github.com"
+          },
+          "id": "dcb59c2a12ebf141edb30356846eb0958cde11ce",
+          "message": "Merge branch 'main' of https://boringssl.googlesource.com/boringssl\n\n* 'main' of https://boringssl.googlesource.com/boringssl:\n  TEST_F(BNTest, ModSqrtInvalid): explain what's going on.",
+          "timestamp": "2026-07-28T06:46:17Z",
+          "url": "https://github.com/divVerent/boringssl/commit/dcb59c2a12ebf141edb30356846eb0958cde11ce"
+        },
+        "date": 1785262568180,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.9821508274701887,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9821858516074602 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.44837778548870577,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.44829166772786067 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 11.073530119528423,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.072154911739974 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.3192492223290169,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3190866466828874 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 6.114010430759936,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.113576921398386 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.1149507484967596,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.114466600334625 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.5420474925701384,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5419999726986364 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 11.711340827110668,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.70992509017762 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.4077047747958402,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.4077359165245016 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 6.486688539737017,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.486823706100393 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.9069891507053616,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9070228420522082 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.12411560998188888,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12411696935719818 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 21.588160215883338,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.583659984579825 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.43734524311250944,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.43735334425964234 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 10.849063510481306,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.84869552100198 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.9077604883436499,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.907783106920456 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.12492028574555174,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12491615660811206 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 21.583151202220808,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.58189950678191 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.43902877943396473,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4389721035821553 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 10.851411244666659,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.85018697169521 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.910427191091773,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.9104652400573516 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.12765934024843806,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1276531351244668 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 21.584256785927348,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.583320326957207 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.44067269619843197,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4406803414393166 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 10.851575005815365,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.850764012716052 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1024435167496835,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.102469956052199 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.20053977595995584,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2005293287663666 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.93905354206969,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.938564696672286 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3670705773894874,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3669592794547947 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.565172620943255,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.564780235518728 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.6868413127096795,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.686775255295618 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.14086111783404953,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.14084418313331132 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 18.566245855989095,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 18.564839676435913 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.4184761974547257,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.41848111438444574 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 9.344534628999401,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.343608094570742 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.21651099355660966,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2165148795152577 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.08780415797521542,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08779987698743937 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 1.3062900786872254,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3062622721290096 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.09375745324026474,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09375885276502541 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 0.6894595665713172,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6894276393391561 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.4491103455132973,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4490903191451721 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.16137683803184244,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.161379122310984 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 3.337326338605466,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.3373888386052215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.2207379707600054,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2207429225135955 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.7490334079900476,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.7490701317550919 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.23148912219915774,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.23129310655577168 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.09091280229193849,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09090708072391038 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 1.42305002909893,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.4230853499814131 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.09734616868043469,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09734842178575706 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 0.7498765068465347,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7498520866914486 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.0300180089973128,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0299070381663555 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.44911218235554223,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4490828370556527 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 11.642637809041894,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.641637226338657 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.3349948115488235,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.3350229243818275 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 6.405544914284422,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.404133165714094 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1362144062849242,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1361715656041353 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.20500536431737224,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2049754681859105 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.223958059340653,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.223125100240829 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3721621552692457,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3721724470467557 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.709867986124606,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.709605060190391 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 2.112009786477269,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.111751206345597 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.16811684633919066,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.16809496524944537 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 23.336705715710437,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23.33548958507267 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.5156248702107762,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5155884371525372 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 11.742672092633669,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.742056804832576 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.24608155754408814,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2460886724072545 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.093532225800938,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09352046344368771 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 1.5405770489281612,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5404571437982197 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.10174645538918921,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10173992401627685 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 0.808355143971301,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8083726067491612 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.48540833543942036,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.48541624576357134 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.1741972431189508,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1741920923139566 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 3.58978465676144,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.589613345286417 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.24297357476571943,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24296612202796478 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.8805544183423808,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8804900672929559 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.6920791550552772,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6920943023487464 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.1712148401429702,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.17120601022358428 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 6.215828143026268,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.215499157127482 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.2537443104470975,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2537167250652035 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 3.1882869193516243,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.188343716604998 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 40.161217278990854,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 40.15926607347962 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.574405127051576,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5743437373508473 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 464.8508305649179,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 464.7780332225563 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 9.118643080734667,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.11807799661002 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 233.28526000000238,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 233.26887000000818 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.7712962063548878,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7712123567287719 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.2529365655086393,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25294098613749416 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 6.297954359457545,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.297748639776296 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.33497756817471624,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.3349822339943862 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 3.2681869874881886,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.2682402652170848 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.8316987679316428,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8316437653677413 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.1847299782211019,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18470617960895838 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 20.096697885197123,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20.093833117537404 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.4958218940943324,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4957972868683221 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 10.133047336421495,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.132398885349334 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 1.894439763758303,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8941763569035126 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.19470822656962217,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1947047926063148 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 20.663303307739803,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 20.66367277023256 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.5171024988347565,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5171138571734579 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 10.4503863974948,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.449926623958115 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.8811067924479552,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.880943614451133 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.12478479533299172,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1247789896620052 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 21.32571789794142,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.32629398324555 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.42929087393040494,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4291543751685849 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 10.710983490023764,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.710353359320884 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.8802891794303729,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8801734163792807 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.12588470359507647,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12587372690126258 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 21.32803623629964,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.32488459196017 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.42928493636224796,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4292679683451633 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 10.708715857854807,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.708328238441606 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.8808391870643189,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.8808838931678433 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.12724204982034795,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12722870772507716 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 21.328021782176677,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.32624204112775 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.4298604551243803,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4298701038837295 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 10.712015368146089,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.711556158728072 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1000147799163913,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1000533290263825 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.19847567672650054,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.19845799868316638 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.941024819110538,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.941210534507332 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3668515389652595,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.36683422920762143 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.570157043788253,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.569435189221149 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 1.9286919303275754,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.928409505567188 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.13215664904081054,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1321410996883301 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 21.614777949356686,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.615205373688564 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.4537675882490047,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.45377474795247963 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 10.869886402486122,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.869148407148346 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.21929552117803344,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.21928699435319438 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.0816153442249552,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.0816055344527865 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 1.3243227146940444,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.324266511149239 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.08816968172634462,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08815900585213306 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 0.6995941382449449,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6994529902270846 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.49378196899375104,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4937852946155098 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.12153674987528006,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12153908260862173 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 3.9995991988551065,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.999286552216902 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.2005849390058231,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.20055086172276598 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 2.068144662922144,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0679933471319685 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.23564252565057814,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.2356293820409376 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.0863135868733103,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08630138833325984 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 1.4280405292451,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.427920643819766 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.09323013005783581,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09322328325835821 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 0.7498409938155166,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7498544249141325 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.2065584376717826,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.2064437199776084 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.19767012504221365,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.19765467359466976 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 24.57221824561641,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.5683873684181 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.574307408196954,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5742852065621932 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 12.37840903065827,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.377720774058687 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1335460743402885,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.1334691462861843 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.20250772331977043,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.20247307611107895 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.224630382776267,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.223912838916743 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3716790912253148,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.37165626302330673 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.687252850708717,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.687397557115215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 2.348095540118717,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.3480102520214796 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.15922035990267544,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.15921329448930294 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 26.37464474179491,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.37231191104647 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.5490074269267542,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5488970111913626 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 13.21962404454155,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.219048881759313 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.2495933414726621,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.24957977416983124 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.0897591660874728,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.08976108343818237 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 1.5347715488424614,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.534569045087177 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.09721609016224188,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09721596720616352 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 0.8052757089387931,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8052175924057549 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.5589628059886415,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5589164403042163 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.12775152846625312,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.12775356259049847 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 4.592926568144524,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.5917760919540624 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.2181121480975788,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.21810233593398512 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 2.36138965354416,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.3611821846648247 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.7170054280007574,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7170165202253487 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.16560460688767958,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1656074793334 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 6.196480814340248,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.196251206020323 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.2631595597546833,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26312513007331945 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 3.1982809195398305,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.197599494253426 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 40.1505417024827,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 40.15028489538599 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.3324402572227598,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.332464371837886 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 476.23443344713473,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 476.2277098975996 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 8.312688737404839,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.312828156493403 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 238.92393231811425,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 238.89736209809573 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.8217261684381252,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.8216524508855373 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.2672748228000634,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.26726596900214306 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 6.300551648153512,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6.299926024194084 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.36372230858814314,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.36370365613985256 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 3.3011200446800917,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.3006325696362278 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.013694727382597315,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.013692849088575765 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.0179918110947743,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.01798956834560103 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.02972108867351782,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.029721630977705218 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.03273579858937339,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.0327363806996439 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.013630580054646096,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.01362956867871045 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.017989061673740744,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.0179884617098851 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.017135379336305375,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.017134453831886602 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.018904989397814,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.018903229443303055 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 2.1320412476227655,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.131969296310418 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 31.191270986424602,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 31.18895858383623 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 12.855633660638553,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 12.854685234470224 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDH/p224/threads:1",
+            "value": 321.69128045978493,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 321.62637241380327 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDH/p256/threads:1",
+            "value": 52.57311893112855,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 52.57395107264486 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDH/p384/threads:1",
+            "value": 874.1475283021165,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 874.0976729561237 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDH/p521/threads:1",
+            "value": 2006.0958260870207,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2006.1210289851338 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 174.61444389028316,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 174.60641022442536 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 17.129845619594377,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 17.128948946023733 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 483.98684775084973,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 483.9941626297576 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 1126.802467741901,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1126.8193790321616 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 174.4162376237629,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 174.3858638613798 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 48.397837443549435,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 48.39414796804033 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 492.74678368792206,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 492.75351773051585 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 1164.6982605045287,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1164.719470588287 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 13.57820203488233,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.57843129845273 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 13.734736805967241,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.734942122818113 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 48.54741526296152,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 48.548290477818455 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 21.042390573401835,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.042693785652038 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 5.986044916655995,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.9861582050304385 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 105.06904804805237,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 105.06401576577247 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 2.0470343667463418,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.0469063731198887 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.23180361466723312,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.23180835643534003 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 23.117797693569074,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23.11826771004555 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.4180048727522043,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.4179826865582541 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 11.592109504131578,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 11.592324380165385 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.7467183164675977,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7465735772401282 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.05315360950907681,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.053148183882747224 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 8.49679256158471,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8.49577963839237 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.1856669585712144,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.18566953006904713 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 4.275262202008698,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.2751031104052934 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 0.8024873271559252,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.802475803262904 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.07532305687527847,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.07532056814948201 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 9.128542620490265,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 9.12777042979238 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.19980995975622814,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.19979769798895425 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 4.581348657631717,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4.581424736087878 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 2.347083884028105,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.3469633781139 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.25881616453055184,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.25879904566386874 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 26.929515203997735,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.93003733641014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.673145039635044,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.6730475570501039 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 13.585342962389786,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 13.583705118262266 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 22.738912408759635,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 22.736495214922854 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 65.64211007025625,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 65.60818173303302 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 1.1078170816127666,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.10784037906092 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 52.40189573992473,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 52.39937443946019 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 98.37546736841767,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 98.3782098245618 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 138.41389910982102,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 138.3853936695848 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 3.83334873168498,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3.8331842882135785 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 5.733659945303941,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.733749826523188 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 7.616798836514631,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7.615812211165399 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 178.60246948361507,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 178.5976725352158 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 276.95817283956933,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 276.9195699588968 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 326.27901601830825,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 326.284398169328 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 43.30259461966659,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 43.299317563388634 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 69.49039910762635,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 69.49184085273559 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 118.39669966159022,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 118.39100507614255 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 43.347142147736974,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 43.3437852265657 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 69.59588486354056,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 69.5907508684929 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 118.2880042516784,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 118.29003316324777 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 30.94189026654452,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30.928006195074026 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 21.088796752390298,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 21.070250601191162 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 65.65094611056978,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 65.64263355202739 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 35.430415466266844,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.430073540561494 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 35.72897357738668,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.733639559099316 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 15.488111432332808,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 15.478206865674874 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 35.621107206483366,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.643101095141 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 23.64028029007059,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 23.646089268068504 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 16.19037391188489,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 16.186438319699192 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 47.168029221882634,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 47.165631668365414 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 24.26293439466711,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.26183240027432 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 26.11567828520974,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 26.11354892802683 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 10.715179738385572,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 10.701337669294203 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 24.488441998647218,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24.50269951010099 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 649.3171944444288,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 649.2486157407417 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 1898.9195945948725,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1898.7935945946253 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 4204.852727272365,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 4204.606969696728 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 16.676324163390976,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 16.676535429318992 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 35.503280425966146,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 35.49773427991843 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 61.225964269801665,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 61.20695667709281 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 80.09001884638414,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 80.0724654483019 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 152.739672203709,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 152.7347574750687 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 238.37495278255543,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 238.3793473861857 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 563.2984163263914,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 563.2605877551391 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1735.991876543783,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1735.8515308647375 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 3946.451599998519,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3946.5178571422907 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 14.751658229175701,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 14.748623463923341 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 31.791288247332893,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 31.783689247554953 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 55.42184922833571,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 55.42277720617309 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.7311090985018942,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.7310707626453445 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.5331032000429441,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.5330435504257255 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 2.656748827227077,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.656605891402142 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.5612498035007122,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.561183492461254 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.5813544120332983,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1.5808518898929818 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 30101.660999991964,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 30100.396599993932 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 227957.26100000026,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 227957.54600000073 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 228.79406420540533,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 228.79669983948128 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 108.71811577312964,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 108.69288500386504 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 24083.50899999808,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24082.263000006304 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 24127.44549999957,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 24126.57516666646 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 3881.057777776833,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 3880.67363888922 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.46117488364133524,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.46116615756314544 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.019399993877856073,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.019400319930497716 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 5.460740421379128,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5.4605677331241385 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.09905516385268545,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.09904387276572658 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 2.737885439098614,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.737877647704435 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 866.1507777779425,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 866.012932098775 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 866.3313641974396,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 866.2744320986349 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 452.06530645160575,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 452.04340645161597 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 2.8800890017120313,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2.8801420561126396 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 550.6709566929889,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 550.5258740156943 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 5506.626639999013,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5506.7546000009315 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.11010857561289505,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11008585905412621 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.11053581394335292,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.11052550123960583 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 6284.3847272724615,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6283.94231818225 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 22292.453833339703,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 22289.47316666563 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 5333.8742692305295,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5333.290076923009 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 19152.85414285758,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19153.23214285942 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1511.0236774198809,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1510.7721935484283 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1511.661903225925,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1511.661139785193 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 550.7126062993634,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 550.6932519683401 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 5504.414439999437,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5504.071000000295 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.10476880489259581,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10475894830606926 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.10454780491947774,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10452977293798596 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 6277.428590909618,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 6277.051227272069 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 22308.66966667122,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 22308.958500000623 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 5340.849269231285,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5340.791961539428 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 19156.652142856146,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 19156.954857143053 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1510.617290322717,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1510.6440322580834 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1510.9310860214375,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 1510.9418924733718 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 551.5230984253399,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 551.4854842519927 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 5517.56492000095,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 5517.6651600004325 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.10040680291756487,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.1003923289881113 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.10028735548580452,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 0.10027176876578066 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 2188.9923281257493,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2188.9177031249037 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 8181.357647057506,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 8181.486058821761 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 2078.410000001271,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 2078.3209552242533 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 7860.024111111999,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 7860.1130555553145 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 491.19651228051106,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 491.20532982446446 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 491.5648175439632,
+            "unit": "us/iter",
+            "extra": "iterations: 9\ncpu: 491.54341403506584 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v6\ncpu_model: AMD EPYC 9V74 80-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.29"
           }
         ]
       }
