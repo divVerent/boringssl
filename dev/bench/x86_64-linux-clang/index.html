@@ -196,8 +196,8 @@
             parent.appendChild(canvas);
 
             const colorR = Math.round(255);
-            const colorG = Math.round(64 + 127 / (1 + score));
-            const colorB = Math.round(64 + 127 / (1 + score));
+            const colorG = Math.round(32 + 191 / (1 + score / 4));
+            const colorB = Math.round(32 + 191 / (1 + score / 4));
             const color = '#' + colorR.toString(16).padStart(2, '0') + colorG.toString(16).padStart(2, '0') + colorB.toString(16).padStart(2, '0');
             const goodAnomalyColor = '#00ff00';
             const badAnomalyColor  = '#000000';
