@@ -98,7 +98,9 @@
         <h2>Global Alert Factor Analysis</h2>
         <p>Number of valid benchmarks modeled: ${benchmarkModels.length}</p>
         <p>Recommended global alert Threshold: ${globalF.toFixed(4)}</p>
+      </div>
 
+      <div class="benchmark-stats">
         <h2>Benchmark Statistics</h2>
         <div>
           <table>
