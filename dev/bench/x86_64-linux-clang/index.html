@@ -82,6 +82,11 @@
       .benchmark-chart {
         max-width: 32%;
       }
+      .findable {
+        max-width: 0;
+        max-height: 0;
+        opacity: 0;
+      }
     </style>
     <title>Benchmarks</title>
   </head>
@@ -174,11 +179,26 @@
         function renderAllChars(dataSets) {
 
           function renderGraph(parent, name, dataset) {
+            const minScore = window.BENCHMARK_FILTER.minScore == undefined ? 1 : window.BENCHMARK_FILTER.minScore;
+            const score = dataset.filter(d => d.bench.anomaly).length;
+            if (score < minScore) {
+              return;
+            }
+
+            const title = document.createElement('div');
+            title.className = 'findable';
+            const titleText = document.createTextNode(name);
+            title.appendChild(titleText);
+            parent.appendChild(title);
+
             const canvas = document.createElement('canvas');
             canvas.className = 'benchmark-chart';
             parent.appendChild(canvas);
 
-            const color = toolColors[dataset.length > 0 ? dataset[0].tool : '_'];
+            const colorR = Math.round(255);
+            const colorG = Math.round(64 + 127 / (1 + score));
+            const colorB = Math.round(64 + 127 / (1 + score));
+            const color = '#' + colorR.toString(16).padStart(2, '0') + colorG.toString(16).padStart(2, '0') + colorB.toString(16).padStart(2, '0');
             const goodAnomalyColor = '#00ff00';
             const badAnomalyColor  = '#000000';
             function colorOf(item, normalSuffix, anomalySuffix) {
