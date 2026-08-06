@@ -13,12 +13,15 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
     if (!Array.isArray(runs)) continue;
 
     // Iterate chronologically through every single run
+    prevBenchesByName = {};
     for (let i = 0; i < runs.length; i++) {
       const currentRun = runs[i];
       for (const bench of currentRun.benches) {
         bench.cpuType = cpuTypeOf(bench);
       }
+      run.benchesByName = {};
       for (const bench of currentRun.benches) {
+        run.benchesByName[bench.name] = bench;
         const benchName = bench.name;
         const newVal = bench.value;
         const cpu = bench.cpuType;
@@ -29,16 +32,13 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
             continue;
           }
           const prevRun = runs[h];
-          for (const prevBench of prevRun.benches) {
-            if (prevBench.name === benchName) {
-              const prevCPU = prevBench.cpuType;
-              if (cpu == prevCPU) {
-                if (h < i) {
-                  baselineVals.push(prevBench.value);
-                }
-                ++otherVals;
-              }
+          const prevBench = prevRun.benchesByName[benchName];
+          const prevCPU = prevBench.cpuType;
+          if (cpu == prevCPU) {
+            if (h < i) {
+              baselineVals.push(prevBench.value);
             }
+            ++otherVals;
           }
         }
 
