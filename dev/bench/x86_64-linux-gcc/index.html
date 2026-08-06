@@ -180,7 +180,9 @@
 
           function renderGraph(parent, name, dataset) {
             const minScore = window.BENCHMARK_FILTER.minScore == undefined ? 1 : window.BENCHMARK_FILTER.minScore;
-            const score = dataset.filter(d => d.bench.anomaly).length;
+            const badScore = dataset.filter(d => d.bench.anomaly > 0).length;
+            const goodScore = dataset.filter(d => d.bench.anomaly < 0).length;
+            const score = goodScore + badScore;
             if (score < minScore) {
               return;
             }
@@ -195,9 +197,10 @@
             canvas.className = 'benchmark-chart';
             parent.appendChild(canvas);
 
-            const colorR = Math.round(255);
-            const colorG = Math.round(32 + 191 / (1 + score / 4));
-            const colorB = Math.round(32 + 191 / (1 + score / 4));
+            const colorVal = Math.round(32 + 191 / (1 + score / 4));
+            const colorR = badScore ? 255 : colorVal;
+            const colorG = goodScore ? 255 : colorVal;
+            const colorB = colorVal;
             const color = '#' + colorR.toString(16).padStart(2, '0') + colorG.toString(16).padStart(2, '0') + colorB.toString(16).padStart(2, '0');
             const goodAnomalyColor = '#00ff00';
             const badAnomalyColor  = '#000000';
