@@ -40,7 +40,7 @@
       }
       return aName.localeCompare(bName);
     })) {
-    const filterObj = Object.assign({}, filter);
+    const filterObj = Object.assign({}, window.BENCHMARK_FILTER);
     if (filter != '') {
       filterObj.filter = filterStr;
     } else {
