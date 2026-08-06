@@ -16,21 +16,21 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
     prevBenchesByName = {};
     for (let i = 0; i < runs.length; i++) {
       const currentRun = runs[i];
+      currentRun.benchesByName = {};
       for (const bench of currentRun.benches) {
+        currentRun.benchesByName[bench.name] = bench;
         bench.cpuType = cpuTypeOf(bench);
       }
-      run.benchesByName = {};
+    }
+    for (let i = 0; i < runs.length; i++) {
+      const currentRun = runs[i];
       for (const bench of currentRun.benches) {
-        run.benchesByName[bench.name] = bench;
         const benchName = bench.name;
         const newVal = bench.value;
         const cpu = bench.cpuType;
         const baselineVals = [];
         let otherVals = 0;
-        for (let h = 0; h < runs.length; h++) {
-          if (h == i) {
-            continue;
-          }
+        for (let h = 0; h < i; h++) {
           const prevRun = runs[h];
           const prevBench = prevRun.benchesByName[benchName];
           const prevCPU = prevBench.cpuType;
