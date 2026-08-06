@@ -3,7 +3,7 @@ const PERCENTILE_THRESHOLD = 1.0 - TARGET_FALSE_ALERT_PROBABILITY;
 const GRAPH_COLOR_STEP = 0.25;
 const GRAPH_COLOR_MIN = 32;
 const GRAPH_COLOR_MAX = 223;
-const GRAPH_FALLOFF = 0.9;
+const GRAPH_FALLOFF = 0.98;
 const GRAPH_MIN_SCORE = 1e-10;
 
 function parseExtra(extra) {
