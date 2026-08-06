@@ -50,7 +50,7 @@
     const url = `JavaScript:location.hash = '#${escape(filterJSON)}'; location.reload(); false;`;
     html += `
         <tr>
-          <td><a href="${url}">${filter.length ? filter : '(all)'}</a></td>
+          <td><a href="${url}">${filterStr.length ? filterStr : '(all)'}</a></td>
           <td>${set.size}</td>
         </tr>
     `;
