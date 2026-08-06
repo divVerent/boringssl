@@ -33,6 +33,9 @@ const NOISE_FLOOR = 0.01; // Even if not seen, observe a min stddev of 1%.
         for (let h = 0; h < runs.length; h++) {
           const prevRun = runs[h];
           const prevBench = prevRun.benchesByName[benchName];
+          if (!prevBench) {
+            continue;
+          }
           const prevCPU = prevBench.cpuType;
           if (cpu == prevCPU) {
             if (h < i) {
