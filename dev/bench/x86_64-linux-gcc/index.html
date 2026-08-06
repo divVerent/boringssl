@@ -196,12 +196,7 @@
             const canvas = document.createElement('canvas');
             canvas.className = 'benchmark-chart';
             parent.appendChild(canvas);
-
-            const colorVal = Math.round(32 + 191 / (1 + score / 4));
-            const colorR = badScore ? 224 : colorVal;
-            const colorG = goodScore ? 224 : colorVal;
-            const colorB = colorVal;
-            const color = '#' + colorR.toString(16).padStart(2, '0') + colorG.toString(16).padStart(2, '0') + colorB.toString(16).padStart(2, '0');
+            const color = colorForGraph(goodScore, badScore);
             const goodAnomalyColor = '#00aa00';
             const badAnomalyColor  = '#000000';
             function colorOf(item, normalSuffix, anomalySuffix) {
