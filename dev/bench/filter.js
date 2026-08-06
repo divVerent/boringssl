@@ -41,7 +41,7 @@
       return aName.localeCompare(bName);
     })) {
     const filterObj = Object.assign({}, window.BENCHMARK_FILTER);
-    if (filter != '') {
+    if (filterStr != '') {
       filterObj.filter = filterStr;
     } else {
       delete filterObj.filter;
