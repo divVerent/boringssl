@@ -202,7 +202,7 @@
             const colorG = goodScore ? 255 : colorVal;
             const colorB = colorVal;
             const color = '#' + colorR.toString(16).padStart(2, '0') + colorG.toString(16).padStart(2, '0') + colorB.toString(16).padStart(2, '0');
-            const goodAnomalyColor = '#00ff00';
+            const goodAnomalyColor = '#00aa00';
             const badAnomalyColor  = '#000000';
             function colorOf(item, normalSuffix, anomalySuffix) {
               const anomaly = dataset[item.dataIndex].bench.anomaly;
