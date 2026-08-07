@@ -24,62 +24,29 @@ use bssl_tls::{
         DtlsMode,
         TlsContextBuilder, //
     },
-    credentials::{
-        Certificate,
-        TlsCredentialBuilder, //
-    },
     errors::Error, //
 };
-use bssl_x509::{
-    certificates::X509Certificate,
-    keys::PrivateKey,
-    params::Trust,
-    store::X509StoreBuilder, //
-};
 
-use super::{
-    CA,
-    RSA_SERVER_CERT,
-    RSA_SERVER_KEY, //
-};
 use crate::{
     TokioDatagramIo,
     new_std_datagram_with_tokio, //
 };
 
-fn dumb_dtls_server_client() -> Result<
-    (
-        TlsConnection<Server, DtlsMode>,
-        TlsConnection<Client, DtlsMode>,
-    ),
-    Error,
-> {
-    let ca = Certificate::parse_one_from_pem(CA, None)?;
-    let server_cert = Certificate::parse_one_from_pem(RSA_SERVER_CERT, None)?;
-    let server_key = PrivateKey::from_pem(RSA_SERVER_KEY, || unreachable!())?;
-
+fn dumb_dtls_server_client() -> (
+    TlsConnection<Server, DtlsMode>,
+    TlsConnection<Client, DtlsMode>,
+) {
     let mut server_ctx_builder = TlsContextBuilder::new_dtls();
-    let server_cred = {
-        let mut builder = TlsCredentialBuilder::new();
-        builder
-            .with_certificate_chain(&[server_cert, ca])?
-            .with_private_key(server_key)?;
-        builder.build()
-    };
-    server_ctx_builder.with_credential(server_cred.unwrap())?;
-    let server_ctx = server_ctx_builder.build();
-    let server_conn = server_ctx.new_server_connection().build();
+    server_ctx_builder
+        .with_credential(super::server_credential())
+        .unwrap();
+    let server_conn = server_ctx_builder.build().new_server_connection().build();
 
     let mut client_ctx_builder = TlsContextBuilder::new_dtls();
-    let ca = X509Certificate::parse_one_from_pem(CA)?;
-    let mut cert_store = X509StoreBuilder::new();
-    cert_store.set_trust(Trust::SslServer)?.add_cert(ca)?;
-    let cert_store = cert_store.build();
-    client_ctx_builder.with_certificate_store(&cert_store);
-    let client_ctx = client_ctx_builder.build();
-    let client_conn = client_ctx.new_client_connection().build();
+    client_ctx_builder.with_certificate_store(&super::client_cert_store());
+    let client_conn = client_ctx_builder.build().new_client_connection().build();
 
-    Ok((server_conn, client_conn))
+    (server_conn, client_conn)
 }
 
 async fn async_ping_pong(
@@ -146,7 +113,7 @@ async fn async_ping_pong(
 #[tokio::test]
 #[ignore = "https://crbug.com/532601068"]
 async fn async_dtls() -> Result<(), Error> {
-    let (mut server_conn, mut client_conn) = dumb_dtls_server_client().unwrap();
+    let (mut server_conn, mut client_conn) = dumb_dtls_server_client();
     let (server_sock, client_sock) = tokio::net::UnixDatagram::pair().unwrap();
     server_conn.set_io(TokioDatagramIo(server_sock)).unwrap();
     client_conn.set_io(TokioDatagramIo(client_sock)).unwrap();
@@ -158,7 +125,7 @@ async fn async_dtls() -> Result<(), Error> {
 #[tokio::test]
 #[ignore = "https://crbug.com/532601068"]
 async fn async_dtls_over_fd() -> Result<(), Error> {
-    let (mut server_conn, mut client_conn) = dumb_dtls_server_client().unwrap();
+    let (mut server_conn, mut client_conn) = dumb_dtls_server_client();
     let (server_sock, client_sock) = std::os::unix::net::UnixDatagram::pair().unwrap();
     server_sock.set_nonblocking(true).unwrap();
     client_sock.set_nonblocking(true).unwrap();
