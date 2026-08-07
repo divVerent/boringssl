@@ -6,6 +6,10 @@ const GRAPH_COLOR_MAX = 223;
 const GRAPH_FALLOFF = 0.98;
 const GRAPH_MIN_SCORE = 1e-10;
 
+const MIN_FRACTION = 0.5; // Time fraction in which to not show anomalies.
+const NOISE_FLOOR_RELATIVE = 0.01; // Even if not seen, observe a min stddev of 1%.
+const NOISE_FLOOR_ABSOLUTE = 0.01; // Even if not seen, observe a min stddev of 10ns.
+
 function parseExtra(extra) {
   out = {};
   for (const line of extra.split(/\n/)) {
