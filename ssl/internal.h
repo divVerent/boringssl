@@ -366,7 +366,7 @@ bool ssl_tls13_cipher_meets_policy(uint16_t cipher_id,
                                    enum ssl_compliance_policy_t policy);
 
 // ssl_cipher_is_deprecated returns true if `cipher` is deprecated.
-OPENSSL_EXPORT bool ssl_cipher_is_deprecated(const SSL_CIPHER *cipher);
+bool ssl_cipher_is_deprecated(const SSL_CIPHER *cipher);
 
 
 // Transcript layer.
@@ -3599,13 +3599,14 @@ uint32_t ssl_hash_session_id(Span<const uint8_t> session_id);
 
 // SSL_SESSION_parse parses an `SSL_SESSION` from `cbs` and advances `cbs` over
 // the parsed data.
-OPENSSL_EXPORT UniquePtr<SSL_SESSION> SSL_SESSION_parse(
-    CBS *cbs, const SSL_X509_METHOD *x509_method, CRYPTO_BUFFER_POOL *pool);
+UniquePtr<SSL_SESSION> SSL_SESSION_parse(CBS *cbs,
+                                         const SSL_X509_METHOD *x509_method,
+                                         CRYPTO_BUFFER_POOL *pool);
 
 // ssl_session_serialize writes `in` to `cbb` as if it were serialising a
 // session for Session-ID resumption. It returns true on success and false on
 // error.
-OPENSSL_EXPORT bool ssl_session_serialize(const SSL_SESSION *in, CBB *cbb);
+bool ssl_session_serialize(const SSL_SESSION *in, CBB *cbb);
 
 enum class SSLSessionType {
   // The session is not resumable.
