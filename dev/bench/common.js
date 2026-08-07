@@ -5,7 +5,7 @@ const DEFAULT_CONFIG = {
   'graphColorMax': 223,
   'graphFalloff': 0.98,
   'graphMinScore': 1e-10,
-  'minFraction': 0.5, // Time fraction in which to not show anomalies.
+  'minFraction': 0.75, // Time fraction in which to not show anomalies.
   'noiseFloorRelative': 0.01, // Even if not seen, observe a min stddev of 1%.
   'noiseFloorAbsolute': 0.01, // Even if not seen, observe a min stddev of 10ns.
 };
