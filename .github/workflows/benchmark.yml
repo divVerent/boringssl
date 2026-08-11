@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: ninja -C build bssl_bench
       - name: Benchmark
-        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
+        run: build/bssl_bench --threads 1 --benchmark_enable_random_interleaving --benchmark_min_time=0.07s --benchmark_repetitions=10 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
       - name: Keep Medians Only
         run: |
           jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
