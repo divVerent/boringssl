@@ -362,7 +362,7 @@ var supportedSignatureAlgorithms = []signatureAlgorithm{
 // SRTP protection profiles (See RFC 5764, section 4.1.2)
 const (
 	SRTP_AES128_CM_HMAC_SHA1_80 uint16 = 0x0001
-	SRTP_AES128_CM_HMAC_SHA1_32        = 0x0002
+	SRTP_AES128_CM_HMAC_SHA1_32 uint16 = 0x0002
 )
 
 // PskKeyExchangeMode values (see RFC 8446, section 4.2.9)
@@ -2549,11 +2549,19 @@ type Credential struct {
 	// Properties is the certificate properties (draft-ietf-tls-trust-anchor-ids)
 	// associated with this credential.
 	Properties CertificatePropertyList
+	// SessionIDContext is the session ID context to configure on the credential.
+	SessionIDContext []byte
 }
 
 func (c *Credential) WithSignatureAlgorithms(sigAlgs ...signatureAlgorithm) *Credential {
 	ret := *c
 	ret.SignatureAlgorithms = sigAlgs
+	return &ret
+}
+
+func (c *Credential) WithSessionIDContext(sidCtx []byte) *Credential {
+	ret := *c
+	ret.SessionIDContext = sidCtx
 	return &ret
 }
 
