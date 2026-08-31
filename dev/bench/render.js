@@ -63,7 +63,7 @@
           };
 
           // Prepare data points for charts
-          return Object.keys(data.entries).map(name => ({
+          return Object.keys(data.entries).toSorted().map(name => ({
             name,
             dataSet: collectBenchesPerTestCase(data.entries[name]),
           }));
