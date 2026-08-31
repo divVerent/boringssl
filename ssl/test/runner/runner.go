@@ -19,6 +19,7 @@ import (
 	"crypto"
 	"crypto/ecdsa"
 	"crypto/ed25519"
+	"crypto/mldsa"
 	"crypto/rsa"
 	"crypto/x509"
 	"crypto/x509/pkix"
@@ -45,7 +46,6 @@ import (
 	"time"
 
 	"boringssl.googlesource.com/boringssl.git/util/testresult"
-	"filippo.io/mldsa"
 	"golang.org/x/crypto/cryptobyte"
 	"golang.org/x/term"
 )
@@ -194,7 +194,7 @@ func initKeys() {
 	ed25519Key = k.(ed25519.PrivateKey)
 
 	for _, k := range []struct {
-		params *mldsa.Parameters
+		params mldsa.Parameters
 		key    **mldsa.PrivateKey
 	}{
 		{mldsa.MLDSA44(), &mldsa44Key},
@@ -361,23 +361,9 @@ func initRawPublicKeyCredentials() {
 	}
 }
 
-func flagInts(flagName string, vals []int) []string {
-	ret := make([]string, 0, 2*len(vals))
-	for _, val := range vals {
-		ret = append(ret, flagName, strconv.Itoa(val))
-	}
-	return ret
-}
+type toIntFlag interface{ ~int | ~uint16 | ~uint8 }
 
-func flagCurves(flagName string, vals []CurveID) []string {
-	ret := make([]string, 0, 2*len(vals))
-	for _, val := range vals {
-		ret = append(ret, flagName, strconv.Itoa(int(val)))
-	}
-	return ret
-}
-
-func flagCertTypes(flagName string, vals []CertificateType) []string {
+func flagInts[T toIntFlag](flagName string, vals []T) []string {
 	ret := make([]string, 0, 2*len(vals))
 	for _, val := range vals {
 		ret = append(ret, flagName, strconv.Itoa(int(val)))
