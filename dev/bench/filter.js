@@ -21,14 +21,14 @@
     return !cpuFilter || cpuType == cpuFilter;
   }
 
-  function cpuFilterEntries(entries) {
+  function filterEntries(entries) {
     for (const subentries of Object.values(entries)) {
       for (const subentry of subentries) {
         subentry.benches = subentry.benches.filter((bench) => keepBench(subentry, bench));
       }
     }
   }
-  cpuFilterEntries(data.entries);
+  filterEntries(data.entries);
 
   let html = `
     <h2>Available CPU Types</h2>
