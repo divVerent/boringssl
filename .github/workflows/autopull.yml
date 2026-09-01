@@ -24,6 +24,8 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
+    outputs:
+      commits_pulled: ${{ steps.check_news.outputs.commits_pulled }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -37,7 +39,17 @@ jobs:
       - name: Pull from remote
         run:
           git pull --no-ff --no-rebase --commit --log --no-edit https://boringssl.googlesource.com/boringssl main
-      - name: Push to self.
+      - name: Check for news
+        id: check_news
+        run: |
+          COUNT=$(git rev-list ORIG_HEAD..HEAD | wc -l)
+          echo "commits_pulled=$COUNT" >> "$GITHUB_OUTPUT"
+      - name: Push to self
+        if: ${{ steps.check_news.outputs.commits_pulled > 0 }}
         run:
           git push origin HEAD
-
+  benchmark:
+    needs: pull
+    if: ${{ needs.pull.outputs.commits_pulled > 0 }}
+    uses: ./.github/workflows/benchmark.yml
+    secrets: inherit

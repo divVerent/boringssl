@@ -20,6 +20,7 @@ on:
   schedule:
     - cron: '54 4,10,16,22 * * *'
   workflow_dispatch:
+  workflow_call:
 
 jobs:
   benchmark-x86-64-linux-gcc:
