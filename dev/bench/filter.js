@@ -1,30 +1,34 @@
 ((data, filterJSON) => {
   loadConfigFromString(filterJSON);
-  const filter = CONFIG.filter;
+  const cpuFilter = CONFIG.cpuFilter;
+  const nameFilter = CONFIG.nameFilter;
 
-  allFilters = {
+  allCPUFilters = {
     '': new Set()
   };
 
   function keepBench(subentry, bench) {
-    const cpuType = cpuTypeOf(bench);
-    if (!(cpuType in allFilters)) {
-      allFilters[cpuType] = new Set();
-    }
-    allFilters[cpuType].add(subentry.date);
-    allFilters[''].add(subentry.date);
     const name = bench.name;
-    return !filter || cpuType == filter || name.includes(filter);
+    if (!(!nameFilter || name.contains(nameFilter))) {
+      return false;
+    }
+    const cpuType = cpuTypeOf(bench);
+    if (!(cpuType in allCPUFilters)) {
+      allCPUFilters[cpuType] = new Set();
+    }
+    allCPUFilters[cpuType].add(subentry.date);
+    allCPUFilters[''].add(subentry.date);
+    return !cpuFilter || cpuType == cpuFilter;
   }
 
-  function filterEntries(entries) {
+  function cpuFilterEntries(entries) {
     for (const subentries of Object.values(entries)) {
       for (const subentry of subentries) {
         subentry.benches = subentry.benches.filter((bench) => keepBench(subentry, bench));
       }
     }
   }
-  filterEntries(data.entries);
+  cpuFilterEntries(data.entries);
 
   let html = `
     <h2>Available CPU Types</h2>
@@ -35,17 +39,17 @@
           <th>Count</th>
         </tr>
   `;
-  for (const [filterStr, set] of Object.entries(allFilters).toSorted(([aName, aSet], [bName, bSet]) => {
+  for (const [cpuFilterStr, set] of Object.entries(allCPUFilters).toSorted(([aName, aSet], [bName, bSet]) => {
       if (aSet != bSet) {
         return bSet.size - aSet.size;
       }
       return aName.localeCompare(bName);
     })) {
-    const filterJSON = configToString({'filter': filterStr.length ? filterStr : null});
-    const url = `JavaScript:location.hash = '#${escape(filterJSON)}'; location.reload(); false;`;
+    const filterJSON = configToString({'cpuFilter': cpuFilterStr.length ? cpuFilterStr : null});
+    const url = `JavaScript:location.hash = '#${escape(cpuFilterJSON)}'; location.reload(); false;`;
     html += `
         <tr>
-          <td><a href="${url}">${filterStr.length ? filterStr : '(all)'}</a></td>
+          <td><a href="${url}">${cpuFilterStr.length ? cpuFilterStr : '(all)'}</a></td>
           <td>${set.size}</td>
         </tr>
     `;
