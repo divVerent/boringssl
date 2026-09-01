@@ -7,7 +7,7 @@ const DEFAULT_CONFIG = {
 
   // Graph filtering.
   'graphFalloff': 0.98,
-  'graphMinScore': 1e-10,
+  'graphMinScore': -1,
 
   // Custom filtering.
   'cpuFilter': '',
@@ -124,6 +124,14 @@ function scoreForGraph(dataset) {
   return [score, goodScore, badScore];
 }
 
+const DEFAULT_GRAPH_MIN_SCORE = 1e-10;
+
+function graphMinScore() {
+  return CONFIG.graphMinScore >= 0 ? CONFIG.graphMinScore :
+         CONFIG.nameFilter         ? 0                    :
+                                     DEFAULT_GRAPH_MIN_SCORE;
+}
+
 if (typeof module != 'undefined') {
   module.exports = {
     CONFIG,
@@ -135,5 +143,6 @@ if (typeof module != 'undefined') {
     tCDF,
     colorForGraph,
     scoreForGraph,
+    graphMinScore,
   };
 }

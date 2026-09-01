@@ -46,7 +46,7 @@
       return aName.localeCompare(bName);
     })) {
     const filterJSON = configToString({'cpuFilter': cpuFilterStr.length ? cpuFilterStr : null});
-    const url = `JavaScript:location.hash = '#${escape(cpuFilterJSON)}'; location.reload(); false;`;
+    const url = `JavaScript:location.hash = '#${escape(filterJSON)}'; location.reload(); false;`;
     html += `
         <tr>
           <td><a href="${url}">${cpuFilterStr.length ? cpuFilterStr : '(all)'}</a></td>
@@ -57,6 +57,18 @@
   html += `
       </table>
     </div>
+    <h2>Filter by Name</h2>
+    <div>
+      <input type="text" id="nameFilter">
+      <input type="button" id="applyNameFilter" value="Apply">
+    </div>
   `;
   document.write(html);
+  document.getElementById('nameFilter').value = nameFilter;
+  document.getElementById('applyNameFilter').onclick = () => {
+    const nameFilterStr = document.getElementById('nameFilter').value;
+    const filterJSON = configToString({'nameFilter': nameFilterStr});
+    location.hash = '#' + escape(filterJSON);
+    location.reload();
+  };
 })(window.BENCHMARK_DATA, unescape(location.hash.substring(1)));

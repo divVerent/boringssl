@@ -73,7 +73,7 @@
 
           function renderGraph(parent, name, dataset) {
             const [score, goodScore, badScore] = scoreForGraph(dataset);
-            if (score < CONFIG.graphMinScore) {
+            if (score < graphMinScore()) {
               return;
             }
 
