@@ -7,13 +7,14 @@
   };
 
   function keepBench(subentry, bench) {
-    cpuType = cpuTypeOf(bench);
+    const cpuType = cpuTypeOf(bench);
     if (!(cpuType in allFilters)) {
       allFilters[cpuType] = new Set();
     }
     allFilters[cpuType].add(subentry.date);
     allFilters[''].add(subentry.date);
-    return !filter || cpuType == filter;
+    const name = bench.name;
+    return !filter || cpuType == filter || name.includes(filter);
   }
 
   function filterEntries(entries) {
