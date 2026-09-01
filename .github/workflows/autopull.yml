@@ -52,4 +52,6 @@ jobs:
     needs: pull
     if: ${{ needs.pull.outputs.commits_pulled > 0 }}
     uses: ./.github/workflows/benchmark.yml
+    permissions:
+      contents: write
     secrets: inherit
