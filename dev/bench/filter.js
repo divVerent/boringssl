@@ -9,7 +9,7 @@
 
   function keepBench(subentry, bench) {
     const name = bench.name;
-    if (!(!nameFilter || name.contains(nameFilter))) {
+    if (!(!nameFilter || name.includes(nameFilter))) {
       return false;
     }
     const cpuType = cpuTypeOf(bench);
