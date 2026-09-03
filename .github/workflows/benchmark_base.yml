@@ -17,13 +17,16 @@ name: Benchmark
 on:
   workflow_call:
     inputs:
+      name:
+        required: true
+        type: string
+      title:
+        required: true
+        type: string
       extra_packages:
         required: false
         type: string
       cmake_flags:
-        required: true
-        type: string
-      name:
         required: true
         type: string
 
@@ -68,7 +71,7 @@ jobs:
           || github.event_name == 'schedule' }}
         uses: benchmark-action/github-action-benchmark@v1
         with:
-          name: Benchmark on ${{ inputs.name }}
+          name: ${{ inputs.title }}
           tool: googlecpp
           output-file-path: benchmark.json
           gh-pages-branch: gh-pages

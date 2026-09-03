@@ -26,33 +26,37 @@ jobs:
   benchmark-x86-64-linux-gcc:
     uses: ./.github/workflows/benchmark_base.yml
     with:
+      name: x86_64-linux-gcc
+      title: Benchmark on x8-64 Linux GCC
       extra_packages:
       cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
-      name: x86_64-linux-gcc
     permissions:
       contents: read
   benchmark-x86-64-linux-gcc-lto:
     uses: ./.github/workflows/benchmark_base.yml
     with:
+      name: x86_64-linux-gcc-lto
+      title: Benchmark on x8-64 Linux GCC with LTO
       extra_packages:
       cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_FLAGS=-flto -DCMAKE_CXX_FLAGS=-flto -DCMAKE_EXE_LINKER_FLAGS=-flto -DCMAKE_AR=gcc-ar -DCMAKE_RANLIB=gcc-ranlib
-      name: x86_64-linux-gcc-lto
     permissions:
       contents: read
   benchmark-x86-64-linux-clang:
     uses: ./.github/workflows/benchmark_base.yml
     with:
+      name: x86_64-linux-clang
+      title: Benchmark on x8-64 Linux Clang
       extra_packages: clang-20
       cmake_flags: -DCMAKE_C_COMPILER=clang-20 -DCMAKE_CXX_COMPILER=clang++-20
-      name: x86_64-linux-clang
     permissions:
       contents: read
   benchmark-x86-64-linux-clang-lto:
     uses: ./.github/workflows/benchmark_base.yml
     with:
+      name: x86_64-linux-clang-lto
+      title: Benchmark on x8-64 Linux Clang with LTO
       extra_packages: clang-20
       cmake_flags: -DCMAKE_C_COMPILER=clang-20 -DCMAKE_CXX_COMPILER=clang++-20 -DCMAKE_C_FLAGS=-flto -DCMAKE_CXX_FLAGS=-flto -DCMAKE_EXE_LINKER_FLAGS=-flto
-      name: x86_64-linux-clang-lto
     permissions:
       contents: read
   upload-results:
