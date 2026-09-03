@@ -1,0 +1,96 @@
+# Copyright 2026 The BoringSSL Authors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+name: Benchmark
+
+on:
+  workflow_call:
+    inputs:
+      extra_packages:
+        required: false
+        type: string
+      cmake_flags:
+        required: true
+        type: string
+      name:
+        required: true
+        type: string
+
+jobs:
+  benchmark:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get -y install build-essential cmake jq ninja-build ${{ inputs.extra_packages }}
+      - name: Configure
+        run: cmake -B build -GNinja -DCMAKE_BUILD_TYPE=Release ${{ inputs.cmake_flags }}
+      - name: Build
+        run: ninja -C build bssl_bench
+      - name: Benchmark
+        run: build/bssl_bench --threads 1 --benchmark_enable_random_interleaving --benchmark_min_time=0.07s --benchmark_repetitions=10 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
+      - name: Keep Medians Only
+        run: |
+          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
+      - name: Gather System Info
+        run: |
+          set -x
+          export AZURE_VMSIZE=$(curl -s --connect-timeout 5 -H "Metadata:true" "http://169.254.169.254/metadata/instance/compute/vmSize?api-version=2021-02-01&format=text" || true)
+          CPU_DATA=$(lscpu -J | jq -r '
+            (.lscpu | map({(.field | rtrimstr(":")): .data}) | add) as $cpu
+            | {
+                cpu_model: $cpu["Model name"],
+                cpu_cores: $cpu["CPU(s)"],
+                cpu_bogomips: $cpu["BogoMIPS"]
+              } | @json
+          ')
+          export CPU_MODEL=$(echo "$CPU_DATA" | jq -r '.cpu_model')
+          export CPU_CORES=$(echo "$CPU_DATA" | jq -r '.cpu_cores')
+          export CPU_BOGOMIPS=$(echo "$CPU_DATA" | jq -r '.cpu_bogomips')
+          jq '.benchmarks[].threads |= "\(.)\nazure_vmsize: \(env.AZURE_VMSIZE)\ncpu_model: \(env.CPU_MODEL)\ncpu_cores: \(env.CPU_CORES)\ncpu_bogomips: \(env.CPU_BOGOMIPS)"' benchmark_median.json > benchmark.json
+      - name: Append benchmark result
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+          || github.event_name == 'schedule' }}
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: Benchmark on ${{ inputs.name }}
+          tool: googlecpp
+          output-file-path: benchmark.json
+          gh-pages-branch: gh-pages
+          benchmark-data-dir-path: dev/bench/${{ inputs.name }}
+          auto-push: false
+          alert-threshold: 258%
+          comment-on-alert: true
+          alert-comment-cc-users: '@divVerent'
+          max-items-in-chart: 256
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Store Commit
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+          || github.event_name == 'schedule' }}
+        run: |
+          git show gh-pages > bench.patch
+      - name: Upload Results
+        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
+          || github.event_name == 'schedule' }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: bench-${{ inputs.name }}
+          path: bench.patch
+          if-no-files-found: error

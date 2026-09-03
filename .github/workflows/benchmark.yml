@@ -24,143 +24,37 @@ on:
 
 jobs:
   benchmark-x86-64-linux-gcc:
+    uses: ./.github/workflows/benchmark_base.yml
+    with:
+      extra_packages:
+      cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
+      name: x86_64-linux-gcc
     permissions:
       contents: read
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-      - name: Install Dependencies
-        run: sudo apt-get update && sudo apt-get -y install build-essential cmake jq ninja-build
-      - name: Configure
-        run: cmake -B build -GNinja -DCMAKE_BUILD_TYPE=Release
-        env:
-          CC: gcc
-          CXX: g++
-      - name: Build
-        run: ninja -C build bssl_bench
-      - name: Benchmark
-        run: build/bssl_bench --threads 1 --benchmark_enable_random_interleaving --benchmark_min_time=0.07s --benchmark_repetitions=10 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
-      - name: Keep Medians Only
-        run: |
-          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
-      - name: Gather System Info
-        run: |
-          set -x
-          export AZURE_VMSIZE=$(curl -s --connect-timeout 5 -H "Metadata:true" "http://169.254.169.254/metadata/instance/compute/vmSize?api-version=2021-02-01&format=text" || true)
-          CPU_DATA=$(lscpu -J | jq -r '
-            (.lscpu | map({(.field | rtrimstr(":")): .data}) | add) as $cpu
-            | {
-                cpu_model: $cpu["Model name"],
-                cpu_cores: $cpu["CPU(s)"],
-                cpu_bogomips: $cpu["BogoMIPS"]
-              } | @json
-          ')
-          export CPU_MODEL=$(echo "$CPU_DATA" | jq -r '.cpu_model')
-          export CPU_CORES=$(echo "$CPU_DATA" | jq -r '.cpu_cores')
-          export CPU_BOGOMIPS=$(echo "$CPU_DATA" | jq -r '.cpu_bogomips')
-          jq '.benchmarks[].threads |= "\(.)\nazure_vmsize: \(env.AZURE_VMSIZE)\ncpu_model: \(env.CPU_MODEL)\ncpu_cores: \(env.CPU_CORES)\ncpu_bogomips: \(env.CPU_BOGOMIPS)"' benchmark_median.json > benchmark.json
-      - name: Append benchmark result
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        uses: benchmark-action/github-action-benchmark@v1
-        with:
-          name: Benchmark on x8-64 Linux GCC
-          tool: googlecpp
-          output-file-path: benchmark.json
-          gh-pages-branch: gh-pages
-          benchmark-data-dir-path: dev/bench/x86_64-linux-gcc
-          auto-push: false
-          alert-threshold: 258%
-          comment-on-alert: true
-          alert-comment-cc-users: '@divVerent'
-          max-items-in-chart: 256
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Store Commit
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        run: |
-          git show gh-pages > bench.patch
-      - name: Upload Results
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: bench-x86_64-linux-gcc
-          path: bench.patch
-          if-no-files-found: error
+  benchmark-x86-64-linux-gcc-lto:
+    uses: ./.github/workflows/benchmark_base.yml
+    with:
+      extra_packages:
+      cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_C_FLAGS=-flto -DCMAKE_CXX_FLAGS=-flto -DCMAKE_EXE_LINKER_FLAGS=-flto -DCMAKE_AR=gcc-ar -DCMAKE_RANLIB=gcc-ranlib
+      name: x86_64-linux-gcc-lto
+    permissions:
+      contents: read
   benchmark-x86-64-linux-clang:
+    uses: ./.github/workflows/benchmark_base.yml
+    with:
+      extra_packages: clang-20
+      cmake_flags: -DCMAKE_C_COMPILER=clang-20 -DCMAKE_CXX_COMPILER=clang++-20
+      name: x86_64-linux-clang
     permissions:
       contents: read
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v7
-      - name: Install Dependencies
-        run: sudo apt-get update && sudo apt-get -y install build-essential cmake jq ninja-build clang-20
-      - name: Configure
-        run: cmake -B build -GNinja -DCMAKE_BUILD_TYPE=Release
-        env:
-          CC: clang-20
-          CXX: clang++-20
-      - name: Build
-        run: ninja -C build bssl_bench
-      - name: Benchmark
-        run: build/bssl_bench --threads 1 --benchmark_min_time=1s --benchmark_enable_random_interleaving --benchmark_min_time=0.1s --benchmark_repetitions=9 --benchmark_out=benchmark_raw.json --benchmark_out_format=json --benchmark_time_unit=us
-      - name: Keep Medians Only
-        run: |
-          jq '.benchmarks = ([.benchmarks[] | select((.run_name | test("BM_SpeedRSAKeyGen/") | not) and .aggregate_name == "median") | .name = .run_name] | sort_by(.name))' benchmark_raw.json > benchmark_median.json
-      - name: Gather System Info
-        run: |
-          set -x
-          export AZURE_VMSIZE=$(curl -s --connect-timeout 5 -H "Metadata:true" "http://169.254.169.254/metadata/instance/compute/vmSize?api-version=2021-02-01&format=text" || true)
-          CPU_DATA=$(lscpu -J | jq -r '
-            (.lscpu | map({(.field | rtrimstr(":")): .data}) | add) as $cpu
-            | {
-                cpu_model: $cpu["Model name"],
-                cpu_cores: $cpu["CPU(s)"],
-                cpu_bogomips: $cpu["BogoMIPS"]
-              } | @json
-          ')
-          export CPU_MODEL=$(echo "$CPU_DATA" | jq -r '.cpu_model')
-          export CPU_CORES=$(echo "$CPU_DATA" | jq -r '.cpu_cores')
-          export CPU_BOGOMIPS=$(echo "$CPU_DATA" | jq -r '.cpu_bogomips')
-          jq '.benchmarks[].threads |= "\(.)\nazure_vmsize: \(env.AZURE_VMSIZE)\ncpu_model: \(env.CPU_MODEL)\ncpu_cores: \(env.CPU_CORES)\ncpu_bogomips: \(env.CPU_BOGOMIPS)"' benchmark_median.json > benchmark.json
-      - name: Append benchmark result
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        uses: benchmark-action/github-action-benchmark@v1
-        with:
-          name: Benchmark on x8-64 Linux Clang
-          tool: googlecpp
-          output-file-path: benchmark.json
-          gh-pages-branch: gh-pages
-          benchmark-data-dir-path: dev/bench/x86_64-linux-clang
-          auto-push: false
-          alert-threshold: 225%
-          comment-on-alert: true
-          alert-comment-cc-users: '@divVerent'
-          max-items-in-chart: 256
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Store Commit
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        run: |
-          git show gh-pages > bench.patch
-      - name: Upload Results
-        if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-          (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-          || github.event_name == 'schedule' }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: bench-x86_64-linux-clang
-          path: bench.patch
-          if-no-files-found: error
+  benchmark-x86-64-linux-clang-lto:
+    uses: ./.github/workflows/benchmark_base.yml
+    with:
+      extra_packages: clang-20
+      cmake_flags: -DCMAKE_C_COMPILER=clang-20 -DCMAKE_CXX_COMPILER=clang++-20 -DCMAKE_C_FLAGS=-flto -DCMAKE_CXX_FLAGS=-flto -DCMAKE_EXE_LINKER_FLAGS=-flto
+      name: x86_64-linux-clang-lto
+    permissions:
+      contents: read
   upload-results:
     if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
@@ -170,7 +64,9 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - benchmark-x86-64-linux-gcc
+      - benchmark-x86-64-linux-gcc-lto
       - benchmark-x86-64-linux-clang
+      - benchmark-x86-64-linux-clang-lto
     steps:
       - name: Checkout Code
         uses: actions/checkout@v7
