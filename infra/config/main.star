@@ -856,12 +856,11 @@ both_builders(
         "upload_to_cas": FINISHED_OUTPUT_FILES_LINUX_STATIC,
     },
 )
-cq_builders(
+both_builders(
     "linux_lto",
     LINUX_HOST,
-    cq_enabled = False,
-    #category = "linux|x86-64|gcc|lto",
-    #short_name = "lto",
+    category = "linux|x86-64|gcc",
+    short_name = "lto",
     properties = {
         "cmake_args": {
             "CMAKE_BUILD_TYPE": "Release",
@@ -1015,7 +1014,7 @@ cq_builders(
     "linux_clang_lto",
     LINUX_HOST,
     cq_enabled = False,
-    #category = "linux|x86-64|clang|lto",
+    #category = "linux|x86-64|clang",
     #short_name = "lto",
     properties = {
         "clang": True,
@@ -1401,6 +1400,19 @@ both_builders(
         "check_prefixed_symbols": True,
         "upload_to_cas": FINISHED_OUTPUT_FILES_MAC_STATIC,
     }),
+)
+both_builders(
+    "mac_arm64_lto",
+    MAC_ARM64_HOST,
+    category = "mac|arm64|clang",
+    short_name = "lto",
+    properties = {
+        "cmake_args": {
+            "CMAKE_BUILD_TYPE": "Release",
+            "CMAKE_INTERPROCEDURAL_OPTIMIZATION": "ON",
+        },
+        "upload_to_cas": FINISHED_OUTPUT_FILES_MAC_STATIC,
+    },
 )
 both_builders(
     "mac_arm64_bazel",
