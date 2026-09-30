@@ -38,7 +38,8 @@ use crate::{
     },
     errors::{
         Error,
-        IoError, //
+        TlsRetryReason,
+        UnknownError, //
     },
     io::{
         AbstractReader,
@@ -194,15 +195,34 @@ impl<R> TlsConnection<R, DtlsMode> {
         if rc == 0 {
             return Ok(false);
         }
-        // Clear error queue first.
-        let lib_err = Error::extract_lib_err();
-        if let Some(err) = self.take_io_err() {
-            return Err(Error::Io(IoError::Transport(err)));
+
+        let code = unsafe {
+            // Safety: inspecting the last error on an existing valid connection.
+            bssl_sys::SSL_get_error(self.ptr(), rc)
+        };
+        match code {
+            // Retransmission flight sent and timer state updated successfully; returns `Ok(true)`
+            // to signal that an expired timeout was handled.
+            bssl_sys::SSL_ERROR_NONE => Ok(true),
+
+            // `DTLSv1_handle_timeout` only flushes outbound writes but we must have `rc != 0`,
+            // so `SSL_ERROR_ZERO_RETURN` is unreachable here.
+            bssl_sys::SSL_ERROR_ZERO_RETURN => {
+                unreachable!("DTLSv1_handle_timeout only flushes outbound flights and rc != 0")
+            }
+
+            // When retransmitting flights on timeout, the write may suspend on `WantRead` or `WantWrite`.
+            // The timeout was still successfully processed and retransmission initiated, so `Ok(true)`
+            // is returned. Other retry reasons are not applicable here and are treated as errors.
+            _ if let Ok(reason) = TlsRetryReason::try_from(code) => match reason {
+                TlsRetryReason::WantWrite => Ok(true),
+                TlsRetryReason::WantRead => {
+                    unreachable!("DTLS should never want to read for timeout handling")
+                }
+                _ => Err(Error::Unknown(UnknownError("unknown dtls timeout error"))),
+            },
+            _ => Err(self.extract_tls_error(code)),
         }
-        if rc < 0 {
-            return Err(lib_err);
-        }
-        Ok(true)
     }
 
     /// Get connection's remaining DTLS timer timeout.
