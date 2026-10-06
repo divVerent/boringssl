@@ -487,9 +487,6 @@ OPENSSL_EXPORT int SSL_get_error(const SSL *ssl, int ret_code);
 // See also `SSL_CTX_set_custom_verify`.
 #define SSL_ERROR_WANT_CERTIFICATE_VERIFY 16
 
-#define SSL_ERROR_HANDOFF 17
-#define SSL_ERROR_HANDBACK 18
-
 // SSL_ERROR_WANT_RENEGOTIATE indicates the operation is pending a response to
 // a renegotiation request from the server. The caller may call
 // `SSL_renegotiate` to schedule a renegotiation and retry the operation.
@@ -886,7 +883,7 @@ OPENSSL_EXPORT int SSL_CREDENTIAL_set1_ocsp_response(SSL_CREDENTIAL *cred,
 
 // SSL_CREDENTIAL_set1_certificate_properties parses
 // `certificate_property_list` as a CertificatePropertyList (see Section 7 of
-// draft-ietf-tls-trust-anchor-ids-05) and applies recognized properties to
+// draft-ietf-tls-trust-anchor-ids-06) and applies recognized properties to
 // `cred`. It returns one on success and zero on error. It is an error if
 // `certificate_property_list` does not parse correctly, or if any recognized
 // properties from `certificate_property_list` cannot be applied to `cred`.
@@ -3355,7 +3352,7 @@ OPENSSL_EXPORT int SSL_add_bio_cert_subjects_to_stack(STACK_OF(X509_NAME) *out,
 // SSL_CREDENTIAL_set1_trust_anchor_id sets `cred`'s trust anchor ID to `id`, or
 // clears it if `id_len` is zero. It returns one on success and zero on
 // error. If not clearing, `id` must be in binary format (Section 4 of
-// draft-ietf-tls-trust-anchor-ids-05) of length `id_len`, and describe the
+// draft-ietf-tls-trust-anchor-ids-06) of length `id_len`, and describe the
 // issuer of the final certificate in `cred`'s certificate chain.
 //
 // Additionally, `cred` must enable issuer matching (see
@@ -3386,10 +3383,10 @@ OPENSSL_EXPORT int SSL_CREDENTIAL_add1_trust_anchor_group(
 // trust anchor IDs in wire-format (a series of non-empty, 8-bit length-prefixed
 // strings).
 //
-// See Section 5.2 of draft-ietf-tls-trust-anchor-ids-05 for guidance on
+// See Section 5.2 of draft-ietf-tls-trust-anchor-ids-06 for guidance on
 // determining this list. If applicable, client applications can use
 // `SSL_get0_peer_available_trust_anchors` to implement the recovery flow from
-// Section 5.6 of draft-ietf-tls-trust-anchor-ids-05.
+// Section 5.6 of draft-ietf-tls-trust-anchor-ids-06.
 //
 // If empty (`ids_len` is zero), the trust_anchors extension will still be sent
 // in ClientHello. This may be used by a client application to signal support
@@ -3428,7 +3425,7 @@ OPENSSL_EXPORT int SSL_peer_matched_trust_anchor(const SSL *ssl);
 // This value is only available during the handshake and is expected to be
 // called in the event of certificate verification failure. Client applications
 // can use it to retry the connection, requesting different trust anchors. See
-// Section 5.6 of draft-ietf-tls-trust-anchor-ids-05 for details.
+// Section 5.6 of draft-ietf-tls-trust-anchor-ids-06 for details.
 // `CBS_get_u8_length_prefixed` may be used to iterate over the format.
 //
 // If needed in other contexts, callers may save the value during certificate
@@ -6919,63 +6916,6 @@ BORINGSSL_MAKE_UP_REF(SSL_ECH_KEYS, SSL_ECH_KEYS_up_ref)
 BORINGSSL_MAKE_DELETER(SSL_SESSION, SSL_SESSION_free)
 BORINGSSL_MAKE_UP_REF(SSL_SESSION, SSL_SESSION_up_ref)
 
-
-// *** DEPRECATED EXPERIMENT — DO NOT USE ***
-//
-// Split handshakes.
-//
-// WARNING: This mechanism is deprecated and should not be used. It is very
-// fragile and difficult to use correctly. The relationship between
-// configuration options across the two halves is ill-defined and not
-// self-consistent. Additionally, version skew across the two halves risks
-// unusual behavior and connection failure. New development should use the
-// handshake hints API. Existing deployments should migrate to handshake hints
-// to reduce the risk of service outages.
-//
-// Split handshakes allows the handshake part of a TLS connection to be
-// performed in a different process (or on a different machine) than the data
-// exchange. This only applies to servers.
-//
-// In the first part of a split handshake, an `SSL` (where the `SSL_CTX` has
-// been configured with `SSL_CTX_set_handoff_mode`) is used normally. Once the
-// ClientHello message has been received, the handshake will stop and
-// `SSL_get_error` will indicate `SSL_ERROR_HANDOFF`. At this point (and only
-// at this point), `SSL_serialize_handoff` can be called to write the “handoff”
-// state of the connection.
-//
-// Elsewhere, a fresh `SSL` can be used with `SSL_apply_handoff` to continue
-// the connection. The connection from the client is fed into this `SSL`, and
-// the handshake resumed. When the handshake stops again and `SSL_get_error`
-// indicates `SSL_ERROR_HANDBACK`, `SSL_serialize_handback` should be called to
-// serialize the state of the handshake again.
-//
-// Back at the first location, a fresh `SSL` can be used with
-// `SSL_apply_handback`. Then the client's connection can be processed mostly
-// as normal.
-//
-// Lastly, when a connection is in the handoff state, whether or not
-// `SSL_serialize_handoff` is called, `SSL_decline_handoff` will move it back
-// into a normal state where the connection can proceed without impact.
-//
-// WARNING: Currently only works with TLS 1.0–1.2.
-// WARNING: The serialisation formats are not yet stable: version skew may be
-//     fatal.
-// WARNING: The handback data contains sensitive key material and must be
-//     protected.
-// WARNING: Some calls on the final `SSL` will not work. Just as an example,
-//     calls like `SSL_get0_session_id_context` and `SSL_get_privatekey` won't
-//     work because the certificate used for handshaking isn't available.
-// WARNING: `SSL_apply_handoff` may trigger “msg” callback calls.
-
-OPENSSL_EXPORT void SSL_CTX_set_handoff_mode(SSL_CTX *ctx, bool on);
-OPENSSL_EXPORT void SSL_set_handoff_mode(SSL *SSL, bool on);
-OPENSSL_EXPORT bool SSL_serialize_handoff(const SSL *ssl, CBB *out,
-                                          SSL_CLIENT_HELLO *out_hello);
-OPENSSL_EXPORT bool SSL_decline_handoff(SSL *ssl);
-OPENSSL_EXPORT bool SSL_apply_handoff(SSL *ssl, Span<const uint8_t> handoff);
-OPENSSL_EXPORT bool SSL_serialize_handback(const SSL *ssl, CBB *out);
-OPENSSL_EXPORT bool SSL_apply_handback(SSL *ssl, Span<const uint8_t> handback);
-
 // SSL_get_traffic_secrets sets `*out_read_traffic_secret` and
 // `*out_write_traffic_secret` to reference the current TLS 1.3 traffic secrets
 // for `ssl`. It returns true on success and false on error.
@@ -7232,6 +7172,7 @@ BSSL_NAMESPACE_END
 #define SSL_R_UNUSABLE_ECH_CONFIG_LIST 337
 #define SSL_R_INVALID_CIPHER_FLAGS 338
 #define SSL_R_DUPLICATE_CIPHER 339
+#define SSL_R_INVALID_TRUST_ANCHOR_ID 340
 #define SSL_R_SSLV3_ALERT_CLOSE_NOTIFY 1000
 #define SSL_R_SSLV3_ALERT_UNEXPECTED_MESSAGE 1010
 #define SSL_R_SSLV3_ALERT_BAD_RECORD_MAC 1020
