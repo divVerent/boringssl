@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1791734715268,
+  "lastUpdate": 1791751223101,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux GCC with LTO": [
@@ -779300,6 +779300,3982 @@ window.BENCHMARK_DATA = {
             "value": 311.229792452801,
             "unit": "us/iter",
             "extra": "iterations: 10\ncpu: 311.20182232715285 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v7\ncpu_model: AMD EPYC 9V45 96-Core Processor\ncpu_cores: 4\ncpu_bogomips: 5192.24"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "github-actions[bot]",
+            "username": "github-actions[bot]",
+            "email": "github-actions[bot]@users.noreply.github.com"
+          },
+          "committer": {
+            "name": "github-actions[bot]",
+            "username": "github-actions[bot]",
+            "email": "github-actions[bot]@users.noreply.github.com"
+          },
+          "id": "a5ea415d99bae344c49bdfa93086c51f40d4fff1",
+          "message": "Merge branch 'main' of https://boringssl.googlesource.com/boringssl\n\n* 'main' of https://boringssl.googlesource.com/boringssl:\n  util/fipstools/inject_hash: Add -ignore-missing-symbols flag and tests",
+          "timestamp": "2026-10-11T20:24:17Z",
+          "url": "https://github.com/divVerent/boringssl/commit/a5ea415d99bae344c49bdfa93086c51f40d4fff1"
+        },
+        "date": 1791751067446,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.133734172937,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1338532112096327 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.1336073197345318,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1332556561580502 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.5003398794325515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5003639289898634 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.49899062094397184,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.49895904998414486 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 11.202085792408655,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.201452090691674 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.49846964874735,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.498335101368191 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.787005112470407,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.787290208104263 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.1986724933601,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.197940809968559 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.4772467312121782,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4771944079986543 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.4690112178274468,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4690298056388693 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 6.268760601610819,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.26906501468898 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.392414675544522,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.391999706228182 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.5459407166315575,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.5459237401879395 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.259119175282702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.2592895123193735 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.2201924841042002,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.220112102635195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.2182635058640434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.218373884888997 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.5784279222619163,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5783782553235851 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.5754259667400707,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5753959155892538 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 12.2000554865959,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.198795866432679 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.462646920939706,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.462745691836894 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.789407131658399,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.79002089864107 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.20214398459224,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.202713460105688 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.5051450798013302,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5052077854857193 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.505055705017854,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.505012913540664 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 6.760704930451453,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.761030849744171 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.881483171727995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.8818005902197115 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 7.0267579813865835,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.026010952040257 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.756889214332281,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.756217505169252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.6000729069676207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.600124740668215 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.60531401964146,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6053907661534725 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.10268189116652367,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10268684632520966 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10640012280034179,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10640363223434854 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 18.119454545451273,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.119648189216665 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.250710624416243,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.249900838760794 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.559627625352494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.56059148533131 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.119361804395716,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.120280181181194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.3678198828874212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3678304267858357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3718318975335642,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3718505224311568 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 9.082312627380082,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.082735223271207 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.174083964111855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.173811466222459 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.2992104188447,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.299321730461351 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.08822706549652,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.087931429102522 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.603021759425927,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.602921692272505 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.6084687740940207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.60854657228642 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.10505607742869974,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1050586922186866 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10861977405885004,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10861801837516157 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 18.138402924296336,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.136205626514272 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.25736095558051,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.25786179544248 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.546232498581407,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.545711250243126 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.12668258374755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.126898389779363 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.3705474906904708,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.37053843071279846 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.37431283023051487,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.37430179675948716 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 9.090903133106579,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.089920235450263 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.17265385695487,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.17231955626339 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.30762609025751,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.308096037161638 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.094759070236694,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.094599563887476 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.6025918045384273,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6026380787338774 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.607956408235415,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6080338226115973 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.10524767107557313,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1052457511446995 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10884757014484372,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10885025701726614 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 18.116128299799776,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.11653442864764 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.24282879268592,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.24136667288746 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.55221258278242,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.551880132450002 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.111387025020885,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.111289898051336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.3700674344152819,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.37004996658955636 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3739572478302503,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.37397043402340413 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 9.089797506489912,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.089481460881407 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.174463136227988,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.174694891465744 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.309224460703671,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.308995486076794 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.093694269288196,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.09357033568298 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1416115824810833,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1416696463954301 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.1472714917311415,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1472916267048756 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.21192851859695155,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2119383037115825 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2137317130388073,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2137049219858349 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.271902873562174,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.27120890804448 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.528594961242158,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.52917183462462 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.819019963699324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.81909195402204 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.278254114403246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.278294567847551 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.39071140734297777,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.390699192616352 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3936086097155755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3936215244890736 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.73066741684552,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.730470041502688 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.858535873093187,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.858623723111224 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.004811350161003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.005093728988616 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.736691820039935,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.736959772127252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.6233322133764925,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.623376222711594 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.6281983246713352,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.628211790392919 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.1164711321908738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11647672814177264 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.11953647545601831,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11954225440099706 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 18.167118574873015,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.167227778809316 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.31571986878499,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.31591761949027 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.62341892918083,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.623594835767722 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.18353582033844,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.184015868596944 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.3866321448704307,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.38662859485694934 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3902425830641868,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3902584998603923 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 9.124724418603195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.125231069767752 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.212753054513279,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.211593233084072 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.341134479804095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.341327934449351 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.137478501632527,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.137217077708335 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.17383880453775663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17383942287422485 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.17544370732544878,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17542911093404884 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.07506388636435533,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07504493981559007 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.08432781317848521,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08432718653326794 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 0.9404210349621478,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9404688839858577 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.1001116895961975,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.100162947569578 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.42868718739969,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4287578826522676 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.9418128040371764,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9418095242655877 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.08330437405474088,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08330847281932277 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.09028453143409985,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09028652064818891 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 0.5053667524404682,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.50532079300334 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.5823574545582149,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5823750678119356 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.7314327607277311,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7314679943315776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5073277483936458,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5073530251040586 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.36034206308448613,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36031633962957443 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.3660185966064205,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36601659644965884 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.1399299841929949,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.13993187446856073 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.14328327006747632,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14329000456797186 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.441854914215962,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4419800293831293 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.7089057035703172,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.7090307518331356 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.040402934047498,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.04014421582717 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.4465928537559485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.446676796545817 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.18306243003579542,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1830673945747784 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.1873506832178915,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18735955979949764 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.2863569535910722,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.286388245402335 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.4139992418551213,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4140280296902479 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5644038421682986,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5644676285370405 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.2895975460451172,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2895903052965 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.18345628593287186,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1834649229074291 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.18442597126854618,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1844090921913202 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.08160416537707517,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08160051279002545 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.08727147510888324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08727586242242373 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 1.0175344428648208,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0175847816388337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.185198721087024,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1852288397989488 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5428192925445312,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5428931941750217 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.0175129359536004,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0174375816927268 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.08812455426788933,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08811703298772941 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.08985969143400577,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08986061251288517 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 0.5431753242797229,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5431761962231393 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.6331304272166738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6331568344189373 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.7909426398949685,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7909780623037873 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5446034644722431,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5446290758985937 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.182770062734576,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.182578890562776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.1813503978020816,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1813777452738163 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.5016237772800248,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5015158819657525 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.49748799067294297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4974859078370069 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 11.789147921902622,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.789129536472739 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.083984703277277,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.082922410616103 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.425285651240852,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.425150044130612 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.795829212675768,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.795335213634274 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.4887784201837642,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4887587141110532 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.484821646364224,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4846578119090745 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 6.565745249565043,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.565032717782176 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.694455469603052,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.69421762048283 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.862421186915286,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.862361281980055 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.554680165729063,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.554014635123474 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.189363608262329,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1893968834096955 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.1939106490721314,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1938248587912776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.21544475568748056,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2154397920436232 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.21722125758133273,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.21723184091190317 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.788171797954018,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.788723932648178 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.06461606153915,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.065216553848867 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.403232503196003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.403421775223881 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.802744679575094,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.802217746785733 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3959418648820097,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.39596036095002346 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.399452914076036,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.399458933849946 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.99689594048216,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.997176524614789 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.138435054771304,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.138733208138145 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.287902010531633,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.287634570914076 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.005397570821822,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.005512268251047 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 1.9716140303143235,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9715826480425271 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.9735276731971882,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9734437979425032 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.1364859880999157,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.13648082325399818 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1400447884589196,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14005248691150216 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 22.122826809951512,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.12098789592895 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 22.32951595987513,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.330644778843205 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 22.662952298448694,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.662855740348252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 22.122655425220913,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.123711143693576 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.4629350665294048,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.462956677967359 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.4662791308071534,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.466272359849705 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 11.124594358858584,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.125140858630768 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.224009951959449,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.22378488904506 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.354336574071949,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.354089293982542 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 11.115584249916235,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.115254677400657 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.19625297477724346,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19626265995877382 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.19547203030458432,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1954698631176337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.08493915413793722,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08494025444279 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.08891223593506395,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08890959857141674 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 1.0811328214455085,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.081117543387222 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.3245794334144585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3246405918387314 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.6662012322950406,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6660295631570523 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.0815477027515203,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0814381467727325 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.09193361253157631,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09193809017149211 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.09242479058555096,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09242578506300107 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 0.579470115781313,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5794457754228638 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.701573198641369,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7016069908815434 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.8487930270366949,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.848784123986588 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5785393183191057,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5785677466025739 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.416171472957655,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.41615506337173214 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.41905505545486016,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.41907613302354624 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.1507082538142457,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15069777192455988 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1537338798550981,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15373070230579616 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 2.9247342681666417,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.9244912264774356 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 3.215439568447606,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.215202125768703 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.5796635396092333,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.579815174457053 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.9299645877054425,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.92956779610197 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.19993181127999077,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19990252174143017 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2040168368788585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.20402071031750083 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.5343280416243084,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5343589703466602 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.6702939377413895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6703751512155587 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.8389005516050587,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8387186532579456 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.5386604842005585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5386948776114915 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.7522305496489744,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7522300200171232 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.7558990207039072,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7558913868217794 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.15797823537729494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1579772308316124 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.16113598566722492,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1611327854436606 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 7.18124703760847,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.181348494887429 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.359464302296818,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.35879028326249 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.557985119397197,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.557288201388188 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.1885058737157195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.188437848751889 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.2590244721816673,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2590358763343642 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2624737989100139,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.262486457562103 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 3.669571730115397,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.6695646131428807 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.724953252745385,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.725103597290317 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.828401918847588,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.828395532584201 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.6641919320435137,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.664295307413023 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 40.89281761266717,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 40.89265463271952 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 40.88773134639657,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 40.88947874114679 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.6159878201534297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6157884761180537 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.614433470066817,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6145086817568188 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 474.0365917871094,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 474.06320048283504 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 473.3262524038761,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 473.32124038456357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 473.51787864075385,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 473.5406844658485 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 472.8088907768324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 472.8035582524557 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 9.37820201875699,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.376881410255415 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 9.37141092009264,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.371782894738114 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 237.3713058252898,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.34454004857076 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 237.53750973226187,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.54883941595102 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 237.86984306564764,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.88106569343603 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 237.8086147343754,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.80350362308172 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.8466055809809486,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8463050722820364 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.8488065716161455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8488513643280712 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.2505250927420181,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2505323128296861 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2530047958653314,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2530175719056829 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 7.276790875373905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.275900964392733 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.434738309038014,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.435093469387217 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.638659459779847,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.638461023571393 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.283226207256436,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.283209739633451 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.35073858312468315,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35072345830387913 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3545399116450153,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3545350184917244 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 3.7577960278389524,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.7579079827726085 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.813212597015977,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.813489940298645 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.913670902846902,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.913635156297358 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.763157793801585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.7631561445215747 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.674438226120777,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6744311234100357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.669940632200958,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6699838251988741 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.1900503095613325,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1900445320561064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.18714102038595923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18713864491246435 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 18.07807202063095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.07629112175738 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.265397750503745,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.26503671686809 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.394927605636717,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.394408356809496 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.0498580645212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.05079133640465 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.4748129230067325,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4748349970382719 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.47050709784118333,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.47052973257504266 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 9.124947397872711,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.124885842191684 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.211215665945119,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.210838957490177 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.281698307647549,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.28091680060312 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.12920989379484,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.128226616360212 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 1.762863913685694,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7629672179827807 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.7588319278723905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.758791423701497 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.19461275533244954,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1946153278148115 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1904800002706471,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1904753278342598 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 19.07388873706718,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.073010052707865 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 19.24042538778293,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.240820439817128 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 19.399503969046677,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.39902768406393 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 19.076648270505768,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.076540322584233 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.49420660516860904,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.49420301468995476 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.4909782635891646,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4910031573837462 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 9.642324990151312,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.642080508474873 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.712627351951536,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.712712170725577 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.80052830852789,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.799287862026674 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.63204165031258,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.632200794740896 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.6011704603185588,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6012213509661044 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5962902011282947,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5962523470352705 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.1036785678123544,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1036773453700209 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09933359960462881,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09933809502985783 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 18.10214313399521,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.101111203397963 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.246021763400144,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.246308686752947 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.535913385083553,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.535717720560136 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.121946828187923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.121895043462764 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.36777295647863434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36778282155995035 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.36404823197075975,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.364050221606841 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 9.089904611671173,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.090344298042883 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.162777208643627,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.162786936091214 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.289867844556248,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.288815410992218 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.090084115630024,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.089756436471871 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.6001977034769586,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6001854858469433 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5959277532827558,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5959405902737336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.1037360883456024,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1037366622992499 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09935255601391547,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09935759925186297 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 18.103375277362524,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.103279493348005 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.249890578361835,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.249631436569896 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.549955715361854,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.549755582892757 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.109055236863416,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.10994744633774 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.3679484119088557,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36792528407705016 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.36466766553843816,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3646609793525473 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 9.100072064551053,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.100504683729564 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.157622413628847,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.158053412599218 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.292476395867075,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.29292501658966 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.091193446576774,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.091619326093952 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.5996920306428546,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5993593724479975 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5959710202686659,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5959523457071358 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.10385772811862648,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10385841154070172 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09975165862470023,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0997512642343831 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 18.109427713069785,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.10849713440675 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.25191350093556,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.252332029790253 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.532813267816547,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.533539312045924 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.108073714393193,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.108640862005252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.36813944500206286,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3681565250410502 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3645823547017514,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36459941824565917 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 9.093901188706427,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.093763372956529 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.160132598495858,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.159815619131859 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.288729095564667,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.288433352294279 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.089541149210316,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.089960936055574 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1430901172623509,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.143098786535034 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.16067337834026,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.160641812623969 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.21299172293506669,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2130026833727646 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.20776770364274752,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.20772005137317234 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.246280332573594,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.246181020642844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.463828598149835,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.464355138544345 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.79608260137491,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.794931536519693 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.263931601879602,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.264475002864655 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.38651261217430466,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.38653182620318527 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3886511280795634,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.38864078735027385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.728695831868656,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.728804783677578 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.831980801284677,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.832229908322912 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.993684566015808,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.99374902200539 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.733660880510529,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.73328754171272 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 1.6254553999392876,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.625439072798064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.6237711655530411,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6238446618808513 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.11695619924715332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11695741827055543 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.11362986604704617,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1136316873526196 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 18.147301037423176,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.144937198963714 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 18.308494858850977,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.306456720878675 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.76094880216498,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.758156201708754 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 18.143521542162894,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.140438332102192 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.3854704759771113,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.38545555083863 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.38326168469442706,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3832565778399387 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 9.13285291108467,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.13328989955389 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.204955295991626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.205159536542087 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.330562589032857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.330907636054508 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 9.122302006872765,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.12275991823355 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.17272847791268553,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1727363894284043 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.17589706120013998,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17587474366760364 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.0781925450128147,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07819627290535072 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.0766351277650145,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07663726646662564 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 0.9572503920817941,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9572756217306742 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.2472413086760987,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2471761109835082 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.440188947205984,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4401900057338357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.9564738440387203,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9565199654894043 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.08671355346040663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08671514094110114 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.08430973945632478,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0843104533216178 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 0.5150373125690733,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5150613484506075 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.6486153556519316,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.648616538075324 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.7324012845687113,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7323018067268208 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5122513718086478,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5122469046037101 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.3863685096685493,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.38638670112925966 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.38243884688256513,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3824562764982334 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.10311189131603153,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1031097670429337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10044984164992324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10038227964658428 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.8580684084338004,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.8582019649701125 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.913314259413223,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.9132523013437663 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.11716629049271,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.1171329274887998 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.851743262885548,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.851756344661385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.16493601736788316,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16494409650357292 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.16193886834952972,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1619465903029871 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.4870671568255287,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4871458955504466 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.511139193687583,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5111375909263711 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5944490946176644,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5945239722672224 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.483659097439947,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4837008000241332 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.1818867130686755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18189574981360998 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.19017528292249486,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1901789433029797 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.08254902568130632,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08254735699596014 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.07939030018074698,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07939115549284835 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 1.024572074946394,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0246200621411359 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.3661286857685062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.366198329766702 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5610487603175187,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5610600058374775 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.0291524577245803,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0291686745089774 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.09094946758438278,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09095365280433766 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.08824157713737793,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08823755739254557 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 0.5473514731253677,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5473529163804042 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.7093616559248263,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7093279622479318 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.7958414816745761,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7958336371331053 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5523135827413033,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5523268429819962 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 1.963548599984539,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.963538114885592 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.9581994409499917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9581611660177565 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.20157733707142578,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.20158117528243613 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1995533376585021,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.199559834561638 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 21.509456201978832,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.509538748628337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 21.71968585343924,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.718925725035852 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 21.864678234496786,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.864179806834464 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 21.512629141982842,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.511507790209304 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.5378042481293556,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.537776844293725 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5332627518730783,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5332722346270186 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 10.858110398230696,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.858279203539462 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.937045839367915,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.93563679402524 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.013965974821936,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.013078541452673 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 10.860969023605877,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.861519173223368 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.1909020339105396,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.190541090573655 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.2073428814204674,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2074050035097268 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.215419972109893,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.21543017502634648 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2110019284980858,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.21100529340945787 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 11.784375000001335,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.783631499761945 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.02220142122017,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.020944866454844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.361287974287062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.362087986894561 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.781786317454332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.78236623425008 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3958372663030721,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3958490652121307 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3940531338217012,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3940140847052922 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.99127007878797,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.991579765469991 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.10886331921407,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.108756198603932 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.275488455387794,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.2756133674428245 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.993855153884215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.9938182095739325 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 1.9706512205417703,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9707396746564967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.969852788312507,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.969880109566576 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.13408364154366859,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.13407976820034606 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1315331694128312,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1315319712054375 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 22.098203114417842,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.097918528548092 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 22.30019501931508,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.30118762791843 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 22.607320382761984,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.607783029739252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 22.08571567079702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.08683900789637 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.46321966676413473,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.46323300280608004 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.46075348833911506,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.46072016394114684 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 11.125439187656504,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.124989959154087 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.211074708703347,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.211305174779444 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.324987663790656,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.324664974625403 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 11.111072517263485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.110798880686934 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.1934156700876482,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19342023259209518 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.20411542266738283,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.20410046287540268 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.08780453958587761,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08780229604522065 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.08376636271842863,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08377032325596803 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 1.095721036874505,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0957159318135 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.4897138713880698,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.489781660810967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.685473589787435,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6854883646716357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.10033397072778,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1003891829751224 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.09688512850259554,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0968831484125626 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.09365955892881275,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0936577934874274 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 0.5858629910251405,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5858808125292992 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.7723142102639222,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7723506827219252 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.8616286058752453,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8616355228188771 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5900837833770218,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5901069689033064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.44941908178249007,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.44937344824417813 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.44563827454233246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4456379499007336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.1189104920184689,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1189082474639355 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1157514374663765,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11575083345911619 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 3.439460888841488,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.439507424610725 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 3.5112112693692787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.5113709694741333 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.7087815294837503,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.708853645595967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 3.431679657161483,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.431832097255048 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.1846764065550991,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1846801491378038 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.1809924199618173,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18100098605125156 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.7819091363636825,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7819095545454708 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.8137710001312857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8138531157270186 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.9004563552095999,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9003368435342352 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.7789624261751862,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7789537664408073 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.7904820507939938,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7903811578850142 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.8085770203169071,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.808579073475854 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.165070877217759,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.165063735251155 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.16196594629024172,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16195620652337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 7.277739199699106,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.277568766213231 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.374475423140796,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.374272432184963 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.596009887500436,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.595432800471317 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.270419351250976,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.2704266627077745 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.2662654554684685,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.26627853417004893 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2634329851986566,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.26344683975674693 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 3.723711057948021,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.7238028784085744 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.735548645176855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.7357210056067105 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.861122523492271,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.861220955287921 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.715342297638988,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.715388792090775 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 42.32340677601297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 42.32244087179874 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 42.35559490940935,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 42.35623274374766 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.3749218939332404,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3746565221067804 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.3715613232654058,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.371517931188967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 504.17146410250797,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 504.1831153846488 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 503.36952577309205,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 503.39226288659904 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 503.1905128204855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 503.2147076923511 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 502.77434536090215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 502.76851030927594 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 8.759229118116332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.758559419249218 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 8.756502231943319,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.756735648601719 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 251.74304370183512,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 251.75531491004926 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 252.81328534696894,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 252.82691002573665 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 252.39312853467132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 252.38378791775844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 251.77771923089935,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 251.78359871799142 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.8906632704883803,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.890708382077114 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.9091835354932302,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9092267871893387 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.26308085994494834,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.26309144427629183 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.26004853648367654,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.26004762435837064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 7.375363119875468,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.374159981941075 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.419504547040034,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.418790486182436 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.648235129339577,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.648801883415203 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.3799909570457585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.380037754333321 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.3640750710844757,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3640625004639054 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.36088970210912136,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36088037109915244 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 3.819476322036383,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.818757500292869 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.811025163201404,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.811204451041844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.93925581959292,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.939550193988671 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.8187492514700905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.818645195785654 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.010363485799867938,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.01036221183531501 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.0137150074955667,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.013715119177827171 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.017445273114402648,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.017444585121407397 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.020492154842709765,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.020491368042007803 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.010361022160480063,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.010360509942565325 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.013722151830541231,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.013722063979107284 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.014571996976878273,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.01457279277419827 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.016352076713588855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.016351308398983987 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 4.509879749736887,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.5096736489898905 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 32.80144526279885,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 32.80112822230299 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 19.918153822572584,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.918190617340414 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p224/threads:1",
+            "value": 122.52809875000995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 122.52862625000473 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p256/threads:1",
+            "value": 49.19216307074733,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 49.19316532865004 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p384/threads:1",
+            "value": 337.0102775862498,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 337.026246551753 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p521/threads:1",
+            "value": 857.9721008773407,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 857.9777456143227 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p224/threads:1",
+            "value": 246.6889168765524,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 246.68605541563588 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p256/threads:1",
+            "value": 61.87814754098567,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.87956683480532 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p384/threads:1",
+            "value": 676.4962673613755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 676.5296805555624 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p521/threads:1",
+            "value": 1719.8508684209787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1719.8639999996726 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p224/threads:1",
+            "value": 115.07781351984029,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 115.063213286679 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p256/threads:1",
+            "value": 8.04349773867199,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.043707466488058 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p384/threads:1",
+            "value": 315.80344983823653,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 315.8175614886996 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p521/threads:1",
+            "value": 794.3127499999501,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 794.3519672131647 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 132.56913611858678,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 132.56788274930662 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 18.155368286207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.153602581132766 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 362.90191821572046,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 362.9060631970402 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 924.622126167782,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 924.665658878543 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 126.61875194056215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 126.61502067215739 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 57.009402438699134,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 56.99425551705728 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 358.013501851278,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 357.98369259246687 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 924.0062264181403,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 924.032433963356 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 20.71917156758989,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.719424687967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 20.8845575570195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.885629716472742 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 38.32919263899781,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.33029150352455 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 22.975803864169265,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.97621592505793 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 7.675620773513641,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.675181258335 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 105.29395123259197,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 105.29899303322193 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 2.310023055195507,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3099234553363948 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.212728748795723,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.21272126105812988 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 26.722630422920027,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 26.722468758530702 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.41170774767649226,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4117118610970212 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 13.366234972678072,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.366853825134905 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.7381911804562306,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.738197605962393 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.056059930172978154,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.056057216077381844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 8.429375979675594,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.429089268796591 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.18273772712618075,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1827316337806373 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 4.2437187581022515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.243939266269657 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 0.8211242530005668,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.821139950451238 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.05745247420139989,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.05744991737506154 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 9.449156234926713,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.449339714535133 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.19687183775432937,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19686072073515323 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 4.747127327532212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.747282342360784 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 2.064259396036718,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.0643604153036046 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.2196129443410387,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2196229476698311 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 23.832216022358043,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.833412107949364 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.5777330374182963,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5776355150922899 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 12.046270056429996,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.046688604021957 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 19.241824088596196,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.241060662482024 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 51.25786645799974,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 51.25663145538291 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 1.041050140431555,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0409501468148847 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 44.4758044464599,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 44.477967332119945 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 76.0307222222213,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 76.03446464646437 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 115.58645981085863,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 115.58869089834359 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 3.71753703774212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.717540747222331 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 5.532755771188023,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.532866894873685 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 7.360175129770127,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.360013127209811 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 192.08593023254807,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 192.0953798449619 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 302.693971476434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 302.6961174496884 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 340.19279356071894,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 340.13541856066826 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 38.22268063133468,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.223663484016406 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 61.89869625868239,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.89491534556665 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 98.65593814438317,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 98.64969513988264 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 38.234234606409714,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.234421862825684 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 61.918346250830794,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.91822904849446 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 98.5831119999716,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 98.57884449996844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 34.988442617058595,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 34.98887039742452 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 23.054774094798752,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.04882122675331 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 68.45548780486241,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 68.45723658537483 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 33.19438053397132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 33.19438273065537 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 38.51001576530843,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.511899766744754 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 15.634761913008452,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.620815173173304 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 32.95911850014575,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 32.97515023709085 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 27.126801163628123,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.129215729834726 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 18.053269979692256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.054410895001332 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 51.36036005224347,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 51.36068798958515 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 24.349671375467825,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.350845477076824 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 28.771710811803057,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28.773010987263014 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 11.02070105815778,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.01457970281327 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 24.08853950010953,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.099552747931472 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 606.7242919255306,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 606.7375683231184 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 1796.4994272724446,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1796.52910909066 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 4038.4930000006616,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4038.483395832534 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 16.391052759199678,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.39182399666703 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 34.60099805927216,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 34.59964537756427 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 60.99166718458686,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 60.99461466749318 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 79.0610383683584,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 79.0630577544427 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 157.86124311184363,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 157.8490599675681 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 260.9596885027156,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 260.9721457219148 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 521.3134468086062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 521.3371010636716 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1626.6354999999066,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1626.711558333227 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 3742.9043653848844,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3743.08619230818 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 14.559532859679118,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.558542702783495 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 31.557327858298898,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 31.557409822865786 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 55.44855924038002,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 55.449730725593724 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.6999168800001598,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6999465749998991 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.49576008056267734,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4957658470837759 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 2.7543417748233567,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.7544640192578265 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.5247960110445207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5248089644264435 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.6139056287569233,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6139552952248692 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 31818.725166677574,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 31819.287999989385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 243026.75849997968,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 243017.36900002876 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 234.89169430687602,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 234.86419306929398 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 93.6282366156739,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 93.6322160611583 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 22520.56424999438,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22521.544875001353 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 22464.845875006744,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22466.02037499912 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 3848.990959997992,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3848.32236000193 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.0028829809810963216,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0028831261305431646 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.0013148380070860722,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0013148262043002623 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 0.001302017471617386,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0013020482563420002 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.0013031913753644704,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.001303214751500641 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 0.0012921101304336155,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.001292149877767891 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 662.8574155404356,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 662.8835067568782 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 662.8473141891367,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 662.8789189191649 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 339.4733062284409,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 339.4780242214376 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 3.049124626540929,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.048935982820866 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 415.6369470338485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 415.6577266950192 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 4161.160479167591,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4160.520833333959 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.11424746758569988,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11424977550647734 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.1142452873337206,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11424325695028806 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 4534.981785717545,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4535.184357143591 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 16484.003916659163,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16483.25083332954 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 3929.404939998449,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3928.478719999476 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 14126.32600000003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14126.973642853662 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1122.9318678169352,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1122.8703850574334 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1123.4171321841482,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1123.466545976889 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 415.42322058809896,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 415.3674306722951 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 4153.194062501106,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4153.264687499102 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.10974565600856472,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10975078261059194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.10949361044832187,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10949511938696403 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 4540.454818182256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4540.172090910036 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 16481.04224999732,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16481.82566665923 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 3930.0762799985023,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3930.096340000092 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 14125.853785710011,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14124.256785712369 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1124.5359252876726,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1124.5951264367031 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1122.8641627902102,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1122.8544534886098 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 416.07988559332136,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 416.06743008475706 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 4156.370826085944,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4156.519347826551 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.1082130517656065,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10821455410670477 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.10845667625852429,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10845228889670262 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 1557.972854838439,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1557.9748548389482 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 5863.217875003102,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5862.67968749965 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 1518.7537421876839,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1518.822039062506 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 5836.337176472238,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5836.052352942248 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 365.8091356877435,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 365.81447955382174 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 366.2682593281332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 366.28399999981133 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v6\ncpu_model: INTEL(R) XEON(R) PLATINUM 8573C\ncpu_cores: 4\ncpu_bogomips: 4599.99"
           }
         ]
       }
