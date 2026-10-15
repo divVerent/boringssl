@@ -3274,9 +3274,10 @@ OPENSSL_EXPORT int X509_VERIFY_PARAM_set1(X509_VERIFY_PARAM *to,
 // X509_V_FLAG_USE_DELTAS causes all verifications to fail. Delta CRL support
 // has been removed.
 #define X509_V_FLAG_USE_DELTAS 0x2000
-// X509_V_FLAG_CHECK_SS_SIGNATURE checks the redundant signature on self-signed
-// trust anchors. This check provides no security benefit and only wastes CPU.
-#define X509_V_FLAG_CHECK_SS_SIGNATURE 0x4000
+// X509_V_FLAG_CHECK_SS_SIGNATURE does nothing. Historically it would check the
+// redundant signature on self-signed trust anchors. This check provided no
+// security benefit and only wasted CPU.
+#define X509_V_FLAG_CHECK_SS_SIGNATURE 0x0
 // X509_V_FLAG_TRUSTED_FIRST does nothing. The behavior it controls is always
 // enabled.
 #define X509_V_FLAG_TRUSTED_FIRST 0x0
@@ -3291,9 +3292,9 @@ OPENSSL_EXPORT int X509_VERIFY_PARAM_set1(X509_VERIFY_PARAM *to,
 // X509_V_FLAG_ALLOW_TIMEZONE_OFFSET allows `notBefore` and `notAfter` fields
 // to contain a time zone offset.
 #define X509_V_FLAG_ALLOW_TIMEZONE_OFFSET 0x1000000
-// X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05 enables the verification of Merkle Tree
-// Certificates as specified in draft-ietf-plants-merkle-tree-certs-05.
-#define X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05 0x400000
+// X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07 enables the verification of Merkle Tree
+// Certificates as specified in draft-ietf-plants-merkle-tree-certs-07.
+#define X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07 0x400000
 
 // X509_VERIFY_PARAM_set_flags enables all values in `flags` in `param`'s
 // verification flags and returns one. `flags` should be a combination of

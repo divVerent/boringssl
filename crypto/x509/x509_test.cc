@@ -5714,44 +5714,21 @@ TEST(X509Test, SignatureVerification) {
             Verify(leaf.valid.get(), {root.valid.get()},
                    {intermediate.bad_sig_type.get()}, {}));
 
-  // By default, the redundant root signature is not checked.
+  // The redundant root signature is not checked. It carries no securiy value.
   EXPECT_EQ(X509_V_OK, Verify(leaf.valid.get(), {root.bad_sig.get()},
                               {intermediate.valid.get()}, {}));
   EXPECT_EQ(X509_V_OK, Verify(leaf.valid.get(), {root.bad_sig_type.get()},
                               {intermediate.valid.get()}, {}));
 
-  // The caller can request checking it, although it's pointless.
-  EXPECT_EQ(
-      X509_V_ERR_CERT_SIGNATURE_FAILURE,
-      Verify(leaf.valid.get(), {root.bad_sig.get()}, {intermediate.valid.get()},
-             {}, X509_V_FLAG_CHECK_SS_SIGNATURE));
-  EXPECT_EQ(
-      X509_V_ERR_CERT_SIGNATURE_FAILURE,
-      Verify(leaf.valid.get(), {root.bad_sig_type.get()},
-             {intermediate.valid.get()}, {}, X509_V_FLAG_CHECK_SS_SIGNATURE));
-
-  // The above also applies when accepting a trusted, self-signed root as the
-  // target certificate.
+  // Likewise when accepting a trusted, self-signed root as the target
+  // certificate.
   EXPECT_EQ(X509_V_OK,
             Verify(root.bad_sig.get(), {root.bad_sig.get()}, {}, {}));
   EXPECT_EQ(X509_V_OK,
             Verify(root.bad_sig_type.get(), {root.bad_sig_type.get()}, {}, {}));
-  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
-            Verify(root.bad_sig.get(), {root.bad_sig.get()}, {}, {},
-                   X509_V_FLAG_CHECK_SS_SIGNATURE));
-  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
-            Verify(root.bad_sig_type.get(), {root.bad_sig_type.get()}, {}, {},
-                   X509_V_FLAG_CHECK_SS_SIGNATURE));
 
-  // If an intermediate is a trust anchor, the redundant signature is always
-  // ignored, even with `X509_V_FLAG_CHECK_SS_SIGNATURE`. (We cannot check the
-  // signature without the key.)
-  EXPECT_EQ(X509_V_OK,
-            Verify(leaf.valid.get(), {intermediate.bad_sig.get()}, {}, {},
-                   X509_V_FLAG_CHECK_SS_SIGNATURE | X509_V_FLAG_PARTIAL_CHAIN));
-  EXPECT_EQ(X509_V_OK,
-            Verify(leaf.valid.get(), {intermediate.bad_sig_type.get()}, {}, {},
-                   X509_V_FLAG_CHECK_SS_SIGNATURE | X509_V_FLAG_PARTIAL_CHAIN));
+  // If an intermediate is a trust anchor, the redundant signature is likewise
+  // ignored. (We cannot check the signature without the key anyway.)
   EXPECT_EQ(X509_V_OK, Verify(leaf.valid.get(), {intermediate.bad_sig.get()},
                               {}, {}, X509_V_FLAG_PARTIAL_CHAIN));
   EXPECT_EQ(X509_V_OK,
@@ -5777,23 +5754,6 @@ TEST(X509Test, SignatureVerification) {
                               {intermediate.valid.get()}, {}));
   EXPECT_EQ(X509_V_OK, Verify(leaf.bad_key_type.get(), {root.valid.get()},
                               {intermediate.valid.get()}, {}));
-
-  // At the time we go to verify signatures, it is possible that we have a
-  // single-element certificate chain with a certificate that isn't self-signed.
-  // This does not seem to be reachable except if missing trust anchors are
-  // suppressed with the verify callback, but exercise this codepath anyway.
-  EXPECT_EQ(X509_V_ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE,
-            Verify(leaf.valid.get(), {}, {}, {}, 0, [](X509_STORE_CTX *ctx) {
-              X509_STORE_CTX_set_verify_cb(
-                  ctx, [](int ok, X509_STORE_CTX *ctx_inner) -> int {
-                    if (ok) {
-                      return ok;
-                    }
-                    // Suppress the missing issuer certificate.
-                    int err = X509_STORE_CTX_get_error(ctx_inner);
-                    return err == X509_V_ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY;
-                  });
-            }));
 }
 
 // kConstructedBitString is an X.509 certificate where the signature is encoded
@@ -12188,10 +12148,8 @@ TEST(X509MerkleTreeFileTest, LargeInclusionProofs) {
 
 #endif  // !defined (BORINGSSL_SHARED_LIBRARY)
 
-// Tests for verifying Merkle Tree Certificates. Test data was obtained by
-// running the demo tool github.com/ietf-plants-wg/merkle-tree-certs/demo
-// at revision d7362d6c441463b4e9c7064fa8bb48ee65929585 with the custom config
-// at crypto/x509/test/mtc/mtc_testdata_config.json.
+// Tests for verifying Merkle Tree Certificates.
+// See crypto/x509/test/mtc/README.txt for explanation of test data.
 class X509VerifyMTCTest : public ::testing::Test {
  public:
   X509VerifyMTCTest() = default;
@@ -12237,7 +12195,7 @@ class X509VerifyMTCTest : public ::testing::Test {
   }
 
   int VerifyMTC(X509 *mtc,
-                unsigned long flags = X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05,
+                unsigned long flags = X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
                 X509 *mtc_ca = nullptr) {
     if (!mtc_ca) {
       mtc_ca = mtc_ca_cert_.get();
@@ -12269,7 +12227,7 @@ class X509VerifyMTCTest : public ::testing::Test {
 TEST_F(X509VerifyMTCTest, VerifyMTC) {
   for (X509 *mtc : GetValidTestMTCs()) {
     EXPECT_EQ(X509_V_OK,
-              VerifyMTC(mtc, /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05));
+              VerifyMTC(mtc, /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07));
 
     // The flag is required to enable MTC verification.
     EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE, VerifyMTC(mtc, /*flags=*/0));
@@ -12390,20 +12348,74 @@ TEST_F(X509VerifyMTCTest, MismatchedSignatureAlgorithm) {
   ERR_clear_error();
 }
 
+TEST_F(X509VerifyMTCTest, ExperimentSignatureAlgorithm) {
+  // This cert has the experimental sigalg with OID 1.3.6.1.4.1.44363.47.0,
+  // which does not apply to draft-07.
+  UniquePtr<X509> mtc_33_experimental_sigalg =
+      CertFromPEM(GetTestData("crypto/x509/test/mtc/cert_33_10.pem"));
+  ASSERT_TRUE(mtc_33_experimental_sigalg);
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc_33_experimental_sigalg.get()));
+  EXPECT_TRUE(
+      ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_UNSUPPORTED_ALGORITHM));
+}
+
 // If the CA lacks the MTCCertificationAuthority extension, it is treated as a
 // standard CA and fails because standard verification does not support MTCs.
 TEST_F(X509VerifyMTCTest, InvalidMTCCANoExtension) {
   UniquePtr<X509> bad_ca(X509_dup(mtc_ca_cert_.get()));
   ASSERT_TRUE(bad_ca);
   int ext_index = X509_get_ext_by_NID(
-      bad_ca.get(), NID_pe_mtcCertificationAuthority_draft, -1);
+      bad_ca.get(), NID_pe_mtcCertificationAuthority_SHA256, -1);
   ASSERT_GE(ext_index, 0);
   UniquePtr<X509_EXTENSION> ext(X509_delete_ext(bad_ca.get(), ext_index));
   ASSERT_TRUE(ext);
 
   EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
             VerifyMTC(mtc_10_subtree_8_11_.get(),
-                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05,
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
+                      /*mtc_ca=*/bad_ca.get()));
+  EXPECT_TRUE(ErrorEquals(ERR_get_error(), ERR_LIB_ASN1,
+                          ASN1_R_UNKNOWN_SIGNATURE_ALGORITHM));
+}
+
+// If the CA cert was encoded according to an older draft version, it is not
+// recognized as an MTC CA.
+TEST_F(X509VerifyMTCTest, InvalidMTCCADeprecatedDraftVersion) {
+  UniquePtr<X509> bad_ca = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/old_draft_version/ca_cert.pem"));
+  ASSERT_TRUE(bad_ca);
+
+  UniquePtr<X509> mtc = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/old_draft_version/cert_1_0.pem"));
+  ASSERT_TRUE(mtc);
+
+  // TODO(crbug.com/525688038): This should be
+  // `X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION`.
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc.get(),
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
+                      /*mtc_ca=*/bad_ca.get()));
+  EXPECT_TRUE(ErrorEquals(ERR_get_error(), ERR_LIB_ASN1,
+                          ASN1_R_UNKNOWN_SIGNATURE_ALGORITHM));
+}
+
+// If the CA cert has the older draft version's OID, it is not recognized as an
+// MTC CA.
+TEST_F(X509VerifyMTCTest, InvalidMTCCAWrongExtensionOID) {
+  UniquePtr<X509> bad_ca = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_ext_oid_wrong/ca_cert.pem"));
+  ASSERT_TRUE(bad_ca);
+
+  UniquePtr<X509> mtc = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_ext_oid_wrong/cert_1_0.pem"));
+  ASSERT_TRUE(mtc);
+
+  // TODO(crbug.com/525688038): This should be
+  // `X509_V_ERR_UNHANDLED_CRITICAL_EXTENSION`.
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc.get(),
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
                       /*mtc_ca=*/bad_ca.get()));
   EXPECT_TRUE(ErrorEquals(ERR_get_error(), ERR_LIB_ASN1,
                           ASN1_R_UNKNOWN_SIGNATURE_ALGORITHM));
@@ -12416,7 +12428,7 @@ TEST_F(X509VerifyMTCTest, InvalidMTCCAExtensionNotCritical) {
   UniquePtr<X509> bad_ca_non_critical(X509_dup(mtc_ca_cert_.get()));
   ASSERT_TRUE(bad_ca_non_critical);
   int ext_index = X509_get_ext_by_NID(
-      bad_ca_non_critical.get(), NID_pe_mtcCertificationAuthority_draft, -1);
+      bad_ca_non_critical.get(), NID_pe_mtcCertificationAuthority_SHA256, -1);
   ASSERT_GE(ext_index, 0);
   X509_EXTENSION *ext = X509_get_ext(bad_ca_non_critical.get(), ext_index);
   ASSERT_TRUE(ext);
@@ -12424,7 +12436,7 @@ TEST_F(X509VerifyMTCTest, InvalidMTCCAExtensionNotCritical) {
 
   EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
             VerifyMTC(mtc_10_subtree_8_11_.get(),
-                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05,
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
                       /*mtc_ca=*/bad_ca_non_critical.get()));
   EXPECT_TRUE(
       ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
@@ -12438,7 +12450,7 @@ TEST_F(X509VerifyMTCTest, InvalidMTCCABadSubject) {
 
   X509_NAME *subject = X509_get_subject_name(bad_ca_no_trust_anchor.get());
   int name_index =
-      X509_NAME_get_index_by_NID(subject, NID_rdna_trustAnchorID_draft, -1);
+      X509_NAME_get_index_by_NID(subject, NID_rdna_trustAnchorID, -1);
   ASSERT_GE(name_index, 0);
   UniquePtr<X509_NAME_ENTRY> entry(X509_NAME_delete_entry(subject, name_index));
   ASSERT_TRUE(entry);
@@ -12453,37 +12465,43 @@ TEST_F(X509VerifyMTCTest, InvalidMTCCABadSubject) {
 
   EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
             VerifyMTC(mtc.get(),
-                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05,
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
                       /*mtc_ca=*/bad_ca_no_trust_anchor.get()));
   EXPECT_TRUE(
       ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
 }
 
 TEST_F(X509VerifyMTCTest, InvalidMTCCAExtensionTrailingData) {
-  UniquePtr<X509> bad_ca(X509_dup(mtc_ca_cert_.get()));
+  UniquePtr<X509> bad_ca = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_ext_trailing_data/ca_cert.pem"));
   ASSERT_TRUE(bad_ca);
-  int ext_index = X509_get_ext_by_NID(
-      bad_ca.get(), NID_pe_mtcCertificationAuthority_draft, -1);
-  ASSERT_GE(ext_index, 0);
-  X509_EXTENSION *ext = X509_get_ext(bad_ca.get(), ext_index);
-  ASSERT_TRUE(ext);
-  Span<const uint8_t> value = ASN1StringAsBytes(X509_EXTENSION_get_data(ext));
 
-  std::vector<uint8_t> new_value(value.begin(), value.end());
-  // Append trailing data.
-  new_value.push_back(0x05);
-  new_value.push_back(0x00);
-  UniquePtr<ASN1_OCTET_STRING> new_value_str(ASN1_OCTET_STRING_new());
-  ASSERT_TRUE(new_value_str);
-  ASSERT_TRUE(ASN1_OCTET_STRING_set(new_value_str.get(), new_value.data(),
-                                    new_value.size()));
-  ASSERT_TRUE(X509_EXTENSION_set_data(ext, new_value_str.get()));
+  UniquePtr<X509> mtc = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_ext_trailing_data/cert_1_0.pem"));
+  ASSERT_TRUE(mtc);
 
   EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
-            VerifyMTC(mtc_10_subtree_8_11_.get(),
-                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_05,
+            VerifyMTC(mtc.get(),
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
                       /*mtc_ca=*/bad_ca.get()));
   EXPECT_TRUE(ErrorEquals(ERR_get_error(), ERR_LIB_ASN1, ASN1_R_DECODE_ERROR));
+}
+
+TEST_F(X509VerifyMTCTest, InvalidMTCCATrustAnchorIDTooLong) {
+  UniquePtr<X509> bad_ca = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_id_too_long/ca_cert.pem"));
+  ASSERT_TRUE(bad_ca);
+
+  UniquePtr<X509> mtc = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_id_too_long/cert_1_0.pem"));
+  ASSERT_TRUE(mtc);
+
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc.get(),
+                      /*flags=*/X509_V_FLAG_USE_MTC_DRAFT_PLANTS_07,
+                      /*mtc_ca=*/bad_ca.get()));
+  EXPECT_TRUE(
+      ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
 }
 
 }  // namespace
