@@ -158,9 +158,8 @@ UniquePtr<X509> get_trusted_issuer(X509_STORE_CTX *ctx, const X509 *x) {
 int check_chain_extensions(X509_STORE_CTX *ctx) {
   int plen = 0;
   int purpose = ctx->param->purpose;
-
-  // Check all untrusted certificates
-  for (int i = 0; i < ctx->last_untrusted; i++) {
+  int num = static_cast<int>(sk_X509_num(ctx->chain));
+  for (int i = 0; i < num; i++) {
     X509Impl *x = FromOpaque(sk_X509_value(ctx->chain, i));
     if (!(ctx->param->flags & X509_V_FLAG_IGNORE_CRITICAL) &&
         (x->ex_flags & EXFLAG_CRITICAL)) {
@@ -986,7 +985,6 @@ int X509_verify_cert(X509_STORE_CTX *ctx) {
       ctx->error = X509_V_ERR_OUT_OF_MEM;
       return 0;
     }
-    ctx->last_untrusted = 0;
     trust = check_trust(ctx);
     if (trust == X509_TRUST_REJECTED) {
       return 0;
@@ -1004,7 +1002,6 @@ int X509_verify_cert(X509_STORE_CTX *ctx) {
       ctx->error = X509_V_ERR_OUT_OF_MEM;
       return 0;
     }
-    ctx->last_untrusted = 1;
 
     // Add certificates to the path until we reach a trust anchor, or fail.
     bool have_store_cert = false;
@@ -1045,10 +1042,9 @@ int X509_verify_cert(X509_STORE_CTX *ctx) {
       }
 
       // Look for an issuer among peer-provided untrusted intermediates, but
-      // only if we haven't started building from the store. We never interleave
-      // them. There is no strong reason for this, except it is needed as long
-      // as we split the chain by `last_untrusted`. Otherwise, this is just
-      // historical OpenSSL behavior.
+      // only if we included a certificate from the store. For now, we match
+      // OpenSSL by not interleaving them, but the logic that relied on this has
+      // been removed.
       if (!have_store_cert) {
         if (X509 *issuer = find_issuer(ctx, untrusted, last);
             issuer != nullptr) {
@@ -1057,7 +1053,6 @@ int X509_verify_cert(X509_STORE_CTX *ctx) {
             return 0;
           }
           (void)sk_X509_delete_ptr(untrusted, issuer);
-          ctx->last_untrusted++;
           // We must not call `check_trust` here because the last certificate in
           // the chain is not from the store. Otherwise, `check_trust` might
           // mistake it for a trust anchor.
