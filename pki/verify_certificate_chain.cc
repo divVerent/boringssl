@@ -28,6 +28,7 @@
 #include <openssl/sha2.h>
 #include <openssl/span.h>
 
+#include "../crypto/bytestring/internal.h"
 #include "cert_error_params.h"
 #include "cert_errors.h"
 #include "common_cert_errors.h"
@@ -881,6 +882,18 @@ class PathVerifier {
   //   otherwise the initial value is n+1.
   size_t policy_mapping_;
 
+  // `working_issuer_cert_` is the certificate that the chain-to-verify claims
+  // issued the next certificate in the chain: the trust anchor's certificate
+  // at first, and then each intermediate in turn. It points into the
+  // certificate chain being verified.
+  //
+  // RFC 5280 section 6.1.2 describes the issuer's fields as separate variables,
+  // since it is agnostic as to whether the trust anchor is a certificate. Here
+  // the trust anchor is always a certificate, so we track that certificate and
+  // read the issuer's subject (the working_issuer_name variable in RFC 5280)
+  // from it directly.
+  const ParsedCertificate* working_issuer_cert_ = nullptr;
+
   // `working_public_key_` is an amalgamation of 3 separate variables from RFC
   // 5280:
   //    * working_public_key
@@ -898,18 +911,11 @@ class PathVerifier {
   //    signature of a certificate.
   bssl::UniquePtr<EVP_PKEY> working_public_key_;
 
-  // `working_normalized_issuer_name_` is the normalized value of the
-  // working_issuer_name variable in RFC 5280 section 6.1.2:
-  //
-  //    working_issuer_name:  the issuer distinguished name expected
-  //    in the next certificate in the chain.
-  der::Input working_normalized_issuer_name_;
-
   // `working_mtc_anchor_` is the trusted MTC Anchor that the chain-to-verify
   // claims issued the next certificate in the chain, and should be used to
-  // verify that certificate. It is analogous to `working_public_key_`, except
-  // that MTCs don't have an EVP_PKEY that can be used to verify their
-  // "signature" and instead have an MTCAnchor used for verification.
+  // verify that certificate.
+  // TODO(crbug.com/575507260): Remove this field and use `working_issuer_cert_`
+  // instead.
   const MTCAnchor *working_mtc_anchor_ = nullptr;
 
   // `max_path_length_` corresponds with the same named variable in RFC 5280
@@ -1133,7 +1139,7 @@ static bool VerifyMTCProofSignature(
     const CBS *cosigner_id, Span<const uint8_t> log_id_text, uint64_t start,
     uint64_t end, const TreeHash &expected_subtree_hash,
     Span<const uint8_t> signature, SignatureAlgorithm signature_algorithm,
-    const CRYPTO_BUFFER *key_bytes, SignatureVerifyCache *cache) {
+    Span<const uint8_t> key_bytes, SignatureVerifyCache *cache) {
   ScopedCBB cosigned_subtree;
   // `cosigner_name` and `log_origin` are the only variable-length parts of
   // `CosignedSubtree`. Allocate the initial buffer size with 48 bytes for those
@@ -1212,12 +1218,9 @@ static bool VerifyMTCProofSignature(
     return false;
   }
 
-  return VerifySignedData(
-      signature_algorithm,
-      Span<const uint8_t>(CBB_data(cosigned_subtree.get()),
-                          CBB_len(cosigned_subtree.get())),
-      der::BitString(signature, 0),
-      Span(CRYPTO_BUFFER_data(key_bytes), CRYPTO_BUFFER_len(key_bytes)), cache);
+  return VerifySignedData(signature_algorithm,
+                          der::Input(CBBAsSpan(cosigned_subtree.get())),
+                          der::BitString(signature, 0), key_bytes, cache);
 }
 
 enum class VerifyMTCResult {
@@ -1231,7 +1234,7 @@ enum class VerifyMTCResult {
   kLandmarkNotRecognized,
 
   // The MTC was verified as a standalone MTC and had a valid CA signature, but
-  // `delegate->IsCosignatureVerificationResultAcceptable` returned false.
+  // `delegate->IsMTCCosignatureVerificationResultAcceptable` returned false.
   kUnacceptableCosignatureVerificationResult,
 
   // The MTC verified successfully.
@@ -1243,6 +1246,7 @@ static VerifyMTCResult VerifyMTC(const ParsedCertificate &cert,
                                  const MTCAnchor *mtc_anchor,
                                  VerifyCertificateChainDelegate *delegate) {
   BSSL_CHECK(mtc_anchor->spec_version() == MTCAnchor::kPlants07);
+  BSSL_CHECK(mtc_anchor->AsCert()->mtc_ca_info().has_value());
   // Step 1: Check that the TBSCertificate's signature field is
   // id-alg-mtcProof with omitted parameters.
   if (cert.signature_algorithm() != SignatureAlgorithm::kMtcProof) {
@@ -1270,6 +1274,10 @@ static VerifyMTCResult VerifyMTC(const ParsedCertificate &cert,
   if (!der::ParseUint64(cert.tbs().serial_number, &serial)) {
     return VerifyMTCResult::kFailed;
   }
+  // TODO(crbug.com/575507260): Check that `serial` is within the MTC CA
+  // certificate's serial number range (Section 5.5), as crypto/x509 does. This
+  // is not needed yet, but will be needed once arbitrary MTC CA certificates
+  // can be trust anchors.
 
   // Step 4's revocation check is not performed in this function. The caller is
   // responsible for performing revocation checks.
@@ -1495,11 +1503,14 @@ static VerifyMTCResult VerifyMTC(const ParsedCertificate &cert,
     // could first find and verify the CA signature before bothering to check
     // any of the other ones.
     if (cosigner_id == mtc_anchor->ca_id()) {
-      found_valid_ca_signature = VerifyMTCProofSignature(
-          &cbs_cosigner_id, StringAsBytes(log_id_text), start, end,
-          expected_subtree_hash.value(), signature,
-          mtc_anchor->ca_signature_algorithm(), mtc_anchor->ca_key(),
-          delegate->GetVerifyCache());
+      std::optional<SignatureAlgorithm> ca_signature_algorithm =
+          mtc_anchor->ca_signature_algorithm();
+      found_valid_ca_signature =
+          ca_signature_algorithm.has_value() &&
+          VerifyMTCProofSignature(
+              &cbs_cosigner_id, StringAsBytes(log_id_text), start, end,
+              expected_subtree_hash.value(), signature, *ca_signature_algorithm,
+              mtc_anchor->ca_key(), delegate->GetVerifyCache());
 
       if (delegate->IsDebugLogEnabled()) {
         delegate->DebugLog(std::string("VerifyMTC: CA signature ") +
@@ -1508,11 +1519,13 @@ static VerifyMTCResult VerifyMTC(const ParsedCertificate &cert,
     } else {
       auto cosigner = delegate->GetMTCCosigner(cosigner_id);
       bool this_cosignature_was_valid = false;
-      if (cosigner && VerifyMTCProofSignature(
-                          &cbs_cosigner_id, StringAsBytes(log_id_text), start,
-                          end, expected_subtree_hash.value(), signature,
-                          cosigner->signature_algorithm, cosigner->key.get(),
-                          delegate->GetVerifyCache())) {
+      if (cosigner &&
+          VerifyMTCProofSignature(&cbs_cosigner_id, StringAsBytes(log_id_text),
+                                  start, end, expected_subtree_hash.value(),
+                                  signature, cosigner->signature_algorithm,
+                                  Span(CRYPTO_BUFFER_data(cosigner->key.get()),
+                                       CRYPTO_BUFFER_len(cosigner->key.get())),
+                                  delegate->GetVerifyCache())) {
         valid_additional_cosigners.emplace_back(cosigner_id.begin(),
                                                 cosigner_id.end());
         this_cosignature_was_valid = true;
@@ -1535,6 +1548,9 @@ static VerifyMTCResult VerifyMTC(const ParsedCertificate &cert,
   }
 
   if (found_valid_ca_signature) {
+    // This calls the deprecated method, whose default implementation calls
+    // `IsMTCCosignatureVerificationResultAcceptable`, so that delegates that
+    // override either method work.
     return delegate->IsCosignatureVerificationResultAcceptable(
                mtc_anchor, std::move(valid_additional_cosigners))
                ? VerifyMTCResult::kSuccess
@@ -1621,7 +1637,7 @@ void PathVerifier::BasicCertificateProcessing(
 
   // Verify the certificate's issuer name matches the issuing certificate's
   // subject name. (RFC 5280 section 6.1.3 step a.4)
-  if (cert.normalized_issuer() != working_normalized_issuer_name_) {
+  if (cert.normalized_issuer() != working_issuer_cert_->normalized_subject()) {
     errors->AddError(cert_errors::kSubjectDoesNotMatchIssuer);
   }
 
@@ -1655,8 +1671,10 @@ void PathVerifier::PrepareForNextCertificate(const ParsedCertificate &cert,
 
   // From RFC 5280 section 6.1.4 step c:
   //
-  //    Assign the certificate subject name to working_normalized_issuer_name.
-  working_normalized_issuer_name_ = cert.normalized_subject();
+  //    Assign the certificate subject name to working_issuer_name.
+  //
+  // This is done by tracking the certificate itself.
+  working_issuer_cert_ = &cert;
 
   // From RFC 5280 section 6.1.4 step d:
   //
@@ -1979,7 +1997,7 @@ void PathVerifier::ProcessRootCertificate(const ParsedCertificate &cert,
   } else {
     working_public_key_ = ParseAndCheckPublicKey(cert.tbs().spki_tlv, errors);
   }
-  working_normalized_issuer_name_ = cert.normalized_subject();
+  working_issuer_cert_ = &cert;
 }
 
 void PathVerifier::ProcessSingleCertChain(const ParsedCertificate &cert,
@@ -2228,6 +2246,20 @@ void PathVerifier::Run(
 }
 
 }  // namespace
+
+bool VerifyCertificateChainDelegate::
+    IsMTCCosignatureVerificationResultAcceptable(
+        const ParsedCertificate& mtc_ca_cert,
+        std::vector<std::vector<uint8_t>> valid_additional_cosigners) {
+  return false;
+}
+
+bool VerifyCertificateChainDelegate::IsCosignatureVerificationResultAcceptable(
+    const MTCAnchor* mtc_anchor,
+    std::vector<std::vector<uint8_t>> valid_additional_cosigners) {
+  return IsMTCCosignatureVerificationResultAcceptable(
+      *mtc_anchor->AsCert(), std::move(valid_additional_cosigners));
+}
 
 void VerifyCertificateChain(
     const ParsedCertificateList &certs, const TrustAnchor &last_cert_trust,
