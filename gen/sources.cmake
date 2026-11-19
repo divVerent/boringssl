@@ -1050,6 +1050,8 @@ set(
   crypto/x509/test/mtc/ca_id_too_long/cert_1_0.pem
   crypto/x509/test/mtc/ca_min_serial_too_low/ca_cert.pem
   crypto/x509/test/mtc/ca_min_serial_too_low/cert_1_0.pem
+  crypto/x509/test/mtc/ca_sha1_cosigner/ca_cert.pem
+  crypto/x509/test/mtc/ca_sha1_cosigner/cert_1_0.pem
   crypto/x509/test/mtc/ca_unknown_sigalg/ca_cert.pem
   crypto/x509/test/mtc/ca_unknown_sigalg/cert_1_0.pem
   crypto/x509/test/mtc/ca_widest_validity/ca_cert.pem
@@ -1290,6 +1292,7 @@ set(
   DECREPIT_TEST_SOURCES
 
   crypto/test/gtest_main.cc
+  decrepit/bio/base64_bio_test.cc
   decrepit/blowfish/blowfish_test.cc
   decrepit/cast/cast_test.cc
   decrepit/cfb/cfb_test.cc
@@ -1516,6 +1519,8 @@ set(
   crypto/x509/test/mtc/ca_id_too_long/cert_1_0.pem
   crypto/x509/test/mtc/ca_min_serial_too_low/ca_cert.pem
   crypto/x509/test/mtc/ca_min_serial_too_low/cert_1_0.pem
+  crypto/x509/test/mtc/ca_sha1_cosigner/ca_cert.pem
+  crypto/x509/test/mtc/ca_sha1_cosigner/cert_1_0.pem
   crypto/x509/test/mtc/ca_unknown_sigalg/ca_cert.pem
   crypto/x509/test/mtc/ca_unknown_sigalg/cert_1_0.pem
   crypto/x509/test/mtc/ca_widest_validity/ca_cert.pem

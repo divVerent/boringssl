@@ -12993,7 +12993,9 @@ class X509VerifyMTCTest : public X509VerifyTest {
     };
   }
 
-  int VerifyMTC(X509 *mtc, X509 *mtc_ca = nullptr) {
+  int VerifyMTC(
+      X509 *mtc, X509 *mtc_ca = nullptr,
+      std::function<void(X509_STORE_CTX *)> configure_callback = nullptr) {
     if (!mtc_ca) {
       mtc_ca = mtc_ca_cert_.get();
     }
@@ -13002,10 +13004,13 @@ class X509VerifyMTCTest : public X509VerifyTest {
         /*crls=*/{},
         /*flags=*/0,
         /*configure_callback=*/
-        [mtc_ca](X509_STORE_CTX *ctx) {
+        [mtc_ca, configure_callback](X509_STORE_CTX *ctx) {
           ASSERT_TRUE(X509_STORE_CTX_set_trust(ctx, X509_TRUST_SSL_SERVER));
           ASSERT_TRUE(
               X509_add1_trust_object(mtc_ca, OBJ_nid2obj(NID_server_auth)));
+          if (configure_callback) {
+            configure_callback(ctx);
+          }
         },
         /*time_posix=*/kVerifyMtcReferenceTime);
   }
@@ -13264,6 +13269,23 @@ TEST_P(X509VerifyMTCTest, InvalidMTCCAExtensionNotCritical) {
       ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
 }
 
+// If the CA has more than one MTCCertificationAuthority extension, it is not a
+// valid MTC CA.
+TEST_P(X509VerifyMTCTest, InvalidMTCCADuplicateExtension) {
+  UniquePtr<X509> bad_ca(X509_dup(mtc_ca_cert_.get()));
+  ASSERT_TRUE(bad_ca);
+  int ext_index = X509_get_ext_by_NID(
+      bad_ca.get(), NID_pe_mtcCertificationAuthority_SHA256, -1);
+  ASSERT_GE(ext_index, 0);
+  ASSERT_TRUE(
+      X509_add_ext(bad_ca.get(), X509_get_ext(bad_ca.get(), ext_index), -1));
+
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc_10_subtree_8_11_.get(), /*mtc_ca=*/bad_ca.get()));
+  EXPECT_TRUE(
+      ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
+}
+
 // If the CA has the MTCCertificationAuthority extension but an invalid
 // subject name (e.g. missing trust anchor ID), MTC CA initialization fails.
 TEST_P(X509VerifyMTCTest, InvalidMTCCABadSubject) {
@@ -13316,6 +13338,32 @@ TEST_P(X509VerifyMTCTest, InvalidMTCCATrustAnchorIDTooLong) {
 
   EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
             VerifyMTC(mtc.get(), /*mtc_ca=*/bad_ca.get()));
+  EXPECT_TRUE(
+      ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
+}
+
+// The CA cosigner's signature algorithm may not use SHA-1, unless
+// X509_V_FLAG_ALLOW_SHA1 is set.
+TEST_P(X509VerifyMTCTest, SHA1CACosigner) {
+  UniquePtr<X509> ca = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_sha1_cosigner/ca_cert.pem"));
+  ASSERT_TRUE(ca);
+
+  UniquePtr<X509> mtc = CertFromPEM(
+      GetTestData("crypto/x509/test/mtc/ca_sha1_cosigner/cert_1_0.pem"));
+  ASSERT_TRUE(mtc);
+
+  // X509_V_FLAG_ALLOW_SHA1 is currently set by default.
+  // TODO(crbug.com/461736992): Flip this when the default changes.
+  EXPECT_EQ(X509_V_OK, VerifyMTC(mtc.get(), /*mtc_ca=*/ca.get()));
+
+  EXPECT_EQ(X509_V_ERR_CERT_SIGNATURE_FAILURE,
+            VerifyMTC(mtc.get(), /*mtc_ca=*/ca.get(),
+                      /*configure_callback=*/[](X509_STORE_CTX *ctx) {
+                        X509_VERIFY_PARAM_clear_flags(
+                            X509_STORE_CTX_get0_param(ctx),
+                            X509_V_FLAG_ALLOW_SHA1);
+                      }));
   EXPECT_TRUE(
       ErrorEquals(ERR_get_error(), ERR_LIB_X509, X509_R_INVALID_MTC_CA));
 }
