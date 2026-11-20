@@ -366,6 +366,7 @@ boringssl_crypto_sources := \
   crypto/dh/dh_asn1.cc \
   crypto/dh/params.cc \
   crypto/digest/digest_extra.cc \
+  crypto/digest/p_keccak.cc \
   crypto/dsa/dsa.cc \
   crypto/dsa/dsa_asn1.cc \
   crypto/ec/ec_asn1.cc \
@@ -385,7 +386,6 @@ boringssl_crypto_sources := \
   crypto/evp/p_ec.cc \
   crypto/evp/p_ed25519.cc \
   crypto/evp/p_hkdf.cc \
-  crypto/evp/p_keccak.cc \
   crypto/evp/p_mldsa.cc \
   crypto/evp/p_mlkem.cc \
   crypto/evp/p_rsa.cc \
@@ -2946,6 +2946,7 @@ boringssl_pki_test_data := \
 boringssl_rust_bssl_crypto_sources := \
   rust/bssl-crypto/src/aead.rs \
   rust/bssl-crypto/src/aes.rs \
+  rust/bssl-crypto/src/chacha20.rs \
   rust/bssl-crypto/src/cipher/aes_cbc.rs \
   rust/bssl-crypto/src/cipher/aes_ctr.rs \
   rust/bssl-crypto/src/cipher/mod.rs \
