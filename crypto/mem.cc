@@ -38,11 +38,8 @@
 
 using namespace bssl;
 
-#define OPENSSL_MALLOC_PREFIX 64
+#define OPENSSL_MALLOC_PREFIX 8
 static_assert(OPENSSL_MALLOC_PREFIX >= sizeof(size_t), "size_t too large");
-
-#define OPENSSL_MALLOC_ALIGNMENT 64
-static_assert(OPENSSL_MALLOC_PREFIX % OPENSSL_MALLOC_ALIGNMENT == 0, "the malloc prefix must be a multiple of the malloc alignment");
 
 #if defined(OPENSSL_ASAN)
 extern "C" {
@@ -214,7 +211,7 @@ void *OPENSSL_malloc(size_t size) {
     goto err;
   }
 
-  ptr = aligned_alloc(OPENSSL_MALLOC_ALIGNMENT, size + OPENSSL_MALLOC_PREFIX);
+  ptr = malloc(size + OPENSSL_MALLOC_PREFIX);
   if (ptr == nullptr) {
     goto err;
   }
