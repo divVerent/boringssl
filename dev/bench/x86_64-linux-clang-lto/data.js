@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795692335181,
+  "lastUpdate": 1795693254411,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux Clang with LTO": [
@@ -982080,6 +982080,3984 @@ window.BENCHMARK_DATA = {
             "value": 549.9520224720675,
             "unit": "us/iter",
             "extra": "iterations: 10\ncpu: 549.9200393257689 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.85"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "divVerent@gmail.com",
+            "name": "Rudolf Polzer",
+            "username": "divVerent"
+          },
+          "committer": {
+            "email": "divVerent@gmail.com",
+            "name": "Rudolf Polzer",
+            "username": "divVerent"
+          },
+          "distinct": true,
+          "id": "eb1de34e33057c78745a41d94ff587d1fbd77a0f",
+          "message": "Revert \"TEMP PATCH: force 64-bytes alignment so we can benchmark it.\"\n\nThis reverts commit a0629cff69276a773931f4c932c163b24d96bc15.",
+          "timestamp": "2026-11-26T03:17:15-08:00",
+          "tree_id": "c1a3894b3a3151210cc7969a8a66f271a8cdff69",
+          "url": "https://github.com/divVerent/boringssl/commit/eb1de34e33057c78745a41d94ff587d1fbd77a0f"
+        },
+        "date": 1795693070057,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.7965878393219696,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7965797450054548 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.801374754645483,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8012316695099801 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.42873003183067365,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4287192263980789 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.4253474660825424,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4253469520860079 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 10.252008349087257,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.25157608696049 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.527327116284274,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.527053655409599 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 10.73250377834243,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.732282827728975 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 10.224636596858641,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.224642827225185 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.1738894493302083,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1738041064613036 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.1749800100908399,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1749549746521466 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 5.654308658656624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.654288564365074 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.779140553537006,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.7791058402720505 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.890118441540884,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.889885541449934 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.6455298589124485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.645543938960195 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 1.8831735965939944,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8830896894958726 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.883274822626306,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8832685330780439 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.4715904490072746,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.47154823227485243 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.46947088838682277,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4694697992335531 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 11.205415571695,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.204608229596285 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.476166686224659,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.475336306035839 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.70074371201046,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.700701871500303 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.168615217389666,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.16828661327275 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.1945316936566175,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.194484007061947 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.1928915979228105,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1928891597923008 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 6.132480958611593,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.1321241585644275 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.2801429303619924,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.280116759560359 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.382623323349237,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.382611179839847 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.1200299569329015,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.119861074706205 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.4977462202360188,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.497749244047472 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5018590101351923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.501814269943607 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.09757053399652862,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09757008766338968 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10270637617713976,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10270629889513479 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 16.91682548547214,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.916595463139053 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.11503145812103,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.114987206445917 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.342125088023824,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.34219903168941 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.89733047174221,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.896374609781848 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.34489623474654135,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34450708438178823 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.34909003357550683,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34909013022247326 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 8.522465644867898,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.522481973351587 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.60011290041655,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.60010641538924 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.68977757677462,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.689795093540397 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.505633678441292,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.505688968156521 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.4995853699260093,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4995081134821704 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5004531977676048,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5004211586052836 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.09823733668296585,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09823702538979946 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10333776475509089,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10333782731021071 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 16.946022340599,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.944843529818215 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.081620863815452,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.08118556252688 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.307613535957593,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.307558402542256 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.91679732527983,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.91673528904545 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.3452645438583434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3452644054373547 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.35103937892979,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3510387972564669 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 8.497678577600897,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.497349075353542 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.585917702137857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.584828710187377 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.687081461928914,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.686826429274191 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.519023489933513,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.519038699553802 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.4983129744337607,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4982595342198932 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.503899472440653,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5038981612119795 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.0992627539410535,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09925069325291538 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10410574298685633,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10410534294835364 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 16.938103636366733,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.937693679661308 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.022212002781338,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.02215033871818 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.379598520871923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.378328667031013 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.87012936821327,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.870104751245524 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.34645397718250354,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3464466294016745 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.35240197253749017,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3524024413374849 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 8.491956872038765,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.491537957779899 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.607004535145775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.606607360893918 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.69679558862455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.696287487891567 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.515175655723688,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.514501650164238 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.0539465895496283,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0539498419210274 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.0590949619722805,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.059040595501334 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.19282758408270656,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19278995369042465 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.19825171067562003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19825174090844014 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.479145211346706,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.479114981268376 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.702834221403213,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.70255643757953 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.024984914757297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.024989344997632 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 10.489352837447672,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.48903184781445 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3492625045031439,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.349262898640674 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.35583616390703265,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35581737533908947 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.3455626872176145,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.34499044169805 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.450863126151467,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.450750460712877 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.603780067351182,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.6033817569509115 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.34524497248049,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.344409722601383 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.1968156552062534,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.196594279946148 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.2028555126131861,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2028125480056049 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.10461945638581682,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10461440414428369 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10919329639758349,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10918853520259711 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 13.122569195831549,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.120744255944865 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.293700528954275,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.293666078936862 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.63173213288539,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.631799064769334 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 13.13739544360736,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.137397715130078 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.29770134372650814,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2976898104775838 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.30377101459659117,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3037644020573331 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 6.5874372313256115,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.587397736433807 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.68975234502526,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.689536704730564 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.820810365260874,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.820722779870287 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.611663820918889,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.6104542215649245 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.15737820204682956,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15736612046289394 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.1554880199345698,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15548242881426008 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.06123509614243862,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06122885744885709 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.0659634749453569,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06595982008710646 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 0.8748009200321303,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8747972724072326 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.0277911051632103,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0277434239168728 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.3177449999999908,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3177037182906062 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.8804866193168787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8804319202594367 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.06629731567403799,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06629724298030579 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.07482368348912695,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07482254091333909 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 0.46291717900911894,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4629042769044006 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.5404386739753433,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5404249949092166 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.6855451909236685,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6855346798701938 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.4689054219952341,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4689047308334343 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.33978559602363817,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.33975561634007895 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.3458611381987595,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34584220154200984 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.13045419304182884,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1304444913287775 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.13674084310876783,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1367340869737004 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.30179058422496,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3017956388858285 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.5489333676749117,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.548932594977759 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.7679925220079737,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.7678964048649055 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.3002657314032993,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2998739030712483 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.17272613631754977,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17271599338158208 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.17832884935946952,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17831934957823656 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.2076940847452429,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2076659833056629 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.3248045899045073,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3248038914113913 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.4227668358932406,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4226825117879425 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.2123998273623624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2123959060363378 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.1695688275375679,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16956808449746613 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.16624641483741376,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16623947966302777 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.06324167410163095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06323976965057612 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.0685648548247936,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06856531710906062 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 0.9594903598051803,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9594392859538028 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.1151170712782523,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.115067605183884 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.4609865434678162,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4606736258048556 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.9652248515227069,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9651969602402438 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.06918632306003347,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06918363346528342 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.07828253026752116,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0782777884726417 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 0.5114198085618706,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5113976542835654 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.5900825315128924,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5900713679294546 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.7478942823559734,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7478778284857415 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.512902145959119,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5128915248665111 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 1.8447054071789584,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8446440258643666 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.8449202055694314,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8448524465403993 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.42967469197544783,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4296641392866431 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.42584335103482446,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.42582682345292416 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 10.792673266232025,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.792639143896618 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.994891287193903,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.994515385481979 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.206499368756251,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.206005853319489 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 10.807602172952226,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.805631584723878 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.1877096300754362,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1876323428570439 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.1846670258361296,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1846114554839862 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 5.919145075688011,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.9187314999078176 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.0361857204223455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.036184953362335 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.138207864820408,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.137925451946706 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.92020787977447,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.919880926465126 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.0972798391667988,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0972588508124441 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.1027876903430787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1027858975652636 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.19547028843009842,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19545788725248572 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.20111528307157261,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.20109942491395646 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.986995698808448,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.986561948386754 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.2207173538494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.219490869416607 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.549266764532058,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.549205813268292 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 10.980687722818192,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.959373663101973 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.3568649028720857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35685247591836144 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3630280733355204,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.36301436392586306 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.595943722574132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.5957686214176325 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.7321413690474134,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.7318153011211495 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.872988230737533,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.872815952565298 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.610742676391836,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.610423543828458 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 1.5253919699453735,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5253023636215206 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.531217841154413,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5311537034715026 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.12418415456572166,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12418122126047737 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.12864727901062148,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12864776813176332 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 16.823904295524088,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.823949656352585 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.028714471181274,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.028232906346144 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.324449947027198,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.32423490465534 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.862327354256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.8614993101097 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.3695677439544147,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3695658852182952 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.37557606663502263,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3755701342218551 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 8.456714741930899,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.456514370793453 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.57084010107825,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.57063898570402 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.710054639264724,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.709731654612824 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.4930295215836,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.492704957887408 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.18207132317821417,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18207038207863563 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.1788644199678657,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1788510151445177 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.06491771040946068,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06491356596994893 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.07066376865499537,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07066285740850056 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 1.0497845486426252,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0497610507691875 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.2429355077786743,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2429352607310347 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5917083156385405,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5916757374799588 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.057271944089922,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0572052986819844 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.07457104308999937,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07456870563657547 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.08104138552732165,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08103944585183633 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 0.5595632905290262,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5595640562432255 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.6594650533003031,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6594440260196062 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.8042378293789302,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8042229263283108 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5622259289035247,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5622176377005275 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.39222620960684634,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.39221878729072357 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.3966550184419385,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3966493244716 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.1429117924016981,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14291117123171876 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.14897506890962636,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14896682706382497 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 2.7432233619663573,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.742842131599 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 3.0071657176975335,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.0070648360731966 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.2404843158104235,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.240430949690765 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.7449432326630543,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.7448815995535014 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.1890548885127338,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1890431149655963 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.19437525012593654,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19436887662305588 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.435532999474945,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4355291870773295 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.557738386714826,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5577142981416794 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.6711282486175818,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6710648181463186 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.4360214884309097,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4359908464291087 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.7112686076393995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7112659836247681 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.7129762208884132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7129722691941256 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.1535711164058809,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1535663880596535 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.15743537730397494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15742836031268495 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 6.768860056305608,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.761242360776295 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.634528252613908,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.63451715336872 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.88476541116531,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.88416737313998 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.765337325005332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.765315433709286 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.2474249696216333,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24741718005392355 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2525671902515255,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.252553284913997 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 3.448542841609657,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.4484338348765995 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.851016009779213,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.848941237851826 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.997143235831706,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.996968433882258 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.456820869871236,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.456823395300122 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 38.674075829379454,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.67312006318902 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 38.75440585692253,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.75295794025127 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.4790053522229483,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4789257840138803 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.4746635215413462,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4746084880945047 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 449.8673538813565,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 449.76145433781323 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 449.8351826484216,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 449.82555707756273 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 450.1556689495822,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 450.1368835614574 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 450.66161872145875,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 450.6484589041538 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 8.699613375454451,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.699381463023986 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 8.699426532071525,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.698094058525514 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 225.83064827585986,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 225.8311022988165 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 224.8670642201737,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 224.86204128438573 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 225.90806651384537,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 225.90154931189903 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 226.23581651377222,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 226.23566857799239 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.7852798368927784,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7852524518254452 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.7877295913063753,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7876197334014674 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.22600654196781841,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.22600115276971522 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.23088032443930068,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23087445883903057 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 6.818905796091164,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.818695288065733 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.711685647980145,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.711660061882478 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.96859517720094,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.968345877483358 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.849478610183654,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.849336011407486 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.32016588315751304,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.32016597520602164 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3252685547845045,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.32525219488313784 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 3.5313534501303976,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.527583129891395 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.938726453627841,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.938688340940079 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.0655006762145245,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.065255609516525 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.529578614869924,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.529437441170849 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 1.5665507286906748,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.566512951836016 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5634990516264602,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5634428027227685 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.18199369272599702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18199390551705608 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.18058678099779116,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1805860449916045 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 16.84006116337614,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.838784088965504 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.049588562486782,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.04907639492381 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.188486451044938,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.188457779726317 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.87929606732128,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.878778378838017 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.44771284176531195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4477123972482163 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.4487329515590296,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.448731473060219 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 8.543605801749623,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.542187017600995 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.635859871768233,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.635538248724483 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.659706557235646,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.659487865147055 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.54639092182239,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.546358137092719 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 1.6367954186810239,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6367913822029496 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.6341639355167157,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6340374652717606 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.17738678312035042,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17729370361258892 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.17646898123325852,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17646942627349077 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 17.83534188500681,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.834990356624473 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.96502638305751,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.961114570026382 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 18.09480735970758,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.094749678013013 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 17.759802357207626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.759160834088924 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.45399837186876607,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4539966192064506 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.4520838874183428,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4520822643562318 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 9.018722664105969,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.018556454562452 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 9.061538762186998,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.061507862791395 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 9.12476368663624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.124540276497843 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.99898612131852,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.998962178311466 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 1.4960000227838186,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.495915366739059 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.4957917893453225,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4957885035664493 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.096341530604271,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09634121762819468 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09534320689927113,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09533929679239807 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 16.91561095819231,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.91493540340716 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.01798804574091,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.01793659043335 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.33266060126419,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.33137060477138 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.907345818372967,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.905350521634613 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.3427686696564807,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3427561541622154 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.34223900898718496,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34222683993194075 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 8.504182752954188,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.503670050979839 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.573375529283704,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.573194248412733 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.702621478872615,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.70248939260581 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.510327359876747,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.510301450901464 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 1.4960543832150122,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4959694422467642 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.4929953463694596,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4929330907988185 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.09619461900731971,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0961948723340847 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09505991462376498,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0950043304810472 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 16.9386318870583,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.937990272037624 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.06687337379993,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.066308326103602 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.3711976764635,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.370090829075945 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.93692910062156,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.935238283936027 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.34278779322695235,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3427786063479421 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.34251053830236267,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34250056411536517 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 8.513201069610913,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.51299059777482 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.543364742977568,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.54188295822769 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.683288767215355,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.681571926883695 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.518619509839962,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.51745928495682 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 1.4908072840742252,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4907166089650805 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.4901131847601512,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4900200300787225 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.09677471961475495,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09677456722614906 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09580194715962043,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0957991336211724 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 16.93234620003475,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.932353576938432 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.079750043576727,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.07973670907374 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.3208753959913,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.320843717002408 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.900387666724832,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.900409925516676 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.3452634343892881,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.34525765811916675 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.34277978411069593,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3427745310384826 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 8.492281429819622,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.492245902355748 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.600605607963848,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.600406228162724 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.66643245273487,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.665097808802557 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.513560449052925,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.513335276339443 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.0557285049848795,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0557084418938887 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.0566539034691105,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.056632901282334 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.19327002995021555,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19324291675171634 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1921727969624895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19217259133069914 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.514956209846408,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.51474288008922 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.716625657032212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.716039038547077 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.010271291432097,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.009854001560926 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 10.512954584776093,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.512924037628045 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.35121879492771246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35120915061966496 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3502269099855463,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3502166539143267 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.363533572090304,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.362311498716549 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.456016002217126,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.455790586932804 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.5768041973884666,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.576507146908961 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.3529060484522315,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.352712454610776 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 1.5052971563982367,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5051848799877372 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.5104376584686805,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.510347151367846 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.10104420643431748,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10104407166334609 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10008368139000756,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10008356316284897 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 16.929947973914956,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.929948746561855 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 17.086912449646967,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.08687322710568 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 17.338452929789472,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.337647721276234 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 16.929848710413687,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.929573827243434 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.35288954533548716,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3528674866966375 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.35176712520856196,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35174587060632384 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 8.51055894781923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.510272013799472 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 8.583574208186917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.583616089345764 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 8.695733461129995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.695702567759394 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 8.50814508040769,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.507723845755176 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.16064384836793708,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16064376827608 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.1581595387877548,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15816000696678387 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.05913377056264855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.05913339866599032 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.057975762509498666,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.05797369861583349 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 0.8802625740913396,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8801487464249942 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.143448030821182,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.143380991812696 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.336766556807238,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3366906931956994 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.8836470501182669,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8836457854990905 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.06822712325860113,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06822561844414629 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.0668232432520874,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06681128318296493 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 0.4697325047639597,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.469700082682889 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.5956414813649108,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.595616514776623 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.6854931651002243,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.685468550548614 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.47053894574372535,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4704971981479626 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.3670802638053381,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3670669486407245 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.3654452626246302,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3654448789863888 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.09325423733660773,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09325189671708965 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09191519114103508,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09191481934034842 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 2.679415377453883,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.6792424358595026 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.726823132087471,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.7264289248389555 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.8910856324076515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.8906776794469433 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.6745545004351916,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.6744772937524086 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.15914076507616867,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15913981888330953 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.15740370414229027,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1573997046158851 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 1.3861426793385907,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3861406709659918 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.4202268545804917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.420176345028902 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.4791725675740053,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4791029338523047 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.3946697719645296,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.394667411280874 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.17705663890462003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1770561063990206 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.17055726053281572,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17054533713045245 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.06294855658641155,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06294715661251192 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.06101364109237278,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.061013280909893206 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 0.9846963729942388,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.984606946808656 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.2727450430566023,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2726464945265972 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.4841709765511337,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4838710696141364 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 0.991792707397153,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9917669112507376 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.0725412876183456,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07253667873887529 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.07053726288839687,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07053720281870743 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 0.5084023015583171,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.508368118755183 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.65875802430555,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6587611622278493 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.749222609550346,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7491806465844147 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5239258491541472,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5239033620703097 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 1.8396722508751917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8396175601400142 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.8343766571843036,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8342645822883696 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.18894120232664494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18893628392653247 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1879003546487966,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18790015687496306 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 20.052855548733227,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.051551187551784 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 20.270283333322798,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.269352572021383 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 20.346357620748247,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.34630357516086 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 20.10303049776413,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.103033659731487 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.5045336877524937,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5045191396626433 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5025161904663767,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5025136528878097 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 10.16054563841626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.160523234105396 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.239656737368904,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.239282283217708 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 10.252905994978683,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.252550742834968 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 10.115746388028475,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.115723374614202 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.0981090731104997,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0980804609274437 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.1012093422309444,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.101192065195517 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.19639673294359014,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1963835746027713 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.19473336955664594,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19472053860748334 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 10.98697688700061,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.986393311746092 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.198566299285272,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.198556073172949 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.53469655860905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.533978799622464 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 11.009944425790552,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.009983322142205 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.35900653873286253,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.35894871686545815 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.35748432351097176,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3574183753423112 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 5.602786312135056,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.602771849911738 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.707253281069071,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.707096312427553 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.848513211021174,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.848302725329043 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 5.590874410446263,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.590869809040665 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 1.8411056432181898,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8408730511417883 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.844354160733983,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8443552714022182 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.12046190388977092,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12045672045469746 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.11906131677647094,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11905189716816048 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 20.67993436905943,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.679850665821522 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 20.78232609615352,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.78127758949529 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 21.11962206070599,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.119664920905063 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 20.712512391447667,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.7112915695881 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.4242856075298218,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4242762404806748 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.42221260571536695,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.42218885640675363 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 10.410044916501294,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.409791111819569 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.457497236396048,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.457240858841939 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 10.56529353916966,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.565115921326973 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 10.406026923485324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.405501968712567 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.1872396989527389,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18723986586196611 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.18588861726987238,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1858856756068772 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.06639965882226576,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.06639670930316163 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.06510585827416861,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0651046801242132 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 1.0565978760361108,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0565950929842756 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.3795098428479136,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3794284808718933 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.6040128617894538,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6038927551310693 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 1.0581438395292995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0581000517373014 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.07652346599132234,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07651886230701341 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.07555849775236417,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07553401366311849 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 0.5613600950726393,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5613591669027536 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 0.7216902623347955,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7216658465651375 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 0.8095022310195666,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8094819992577216 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 0.5624602579987845,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5624442429918817 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.4239596615583744,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.423963592974797 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.4246332513192441,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.42463296492064595 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.10547914025781065,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1054539041952314 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10419412241966856,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10419161106770507 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 3.2315569482481385,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.231475987070578 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 3.2869329414894217,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.2869287503342064 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.431868249030572,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.431848393749963 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 3.232482141083627,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.2323972491651505 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.17603066627332242,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1760307431646608 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.174459234393561,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17445732277158307 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 1.6735292559072732,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6735224743988535 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.6981561186518868,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6978628040375217 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.7548504268912624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7546360161470154 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.6712390286411503,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6688370531140055 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.741460527706614,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7414634917160352 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.7407787737136122,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7407785127529207 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.15143808091411878,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1514377029769678 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.15019873664942734,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15019830690703523 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 6.788119882835471,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.787727980703681 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.6230151621919,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.622831864127088 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.86635228654777,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.865856482609958 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.80109837826718,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.800941714601964 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.24646869334442645,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24645883651945605 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.24474719053337185,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24474685772624985 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 3.491179395710032,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.491188010557976 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.8258941586279684,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.825664344408311 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.970838352064328,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.970310866113326 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.4871668841699255,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.4870074245205283 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 39.928639297364036,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 39.928001633974986 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 40.02362103337635,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 40.021065907233314 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.291179529361879,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2910955094623975 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.2909721011558515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2909721142053079 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 475.06009223283047,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 475.0333058251582 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 473.1993212560621,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 473.1765024154565 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 474.8042270532079,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 474.79345652174806 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 473.38350966177256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 473.37632125599856 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 8.254526362556515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.25423810934134 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 8.25744519506802,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.2574177081561 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 236.92277349404463,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 236.91858915667004 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 237.90884140442262,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.90383171911358 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 237.87862801931857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.87315700481932 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 237.43497578700317,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 237.42669128337826 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.831613557314055,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8316102018364326 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.82923812364615,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8292035396359149 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.24234751014340256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2423425592699507 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2415324432782581,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24153288227071829 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 6.897322617880535,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.897069784526325 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.709984864871792,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.709959219219115 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.977325790755199,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.977348783454806 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.909516753302674,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.909246417532171 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.33854819337160436,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.33849168552155084 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.33644207582262553,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.33640020903309253 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 3.577373387420914,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.5772805978873263 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.923263314147201,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.923152590124165 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.041976731303173,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.038780917205415 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.5687708113614667,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.5687638651502582 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.009661581365249429,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.00966131517192292 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.012776278661546663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.012776291505335532 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.015948621734100398,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.015947929643040475 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.0190495788296253,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.01904957543066502 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.009680178724793717,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.009679983075031335 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.012819131158958144,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.012818795880430913 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.013416703549424727,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0134145251850955 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.015207437418929192,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.015207380450702235 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 2.0768079058919775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.0768120813904907 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 24.895778816989502,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.895674039438077 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 10.40314188905005,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.402774795125973 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p224/threads:1",
+            "value": 120.29244553245212,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 120.28498898411371 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p256/threads:1",
+            "value": 45.68286255257511,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 45.68276647965 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p384/threads:1",
+            "value": 309.09688958993246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 309.0897050473845 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p521/threads:1",
+            "value": 738.8067180451278,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 738.8025451127589 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p224/threads:1",
+            "value": 240.86655693073826,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 240.86670049503624 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p256/threads:1",
+            "value": 57.27750874126872,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 57.277690268093366 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p384/threads:1",
+            "value": 619.6443333331433,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 619.5178207547062 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p521/threads:1",
+            "value": 1484.3627348482464,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1484.3345909097802 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p224/threads:1",
+            "value": 111.98488672766715,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 111.9810989702886 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p256/threads:1",
+            "value": 7.484635051156687,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.4840885941652875 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p384/threads:1",
+            "value": 285.8193093842484,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 285.8193489735226 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p521/threads:1",
+            "value": 682.5103125002051,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 682.4844618053859 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 127.51176131953775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 127.50831112546511 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 16.80594247183857,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.805687350631153 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 330.296130067436,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 330.28487162153675 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 799.7216844262496,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 799.6953975413041 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 128.28261328186784,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 128.2641510412704 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 52.67314028920204,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 52.655122317903945 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 334.9541020410003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 334.91819898166904 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 822.165174996788,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 822.1124666690117 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 11.143247286909283,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.140864119373333 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 11.19341885889622,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.193419883838537 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 36.92336425598003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 36.91461378265266 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 19.602782480883793,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.60213962374727 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 6.060981585199604,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.06087727521966 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 94.34135851782827,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 94.34103031755049 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 1.778502238994733,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7784947546136443 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.1819558726604181,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18195259474567274 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 20.307455948483565,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 20.30583851185467 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.3450825835856673,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3450648087290078 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 10.159495167853482,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.159275686674597 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.7040392386392137,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7040043602465476 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.08764983683490792,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08764704931984703 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 7.890433157433398,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.890347245541351 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.18468950637632986,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18468151791040285 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 3.974264913352056,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.974247645258367 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 0.7757723622395459,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7757509879697041 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.08083819762553426,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0808361023666044 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 8.849903887396962,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.849856121538094 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.19538214096794948,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19538224040350471 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 4.454936526726931,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.45483510153904 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 1.9155963737102675,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.915562949640162 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.2049365085006289,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2049286266600959 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 22.22948281356247,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.22940587298336 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.5382526429430062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5382396906089333 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 11.21199634160161,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.211952726648567 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 17.68618562387085,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.686141320069066 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 47.0974164672502,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 47.09733245571113 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 0.9057978241740159,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9057843008762643 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 36.52752898551,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 36.52639000370778 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 61.87717073932195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.87716604012352 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 94.77184857143497,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 94.76733238097084 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 3.099514009123128,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.099280291042485 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 4.621645983015448,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.621492628532654 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 6.134437550040121,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.134268553304291 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 130.49035494219982,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 130.48989409494442 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 201.63874382710242,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 201.63498765433593 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 241.3466433648717,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 241.3325675355692 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 31.449113585742772,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 31.447447502382413 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 50.84200462724321,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 50.84197429305961 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 81.73565901504347,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 81.73228046744114 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 31.62230872482788,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 31.622159955254823 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 50.46746000000614,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 50.46592999999341 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 80.73605395385755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 80.73570922570306 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 24.959021241523992,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.962598415616817 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 16.127675086385914,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.1211881684853 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 50.02256397136582,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 50.01168884340696 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 25.305167909495808,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.30474427873581 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 29.879598489762337,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 29.88345135952455 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 13.91244896351779,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.906497110003183 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 25.05104784438813,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.055525262277726 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 19.590481859897523,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.590007817236668 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 12.788534448804624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.787388322831687 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 38.078764434175895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.07861566590149 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 18.677501639650806,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.676933545524882 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 22.0951899047236,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.093107542464452 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 9.534411590921987,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.53408850759728 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 18.29470795462766,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 18.300708419261476 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 556.4585423732653,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 556.4573474576814 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 1651.1095677964154,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1651.110203389658 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 3706.517166668382,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3706.365759257921 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 14.9735042676463,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.970468221311133 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 32.30065847177974,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 32.29957292358149 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 57.272240127733156,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 57.272306620198584 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 63.67203350517659,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 63.670825708775325 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 119.0238734867152,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 119.01128450360125 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 195.2059454365684,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 195.20295039685305 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 486.6342821781198,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 486.63374009908694 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1517.0586692306642,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1517.010830768693 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 3481.629357143642,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3481.564928571958 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 13.385758917673744,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.385243252403503 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 29.207630789800522,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 29.20637381235098 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 51.20702398329483,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 51.20702398330965 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.664983775570838,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6649828768516312 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.47541201127468175,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4754028457824129 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 2.5841318427746294,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.5839842059200526 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.5029202439835548,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5029181312925444 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.525312753704424,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5252277604699087 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 14530.469428572294,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14530.063285714536 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 112071.58349998281,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 112067.53199998332 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 114.17152319008831,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 114.15331221717562 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 85.4450517544249,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 85.44043640350395 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 23828.159124988702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23822.675249995482 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 23785.99687500582,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23785.198875003745 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 3330.4859310345005,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3330.0252241392163 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.0002613301450230978,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0002613104925118921 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.0002608795549579627,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0002608601776369204 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 0.0002607278831307774,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0002607258347816995 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.00026107397095852155,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0002610719333772123 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 0.0002614769619474708,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.00026147635651380943 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 608.7176481484513,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 608.6886111111169 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 608.6932283950111,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 608.6692191358816 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 307.5466093751089,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 307.5288437498713 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 1.9963096501174769,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9958501356605933 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 378.8862104245105,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 378.87731274124764 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 3796.0885961533336,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3795.503038460333 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.08060778210942703,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08060469553861352 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.08900117236005578,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08900019631718246 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 4227.141456523065,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4227.115673913935 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 15136.99174999772,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15136.515000000018 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 3635.9005925924566,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3635.3858518520224 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 13130.528749996982,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13130.54124999935 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1038.536031579066,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1038.489194736844 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1043.224329787384,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1043.1648138292271 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 379.2051853281025,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 378.7346467180946 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 3793.2018846137134,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3793.042115383663 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.08389631945585008,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08389047543809966 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.08284396149521892,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08284398028244216 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 4231.1163043480165,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4230.883652172926 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 15120.002083335747,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15119.193499998573 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 3645.050999999191,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3645.036851852242 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 13112.91192856905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13112.918071430258 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1039.4493457448802,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1039.444191489267 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1043.4668882980793,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1043.4183457446886 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 377.8071124030731,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 377.78957170533124 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 3774.240115382974,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3774.0486923092058 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.0702428060948633,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07024266648288838 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.07037431799465593,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.07037379224387855 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 1454.0889705881789,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1454.0868676468806 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 5421.8164444440245,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5421.382750000703 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 1411.9461071434866,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1411.9407785715662 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 5506.19500000001,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5505.956388889091 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 336.85052749131853,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 336.8416907216398 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 336.3660460748507,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 336.36385665531697 us\nthreads: 1\nazure_vmsize: \ncpu_model: Intel(R) Xeon(R) 6975P-C\ncpu_cores: 4\ncpu_bogomips: 5400.00"
           }
         ]
       }
