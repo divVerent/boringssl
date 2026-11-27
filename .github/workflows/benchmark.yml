@@ -23,15 +23,15 @@ on:
   workflow_call:
 
 jobs:
-  # benchmark-x86-64-linux-gcc:
-  #   uses: ./.github/workflows/benchmark_base.yml
-  #   with:
-  #     name: x86_64-linux-gcc
-  #     title: Benchmark on x8-64 Linux GCC
-  #     extra_packages:
-  #     cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
-  #   permissions:
-  #     contents: read
+  benchmark-x86-64-linux-gcc:
+    uses: ./.github/workflows/benchmark_base.yml
+    with:
+      name: x86_64-linux-gcc
+      title: Benchmark on x8-64 Linux GCC
+      extra_packages:
+      cmake_flags: -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++
+    permissions:
+      contents: read
   benchmark-x86-64-linux-gcc-lto:
     uses: ./.github/workflows/benchmark_base.yml
     with:
@@ -60,14 +60,17 @@ jobs:
     permissions:
       contents: read
   upload-results:
-    if: ${{ (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
-      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main')
-      || github.event_name == 'schedule' }}
+    if: |
+      always() && cancelled() == false && (
+        (github.event_name == 'push' && github.ref == 'refs/heads/main') ||
+        (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+        github.event_name == 'schedule'
+      )
     permissions:
       contents: write
     runs-on: ubuntu-latest
     needs:
-      # - benchmark-x86-64-linux-gcc
+      - benchmark-x86-64-linux-gcc
       - benchmark-x86-64-linux-gcc-lto
       - benchmark-x86-64-linux-clang
       - benchmark-x86-64-linux-clang-lto
