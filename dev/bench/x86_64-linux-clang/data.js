@@ -1,3986 +1,8 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1795741742543,
+  "lastUpdate": 1795762054665,
   "repoUrl": "https://github.com/divVerent/boringssl",
   "entries": {
     "Benchmark on x8-64 Linux Clang": [
-      {
-        "commit": {
-          "author": {
-            "email": "divVerent@gmail.com",
-            "name": "Rudolf Polzer",
-            "username": "divVerent"
-          },
-          "committer": {
-            "email": "divVerent@gmail.com",
-            "name": "Rudolf Polzer",
-            "username": "divVerent"
-          },
-          "distinct": true,
-          "id": "ba00a0383caeb1eeeefdd4a21b736ff2da664962",
-          "message": "Fix benchmark names.\n\nChange-Id: Iec1325b8ddc605527d2c609ca0a0e6ae87a5d58a",
-          "timestamp": "2026-09-03T11:42:58+02:00",
-          "tree_id": "f6800f605fb1f3bfa9f615c13b8ac944eac348d3",
-          "url": "https://github.com/divVerent/boringssl/commit/ba00a0383caeb1eeeefdd4a21b736ff2da664962"
-        },
-        "date": 1788429449629,
-        "tool": "googlecpp",
-        "benches": [
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
-            "value": 1.674502297888392,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.6742458996789487 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.6770362857818344,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.676931292435091 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
-            "value": 0.4013208867733808,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4013200651635966 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.39755802118998734,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3975568543240483 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
-            "value": 9.47071862852974,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.470424249978857 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 9.7059166088303,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.705613634106689 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 9.888848717425843,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.888769995958429 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 9.468383360677196,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.467134301708487 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
-            "value": 1.0941987951134489,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.094126490782334 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 1.091575316877652,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0913661385372602 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
-            "value": 5.236327453701703,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.236305331695947 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.35223575813469,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.351688674032368 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.441408414059398,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.440845308609342 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 5.2335380101361935,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.233091837823144 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
-            "value": 1.77640972725385,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.7761092255876065 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.7763486742730952,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.7762263198122306 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
-            "value": 0.48315161000455537,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4831310763974825 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.4795352924924747,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.47953392351490187 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
-            "value": 10.373885667510752,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.373437684838903 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.598699254218813,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.597789396890459 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.78878896354036,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.788754708665598 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 10.379559277265447,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.37878164623553 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
-            "value": 1.151493514095055,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1514892350375994 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 1.1546657810154444,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.154616718280672 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
-            "value": 5.709889328754225,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.709840251499212 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.840887471066077,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.840718024808668 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.909971580975742,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.908801549034118 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 5.715059327465311,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.714639139811604 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
-            "value": 1.3778383374094456,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3778022897872693 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.3833930046959595,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3833162340146503 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
-            "value": 0.09182141103251786,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09181945136945144 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.0952680309520595,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09526378594296593 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
-            "value": 15.59548541093107,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.595097989951961 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.694817738329476,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.694321417150396 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.926084971570244,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.925647116168268 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.584894444446359,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.584134285715901 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
-            "value": 0.31904016132868024,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3190014284644361 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.322460010421102,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3224297078010574 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
-            "value": 7.833018330671848,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.831288138976714 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.895173783675098,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.894601246484176 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 7.99964928929595,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.999012416386726 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.840355100895844,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.8401869394628845 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
-            "value": 1.378358281217083,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3782799030284523 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.3836652562693454,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.383630440608493 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
-            "value": 0.09236501363505772,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09235985620319412 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.09562675589520209,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09562182817816606 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
-            "value": 15.594748927716362,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.593816997621497 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.688643175074011,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.688061160570019 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.940653159006853,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.935408965406955 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.575185108747466,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.575101365294554 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
-            "value": 0.31975372129565865,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.31974731864590644 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.3230175867894417,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3229956872844598 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
-            "value": 7.82294165935563,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.822277636085531 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.887706453684231,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.886933376144181 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.022353056392443,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.022241655105054 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.83376318519186,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.8319287481050734 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
-            "value": 1.3801634127791043,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3800477096010164 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.3846312880315979,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3843889084979257 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
-            "value": 0.09379051965543873,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09377951705024039 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.09676538908471591,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09675892002655861 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
-            "value": 15.55649761867196,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.555308620417184 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.691765865387362,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.69147379807799 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.942160595216055,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.940824361683383 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.58830101208142,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.58816013712275 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
-            "value": 0.32107708866766227,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.32107826078726065 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.32443392322152553,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.32440789513967994 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
-            "value": 7.830073933835817,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.828942726186339 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.898341933665404,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.897992191272967 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 7.998208261828731,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.998137615427706 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.824742460508529,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.8244024652969255 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
-            "value": 0.9758180989474292,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9757903994360614 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.9780552539565266,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9779805311231529 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
-            "value": 0.18141961154430847,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18141886650483985 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.18421356509406614,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18421195165707177 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
-            "value": 9.655052717231708,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.654459266200638 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 9.871505534313105,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.870185399476034 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.186812966412557,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.186805296436606 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 9.664451440978983,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.663681257403868 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
-            "value": 0.3278920789329781,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3278403330011848 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.3310250517759855,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.33100516238890243 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
-            "value": 4.947829941566881,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.947821604876195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.040795134771938,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.040459568108062 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.17074699145059,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.1707115486128385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 4.973205282644672,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.972873618064296 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
-            "value": 1.1094493335096591,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1094219216046315 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.1121905534684473,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1121775366835531 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
-            "value": 0.10111218656389116,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.10108294366456194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.10356097710408381,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1035505801885422 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
-            "value": 12.074673830047821,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12.073908004924089 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 12.242387621541422,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12.241109012714862 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 12.50559473952708,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12.50326455567188 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 12.084762286000444,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12.084163259025468 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
-            "value": 0.2876384519948044,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.28762242568783314 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.2861492800285823,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.28612524491317526 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
-            "value": 6.0886291643412305,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.088407252311 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 6.154982233505101,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.154675694628176 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 6.290675201299915,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.289723548524781 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 6.198736076580147,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.197923141471669 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
-            "value": 0.1505208672700965,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15051232592750416 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.15150125186313368,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15150133655255954 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
-            "value": 0.0639356504180839,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06392561460981426 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.06766049635264684,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06765118051428035 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
-            "value": 0.8707058695927765,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.8707031871843041 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.0293329226551307,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0292913389143146 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.2729842216446012,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2729058837173137 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 0.8791980042502869,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.879145670415609 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
-            "value": 0.06776117892134201,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06775194472239429 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.07716121019519287,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07716077833364535 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
-            "value": 0.46778672133803767,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4677379233883291 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.541342468334374,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5413311349248979 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.6529675928411091,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6529648492004874 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.4704806244997547,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4704785379819175 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
-            "value": 0.31632228284039116,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.316251160275777 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.3203350239365032,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3202904420420623 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
-            "value": 0.12281022842578757,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1227953744197808 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.12647751005258062,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.12647158335194816 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
-            "value": 2.1221481104714583,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.1221392905061096 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 2.3541280424814826,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.3541598548733953 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 2.578945547112533,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.578814300912512 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 2.127801833567843,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.1275198220675717 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
-            "value": 0.16060729616206654,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1605902370270323 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.16379722855549292,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.163796993531411 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
-            "value": 1.1138606919419822,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1138524826558147 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.2172634936643782,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2170241678488805 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.308306215412792,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3081912781445209 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 1.1184668975087126,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1184182728936165 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
-            "value": 0.15972998520597056,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15969760107354478 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.16666450939102104,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1666597085965148 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
-            "value": 0.06387772260522565,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06387582796769098 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.06889598938413191,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0688861300291726 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
-            "value": 0.944995427612683,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9449714019724998 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.1271460786897587,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.127137231517254 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.3784037792946933,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3783969667107558 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 0.9480774788093903,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9479875960970651 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
-            "value": 0.07116101539516417,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0711527648021431 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.07985769720511639,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07984593707081898 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
-            "value": 0.4941604216518386,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4941597325297721 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.5961005608502574,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5960289196222197 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.7053814071580933,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7053766464215124 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.49950225737659865,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4994738098511113 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
-            "value": 1.718758262470375,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.718747549749541 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.7138362382405856,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.7138290913984597 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
-            "value": 0.4026051803020258,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.40260394836095853 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.3985722847218053,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.39852833360910633 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
-            "value": 9.97134760064755,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.967930561206124 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.203030967939405,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.202361448283451 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.35451415443458,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.354456110700612 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 9.970720832385455,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.968241698885647 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
-            "value": 1.1062442347300232,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1061514332983915 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 1.1034228279555856,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.103394963083029 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
-            "value": 5.491599709205162,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.491450704619831 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.603743300586408,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.603709033308017 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.672746761134853,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.6726188837485685 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 5.4957197168930465,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.495654674651438 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
-            "value": 1.0162092586849716,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0161883736559103 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.0192816519764452,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.019276611538491 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
-            "value": 0.18418515348767053,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18418409424111643 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.18706260380494502,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18706150942666294 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
-            "value": 10.114984885998636,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.114932012794672 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.337474317055594,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.33742695918253 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.638627578713736,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.637195059717756 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 10.123847810374496,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.123833712044426 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
-            "value": 0.33398355098179694,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.33395956418036155 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.33785363513707806,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.337852802133088 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
-            "value": 5.165540353016654,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.16552908900994 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.2808492691201225,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.280809479655889 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.408972470483793,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.408488635107968 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 5.170765744805436,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.170728094759205 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
-            "value": 1.4169520567723772,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4169521578423985 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.4097157903805813,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4096389938647635 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
-            "value": 0.11873050841935003,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1187295238129755 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.12174827988548101,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.12174792092122248 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
-            "value": 15.546151138879361,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.546006485289961 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.658232582291339,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.65692313838673 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.973113813860389,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.973045151319212 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.564013737690502,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.564018316915583 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
-            "value": 0.3457761943381696,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3457617292998492 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.351639643033595,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.35163110270784603 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
-            "value": 7.796969306297283,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.796958050610624 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.898978381012789,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.898161695379637 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.012378513480261,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.012078710151549 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.805824852682763,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.804348741836035 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
-            "value": 0.17064929043793484,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.17063305219973454 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.18257132630939507,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18256344954020093 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
-            "value": 0.06498889670100359,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0649871618415878 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.07132615696767734,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07129459520761493 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
-            "value": 1.018898321421411,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0188748602895557 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.2109964754670162,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2109496233661392 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.4945375492855908,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4944067852092182 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 1.0174401023029733,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0173737769885887 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
-            "value": 0.07735010680386183,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07734389786369202 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.0829239996297488,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08291425330714616 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
-            "value": 0.5244281891556994,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5244268323155687 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.6361151991404395,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6361110305589726 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.7693297449498104,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7692482284949513 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.5323122252896287,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5322808244018158 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
-            "value": 0.3634327459491772,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.36338259110806326 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.3659363217333639,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.36593623014492027 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
-            "value": 0.13571183860525055,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.13570763898785063 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.13834402377620994,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.13833978391610932 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
-            "value": 2.5366080885392073,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.5366092263143205 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 2.7722260415479263,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.77207246971499 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 2.9998791655222603,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.999741638413337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 2.5477169581556685,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.547730535043839 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
-            "value": 0.17852818259673248,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1785172797012628 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.18038368658873352,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1803827777173454 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
-            "value": 1.3206859841558283,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.320582930462895 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.4340980976154347,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4340069131151942 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.5319862817747245,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.53188899571651 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 1.3231266537962003,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3231176692947304 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
-            "value": 0.6689885861315147,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6689635616107776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.6593616059423579,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6593330700459015 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
-            "value": 0.1434333200201942,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1434161926890155 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.14583501704021723,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.14581129156191283 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
-            "value": 6.252755226271171,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.25236199439467 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.669209654571135,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.668840034871646 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.925828555491004,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.925572894589319 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 6.228709008322226,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.22865593037406 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
-            "value": 0.230045438400056,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.2300366254698542 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.2334996987513458,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.23348704392977196 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
-            "value": 3.1911574236234737,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.191043393656336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.3717512055973184,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.371049870618308 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.499340501288968,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.4988934899626045 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 3.184788356699549,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.184296631620987 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
-            "value": 36.43126352495523,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 36.429594885884036 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 35.636147785030474,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 35.63199927379078 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
-            "value": 1.3729293801934985,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3727664971060876 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 1.372844263917397,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3721968282924797 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
-            "value": 413.25686864422744,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 413.2541588983384 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 413.7638797468665,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 413.7291919830265 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 414.4322827005549,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 414.40960126578057 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 413.5377067510952,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 413.48164556963167 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
-            "value": 8.032325771844022,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.03229387437436 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 8.025417109455457,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.02462768740213 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
-            "value": 207.7773066954083,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 207.77628293739303 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 207.65191419501897,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 207.64174470343488 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 208.26523885351398,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 208.2536135880833 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 207.4164417373358,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 207.41499894067397 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
-            "value": 0.725830246003201,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7258158589465883 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.7274766033958657,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7274513716913074 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
-            "value": 0.2096202010130101,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.2096035812507408 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.2122157828395669,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.21220699302067056 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
-            "value": 6.291566028648434,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.290897488600697 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.756038406669576,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.754872325250556 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.9832779927185,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.983247268999376 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 6.309972041067339,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.309945438108736 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
-            "value": 0.29669374527760056,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.2966938616373542 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.2986064425471607,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.2985688678729357 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
-            "value": 3.2511550799487146,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.2511342900652664 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.465684337549769,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.465275854414598 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.567995546165632,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.567592160107322 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 3.2613037649565113,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.2611933516713356 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
-            "value": 1.451490705665201,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4513422561179588 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.4445604911338878,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4444084494240312 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
-            "value": 0.1621001375276968,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16208224816288086 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.15999798915875743,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15999057402755507 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
-            "value": 15.541607250281189,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.540906284626681 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.757215281152346,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.756601442230524 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.833755403400172,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.831833360833638 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.536051031742337,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.53478984127148 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
-            "value": 0.4177176739761383,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4176408271710101 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.4149987562454358,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.41444161026208465 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
-            "value": 7.899394294221788,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.89914936423645 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.955407051280474,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.955379949691874 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.006123180701438,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.005871422730776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.886992359662402,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.886725229208817 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
-            "value": 1.51317943744773,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.5128335677309566 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.5063378701090842,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.5062565711981273 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
-            "value": 0.16620341352939352,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16618985206288192 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.16261328399613503,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16260209214502555 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
-            "value": 16.400163072549,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.399286024739684 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 16.550955204991812,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.550893284957894 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 16.67666170971977,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.67652693745874 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 16.407706931187096,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.407554913781865 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
-            "value": 0.42488236774937505,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4248780881612655 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.4196963170578115,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.41964346832157223 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
-            "value": 8.310170924212644,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.310119069845811 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 8.37684898813049,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.37663397660707 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.418468296867792,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.418388073789771 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 8.399576200781116,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.399109086977196 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
-            "value": 1.3772620525903898,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3771996649703264 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.374139377338118,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3740831079851425 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
-            "value": 0.09056878821348678,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.090565498675987 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.08822112363709843,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08821337618935216 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
-            "value": 15.5531638849075,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.5523041646765 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.731642287756952,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.730661618173418 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.920387455373586,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.91947938980826 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.55580516394968,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.553783066687355 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
-            "value": 0.31759702701824616,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.31756989673299796 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.31525179726810776,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.315245123305275 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
-            "value": 7.802126804947117,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.801869525328597 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.882155154349141,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.881761062302789 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 7.985874247597879,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.985152310070785 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.806625927699194,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.806173928656703 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
-            "value": 1.3750528811756095,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3750108596523463 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.373028430178095,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3729810652212033 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
-            "value": 0.09052683702901809,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09052463147674919 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.0879357603371955,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08793499955002496 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
-            "value": 15.55454179198301,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.551118014876042 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.697947936657926,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.697162028149823 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.961756861978557,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.961259197973684 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.549978991589901,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.548929839859593 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
-            "value": 0.31830372256476325,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.31829011451537365 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.31473566466168723,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3147335771515531 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
-            "value": 7.806474679001637,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.806463792963325 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.928723237283329,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.928682791372131 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.001622412083906,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.000450863393464 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.806133399839268,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.805616520349664 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
-            "value": 1.3763182577450328,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3761964949963272 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.3755657505011443,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3755595535549896 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
-            "value": 0.09115210999750734,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09114292865196424 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.08828602942300531,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08828526097876863 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
-            "value": 15.557860319714322,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.5566383349212 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.667080895287526,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.666664668262248 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 15.988956157470586,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.987792907107425 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.536617759084416,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.533515632440261 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
-            "value": 0.3191699649355123,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3190870381935326 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.3160684256133115,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3160612163050601 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
-            "value": 7.827242801465083,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.826621062679199 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.8686333842695175,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.868209063858066 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 7.980121335504306,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.979946131922515 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.804846591813448,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.804832974995206 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
-            "value": 0.9769719274260241,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9768741173111725 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.9749291306427651,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9748532675275087 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
-            "value": 0.18173576062173552,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1817251407320061 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.1808730342101838,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1808502756640856 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
-            "value": 9.663543639052724,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.663244378697984 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 9.851781309630613,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.851698804860588 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.147712637132395,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.14660432622519 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 9.667314119614794,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.666475022174355 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
-            "value": 0.33319016230745657,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3331730309744313 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.32655210767555315,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3265325068392942 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
-            "value": 4.938159899247396,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.937361712845653 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.024572249000171,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.024581453183205 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.1536243174468925,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.153441896835651 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 4.936532234523609,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.936104151988177 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
-            "value": 1.3901584814467982,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3900525200557194 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.3903866508914553,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3902074064104541 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
-            "value": 0.0963228045911905,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09631944850638743 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.09300738208698514,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09299390088717022 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
-            "value": 15.564659816249819,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.563021115415504 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 15.767018711854448,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.765959685195885 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 16.19326229097146,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.191996237460156 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 15.620796287246232,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.620251099168447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
-            "value": 0.3279412572642565,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.32791291518093246 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.32505801669651446,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3250351277998976 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
-            "value": 7.846571148304159,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.845020059252667 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 7.90467898597265,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.904098218604086 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 8.017195237126705,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.016865593582759 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 7.827659624603403,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.827603554311793 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
-            "value": 0.1525018502647447,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15248635598993227 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.1480289684987898,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.14801317716732498 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
-            "value": 0.06394418151056357,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06394414496004723 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.05492581362419002,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.05492556212669063 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
-            "value": 0.8296862103062512,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.8296034227030231 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.059509833057671,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0593865040874824 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.2468623225920459,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2468591279858587 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 0.8123101077669872,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.8122886667874176 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
-            "value": 0.0710047906452415,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07099943273191384 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.06350893668616868,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06350865763672968 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
-            "value": 0.44350139929318527,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.44348365411604823 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.5488288184976503,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5488245356491366 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.6320379893894565,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.631953597568152 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.43379825271683786,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.43378776492427457 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
-            "value": 0.3332801598589406,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.33324455227224703 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.3310956267876876,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3310840404827148 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
-            "value": 0.08710176234022937,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0870882573103747 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.08469423975149859,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08469084022935372 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
-            "value": 2.4737619338559997,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.4735864838716304 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 2.5180177673439488,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.5177006747739044 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 2.691283914781932,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.6912787118680885 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 2.4763641519919757,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.4761028650114896 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
-            "value": 0.14959548953554458,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.14958264637285337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.13839749118768035,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.13837924187904077 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
-            "value": 1.2772834021273987,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2772546192010936 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.2973944865489788,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.29738233722095 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.3655053249873097,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.3654450250216201 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 1.2753488405418298,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.275340300938019 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
-            "value": 0.1669267382774976,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1669256893489455 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.16095957825347423,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16094591412572695 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
-            "value": 0.06686910454314314,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06686706178183315 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.05773636588132007,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.05773467754315614 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
-            "value": 0.9213299186055235,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9212151143399652 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.1728998555988939,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1727885111108702 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.3731664175558096,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.373011481037253 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 0.9059388110782237,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.905745724425349 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
-            "value": 0.0752051614773893,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07519913634349369 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.06648785196733979,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06647803653329969 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
-            "value": 0.4878617735994374,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.48784968618981256 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.6067879921758567,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6067640464740778 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.6931769399183697,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6931138408205529 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.48354259247853115,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4835217886378501 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
-            "value": 1.6947009631380774,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.6946932561017458 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.6923114741381327,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.692199293103403 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
-            "value": 0.16893024032386034,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1689285603632508 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.1693650834185039,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.1693499460901215 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
-            "value": 18.49408982092951,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.49342912346448 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 18.67504146852438,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.67492866653876 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 18.777384608029458,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.77729464627618 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 18.50497575929594,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.50413384267447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
-            "value": 0.4716357965259898,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.47161969616181476 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.46671303761194693,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4666968776669644 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
-            "value": 9.37546400880782,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.372528524936438 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 9.449542938288781,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.449210840474262 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 9.514148212729026,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.513845490648745 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 9.377062344378388,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.376553964758262 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
-            "value": 1.0184057920627074,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0183728050145104 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.016065520633653,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.0160205198569483 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
-            "value": 0.18490042943976745,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18489489768951578 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.1853557137919297,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18535094196686153 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
-            "value": 10.1211330232515,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.119308217054295 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.33439354532984,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.332406549440895 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.638080699287952,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.63811701667625 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 10.116748294750035,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.116153834226973 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
-            "value": 0.3351816998375636,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3351739694199474 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.33201151159960307,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3320103222030014 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
-            "value": 5.170068803988519,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.169707415743319 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.317471287233486,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.31700295730843 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.446630390594824,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.446107262537784 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 5.17218475744413,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.1721989371764305 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
-            "value": 1.688792898797746,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.6886509263558733 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 1.7212505711580786,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.7212028686770189 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
-            "value": 0.11403228006286333,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.11399314437725079 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.11100374012603761,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.11100304270888098 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
-            "value": 18.974557405603914,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.970360116169537 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 19.11928272019093,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 19.11874492754548 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 19.38539674681412,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 19.384365528380155 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 18.96068466899033,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.95979519938271 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
-            "value": 0.4007662817567942,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.40074773307226064 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.3901760483191151,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3901730482871354 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
-            "value": 9.549053107676682,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.549184028789451 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 9.60391547291779,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.60337303767472 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 9.739085092611685,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.738117556262122 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 9.543118020306062,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.54284180984022 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
-            "value": 0.17350427676432187,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.17324202434102062 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.17371783355197976,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.17371117917130682 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
-            "value": 0.07116407813415225,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07115568490355269 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.060083387619656016,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06008027237549385 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
-            "value": 0.9836159074372519,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9835507658729336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.2753512609067814,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.2753472024444463 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.4882149629669117,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.4880693319000844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 0.9792748917320659,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.9791766676245868 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
-            "value": 0.08071372867700585,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08070636180463306 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.07024098761310946,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07022369267862802 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
-            "value": 0.524889237658648,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5248667295166289 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 0.6614547959138679,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6614130420465785 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 0.7492232636658147,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7491657308950094 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 0.5181575702251949,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.5181277768711441 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
-            "value": 0.3865630163414278,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.38655455169531744 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.38641831549380523,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.38639625310202447 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
-            "value": 0.09829155002514547,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09829140480255158 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.09710393161214144,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09708089940688376 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
-            "value": 2.9787675554736817,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.9786699235996337 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 3.0447466997200734,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.044594282616049 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 3.198615033870987,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.1985832301979804 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 2.9731516078914013,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.9728558924282344 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
-            "value": 0.16118881908003557,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16118226854259537 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.1533583591343455,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.15332731292651844 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
-            "value": 1.529467003650045,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.5294597803363117 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 1.561623382198872,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.561616553248264 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 1.6207260070648044,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.62050844955935 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 1.525449183289005,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.5252247940705188 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
-            "value": 0.6843502691344377,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6842211160525735 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.6827026393736003,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6824539326391694 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
-            "value": 0.14185152673967885,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.14184743467175787 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.13915895163580036,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.13915210960310642 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
-            "value": 6.274461967103316,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.27442574689494 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 10.643434207314918,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.643452926826711 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.897572693853132,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.897479556595274 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 6.255388377927712,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.254998713659104 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
-            "value": 0.22979989716266877,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.22980082949163366 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.22624210380106619,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.22623668456871476 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
-            "value": 3.2166854913701726,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.216666583664728 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.35934398711518,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.357962689011461 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.479766112378821,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.479556665365536 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 3.20460820335313,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.2045944658368244 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
-            "value": 36.67295056391396,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 36.67106296992107 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 36.699354525067,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 36.694051982048016 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
-            "value": 1.1824131776882796,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.182186094229461 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 1.1816927919686955,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.1816662854806206 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
-            "value": 435.7690157657568,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 435.6910067567266 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 435.2263622221623,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 435.201357777828 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 435.8732008926986,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 435.85763839290183 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 435.3120222223576,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 435.3116377776445 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
-            "value": 7.6167471469596135,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.615893175994577 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 7.611151050957089,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.6110966028095906 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
-            "value": 218.2623203125392,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 218.25909375003 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 218.6467841163403,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 218.6269463087339 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 218.79031775689904,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 218.7817628504502 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 218.02521888894768,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 218.01184333335124 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
-            "value": 0.7725225109419568,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7724691967979982 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
-            "value": 0.76933368351738,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7693285953964761 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
-            "value": 0.22992776706134438,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.22990132791035195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
-            "value": 0.22615659133860508,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.22615696540816127 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
-            "value": 6.362461801263622,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.362447972928342 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 11.021188874299167,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 11.021107099879769 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 10.972367117612963,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.971861359576042 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
-            "value": 6.352640779218952,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.352255357142014 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
-            "value": 0.31710363567490013,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.31710224829692923 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
-            "value": 0.3135384611695428,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3135320802934213 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
-            "value": 3.297095561162469,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.2968043945178764 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
-            "value": 5.447053358689469,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.446239359024175 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
-            "value": 5.5800463272308995,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.580021889336641 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
-            "value": 3.2885409712446156,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.2885383571284086 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
-            "value": 0.008887040880285293,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.008887012583717168 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
-            "value": 0.011769350811753652,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.011767209386946175 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
-            "value": 0.015173014214656205,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.015173201016664025 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
-            "value": 0.01790456397350167,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.01790455602720365 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
-            "value": 0.008919757599529876,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.008919559920753451 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
-            "value": 0.011826341455861712,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0118260626241809 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
-            "value": 0.012711464614460304,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.012710038929083905 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
-            "value": 0.014372512048339068,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.014372444770712853 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedBase64/threads:1",
-            "value": 2.107101084505403,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.1062758509610524 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
-            "value": 22.876728704794044,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 22.87633360560137 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
-            "value": 9.581375170732716,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.58137307317174 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHComputeKey/p224/threads:1",
-            "value": 110.1811842105423,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 110.16440051345378 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHComputeKey/p256/threads:1",
-            "value": 41.99613747176231,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 41.996619864557104 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHComputeKey/p384/threads:1",
-            "value": 282.7346468023961,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 282.7098415696755 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHComputeKey/p521/threads:1",
-            "value": 691.9423661972206,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 691.884440141006 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHEphemeral/p224/threads:1",
-            "value": 220.43962022467036,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 220.43915617977996 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHEphemeral/p256/threads:1",
-            "value": 53.132148407989106,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 53.12941581219959 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHEphemeral/p384/threads:1",
-            "value": 566.4352324839539,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 566.3581719745181 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHEphemeral/p521/threads:1",
-            "value": 1368.0570000001385,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1367.9402638889906 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHKeyGen/p224/threads:1",
-            "value": 104.71249893394327,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 104.70698773992137 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHKeyGen/p256/threads:1",
-            "value": 6.9212009828155745,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 6.921041681397021 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHKeyGen/p384/threads:1",
-            "value": 265.0935202701795,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 265.07691081069487 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDHKeyGen/p521/threads:1",
-            "value": 630.6586064516566,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 630.6215645162367 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSASign/p224/threads:1",
-            "value": 118.56554111246714,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 118.54687968560413 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSASign/p256/threads:1",
-            "value": 15.523969701759711,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 15.521699463473292 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSASign/p384/threads:1",
-            "value": 305.60985825550654,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 305.56688006233463 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSASign/p521/threads:1",
-            "value": 739.6314999998748,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 739.556045112811 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSAVerify/p224/threads:1",
-            "value": 119.55302808362323,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 119.54275518957513 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSAVerify/p256/threads:1",
-            "value": 48.87422598319917,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 48.856468143201404 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSAVerify/p384/threads:1",
-            "value": 311.7150541532411,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 311.6864891676135 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedECDSAVerify/p521/threads:1",
-            "value": 759.4772261899692,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 759.3896904762371 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedEd25519/threads:1",
-            "value": 10.327780801841879,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.325305977182218 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedEd25519Sign/threads:1",
-            "value": 10.343681827793318,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.34361183306996 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedEd25519Verify/threads:1",
-            "value": 34.705598559383695,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 34.70348928320311 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHRSSDecap/threads:1",
-            "value": 17.648926983551096,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 17.648322248326128 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHRSSEncap/threads:1",
-            "value": 5.110507036380797,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.1103319086838415 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHRSSGenerate/threads:1",
-            "value": 91.65696558141482,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 91.65408186047073 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
-            "value": 1.5800518835143114,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.580008653985411 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
-            "value": 0.16214932377539765,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.16214472769486538 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
-            "value": 18.0475608607331,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.046825729583283 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
-            "value": 0.30698417957592705,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.3069549998907856 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
-            "value": 9.035948876134299,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.035896652321096 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
-            "value": 0.66363592788047,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6636247276912285 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
-            "value": 0.098711907305657,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09870603687180204 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
-            "value": 7.273202889210603,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 7.273006900735304 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
-            "value": 0.18521372715193013,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.18520988705257344 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
-            "value": 3.697761446146172,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.6975071479620665 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
-            "value": 0.7092620360655978,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.7092552933384011 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
-            "value": 0.06850730411474916,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.06850724986838173 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
-            "value": 8.131512940049374,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 8.131064961654513 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
-            "value": 0.1730694445445203,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.17302905589511924 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
-            "value": 4.118873041809037,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.1187243873133506 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
-            "value": 1.7647903270589829,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.7647848853340293 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
-            "value": 0.19191816529877054,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.19191694768054784 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
-            "value": 20.633198590925886,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 20.633145200347368 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
-            "value": 0.49860073794690624,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.49850440931062073 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
-            "value": 10.329061795381614,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 10.328465282900835 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
-            "value": 16.34325154244338,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 16.342677838916288 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
-            "value": 43.030416191300645,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 43.02468407195981 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
-            "value": 0.8446769497965996,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.8446304435677936 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
-            "value": 39.15767540401815,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 39.15755084745618 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
-            "value": 66.21449726562645,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 66.2111773437446 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
-            "value": 101.06044102567233,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 101.0296225641346 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
-            "value": 3.012850958040581,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3.0127673265823938 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
-            "value": 4.492678049222122,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4.492061029878402 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
-            "value": 5.957586993815652,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.957535440789025 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
-            "value": 153.04422321430894,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 153.0160081168413 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
-            "value": 239.68755750004794,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 239.68585875003615 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
-            "value": 274.72186871514305,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 274.7227108938795 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
-            "value": 33.212390389860175,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 33.21094801641651 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
-            "value": 53.94420897576337,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 53.94254322687359 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
-            "value": 87.68182886512474,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 87.68109606791111 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
-            "value": 33.19949482936137,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 33.199285418818604 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
-            "value": 53.980852356616744,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 53.97098551958796 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
-            "value": 87.75240544158166,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 87.74013470119078 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
-            "value": 28.57430394142848,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 28.58116102175412 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
-            "value": 19.31932919077418,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 19.313703353007554 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
-            "value": 56.04010822387007,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 56.03712335807459 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
-            "value": 27.814172007952077,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 27.811724758934666 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
-            "value": 33.11380931364603,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 33.11685163102041 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
-            "value": 13.794676161157781,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 13.791519222843505 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
-            "value": 27.565342511949886,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 27.569227311368195 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
-            "value": 20.531054945196484,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 20.53176024961059 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
-            "value": 13.82343674615873,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 13.82500848560482 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
-            "value": 39.516578418214515,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 39.51330875781944 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
-            "value": 19.077603736861523,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 19.07439694433371 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
-            "value": 23.025437105004432,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 23.028900981872415 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
-            "value": 9.407604874318801,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 9.40165524843803 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
-            "value": 18.821280024165453,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 18.824823979065712 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
-            "value": 514.4867771428251,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 514.4362142857111 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
-            "value": 1515.543369230972,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1515.4975076921592 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
-            "value": 3412.0434999998643,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3411.597396552287 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
-            "value": 13.946246750464658,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 13.944960934142731 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
-            "value": 29.96797198785573,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 29.966927607155014 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
-            "value": 52.77771509130039,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 52.77739849623133 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
-            "value": 59.926996365835386,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 59.91889642641238 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
-            "value": 111.83021903150859,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 111.81778490983636 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
-            "value": 183.11652242983064,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 183.08776915894032 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSASign/2048/threads:1",
-            "value": 447.5628855139679,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 447.51403037380607 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSASign/3072/threads:1",
-            "value": 1407.106785714112,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1406.9706499997533 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSASign/4096/threads:1",
-            "value": 3280.985016129622,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3280.960677419937 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAVerify/2048/threads:1",
-            "value": 12.423227399166006,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12.422666645594896 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAVerify/3072/threads:1",
-            "value": 26.95348348017968,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 26.952516519833324 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRSAVerify/4096/threads:1",
-            "value": 47.23168765073431,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 47.23141799324292 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
-            "value": 0.6163842526666011,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.6163584850094341 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRandom/InputSize:16/threads:1",
-            "value": 0.4354749767579545,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.4354718904761438 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
-            "value": 2.3810060653108747,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.3808638094997843 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRandom/InputSize:256/threads:1",
-            "value": 0.46259441983416066,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.46254217395452174 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
-            "value": 1.4011326169473872,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1.400926213716854 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSLHDSA/threads:1",
-            "value": 28045.243749996727,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 28044.327124995052 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSLHDSASign/threads:1",
-            "value": 213546.05650003575,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 213538.42350001173 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSLHDSAVerify/threads:1",
-            "value": 208.61344331984736,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 208.6112773278948 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSPAKE2/threads:1",
-            "value": 78.84832638333498,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 78.83296832399391 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
-            "value": 21961.2935000022,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 21960.460375000323 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
-            "value": 21998.933500000818,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 21998.73462500079 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSelfTest",
-            "value": 3347.820344826809,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3347.460448276301 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSipHash/1350/threads:1",
-            "value": 0.4587686402840362,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.45876714109695244 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSipHash/16/threads:1",
-            "value": 0.014780052219437043,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.014778577413259336 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSipHash/16384/threads:1",
-            "value": 5.6748519193966755,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5.671365014350861 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSipHash/256/threads:1",
-            "value": 0.09336098187871136,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09335064903362525 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedSipHash/8192/threads:1",
-            "value": 2.728852936946461,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.728469408584483 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
-            "value": 560.4068189655734,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 560.3768160919269 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
-            "value": 560.812446428556,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 560.7947708333039 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
-            "value": 284.33495362302585,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 284.32945797101513 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "BM_SpeedX509/threads:1",
-            "value": 2.393954485375023,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 2.3938336188969687 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
-            "value": 348.5868076923631,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 348.58547069600655 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
-            "value": 3476.688642856678,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3476.5453392862714 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
-            "value": 0.09084201257353876,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09084133042137424 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
-            "value": 0.091735977186391,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.09172508546169725 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
-            "value": 3905.1551199997907,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3904.9600199997776 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
-            "value": 13997.75942858079,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 13997.161428570898 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
-            "value": 3386.059448274637,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3385.963241379435 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
-            "value": 12099.698437495475,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12098.762125006602 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
-            "value": 956.8574531252003,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 956.6315260413443 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
-            "value": 956.7004460783592,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 956.6324264705306 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
-            "value": 347.44566134762977,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 347.4251117021016 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
-            "value": 3476.3592399997374,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3475.973019999828 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
-            "value": 0.08218505351953648,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08217937260135635 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
-            "value": 0.0820689366597551,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.08206550015174038 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
-            "value": 3900.6591521747987,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3900.4940434766845 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
-            "value": 13975.241642851546,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 13975.186571429838 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
-            "value": 3377.8018275874165,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3377.3864827592456 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
-            "value": 12101.667437502072,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 12101.077249997872 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
-            "value": 958.3796960784491,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 958.3514460780796 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
-            "value": 960.1958281250472,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 960.1726562500173 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
-            "value": 347.87184397159825,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 347.8099326241107 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
-            "value": 3488.4666428567352,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 3488.357946428116 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
-            "value": 0.07892777999524798,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.07891602067959771 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
-            "value": 0.07710374508880653,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 0.0770977608832449 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
-            "value": 1338.307134919851,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1338.2477460319412 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
-            "value": 4975.222450001127,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 4974.988349999876 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
-            "value": 1308.7993600000423,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 1308.6424533328984 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
-            "value": 5075.106210525567,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 5074.870184210723 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
-            "value": 321.44166943526733,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 321.4229501661558 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          },
-          {
-            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
-            "value": 321.01718852461136,
-            "unit": "us/iter",
-            "extra": "iterations: 10\ncpu: 320.9966868851433 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v7\ncpu_model: Intel(R) Xeon(R) 6973P-C\ncpu_cores: 4\ncpu_bogomips: 5199.99"
-          }
-        ]
-      },
       {
         "commit": {
           "author": {
@@ -1017868,6 +1013890,3984 @@ window.BENCHMARK_DATA = {
             "value": 529.8482837837263,
             "unit": "us/iter",
             "extra": "iterations: 10\ncpu: 529.8298324323941 us\nthreads: 1\nazure_vmsize: Standard_D4ds_v5\ncpu_model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz\ncpu_cores: 4\ncpu_bogomips: 5586.87"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "divVerent@gmail.com",
+            "name": "Rudolf Polzer",
+            "username": "divVerent"
+          },
+          "committer": {
+            "email": "divVerent@gmail.com",
+            "name": "Rudolf Polzer",
+            "username": "divVerent"
+          },
+          "distinct": true,
+          "id": "274bd6fca56cf1cbfafdbe74f9f304f18bec1a55",
+          "message": "Revert \"Reapply \"TEMP PATCH: force 64-bytes alignment so we can benchmark it.\"\"\n\nThis reverts commit 360aa1cd8e74f876e98774d223814d1b43aec8c9.",
+          "timestamp": "2026-11-26T22:27:52-08:00",
+          "tree_id": "c306a4398742175630e9586552664feab4da43d1",
+          "url": "https://github.com/divVerent/boringssl/commit/274bd6fca56cf1cbfafdbe74f9f304f18bec1a55"
+        },
+        "date": 1795761813035,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.36611999661593,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3658830610068944 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.3622251867134287,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.361993293042148 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.573817920646582,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5737972463495604 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.5710935160353804,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5710794032616118 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384",
+            "value": 12.777148411043036,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.776100872624202 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.042233993092651,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.042410600430216 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.492996245728794,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.493237952221069 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.76539042622763,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.763974622951306 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256",
+            "value": 1.614817666018967,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6147625892183288 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.613441945434983,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6134620612298232 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192",
+            "value": 7.095231383746703,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.095325802485965 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 7.239785114224541,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.2389302137078655 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 7.3980462030098035,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.397751015037359 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 7.1225246162751175,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.1217464523601155 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.5302401711830997,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.529902369228556 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.5459939164269967,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.545679310699642 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.6790750372499434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6789892754428499 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.6782493071921532,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6782388131387054 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384",
+            "value": 13.536405759165538,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.535330945161963 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.817419023493875,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.817166174194943 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 14.197263858727805,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.197015125196197 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 13.541577776247564,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.54068696610797 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256",
+            "value": 1.7392857952129877,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.739195041425586 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.7366344698645204,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.7365535451632588 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192",
+            "value": 7.566407909911051,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.566468329619473 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 7.655973743671024,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.655490299961443 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 7.824919107114598,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.824028449783979 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 7.5691216050348755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.568625287709956 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 2.203639251454279,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2036618628265523 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.213471920760411,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2133978475217146 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.15038462394871333,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15038184446890762 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.15558191557688225,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15557735892529378 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 24.764351669195953,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.76340806778875 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.64562641225762,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.643272156661222 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.065984895029615,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.06552598566283 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.777920879678582,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.77089560161701 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.5205708014629201,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5205140530698956 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5254435540909783,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5254109307185245 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 12.44863559647634,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.447843050767503 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.401025692949208,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.400760726490951 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.593243359421397,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.591271076607148 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.447470580776303,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.446213099164469 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 2.2082563437466916,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.208079034622968 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.2133081509591506,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2132353592157727 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.15084741197256282,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15084313450844333 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.15648905024373386,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15648027727014135 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 24.772299444314672,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.770746526890484 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.641625628773873,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.64220020120375 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.16640178799098,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.166095657729667 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.789020318012618,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.788546314996633 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.5209001083444613,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5208382433386596 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5263182826840775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.526277050334232 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 12.441528805796112,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.438185043877102 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.401784730128284,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.40197307546963 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.592111375015737,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.591004942868429 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.451873887615939,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.451603292650232 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350",
+            "value": 2.207636263488692,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2075055980220757 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.213917850608051,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.213687405416515 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16",
+            "value": 0.15401443782111754,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15399090016701353 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.15840449507749849,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1584017770033723 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384",
+            "value": 24.762697653879577,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.76211869324053 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.648596308386104,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.647710698146575 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.055708375898703,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.05605937180974 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.77069040403215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.76958926767205 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256",
+            "value": 0.5231395652429269,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5231011053507575 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5284792753927954,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5284841818680664 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192",
+            "value": 12.44804168781703,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.446175888326938 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.401109159826447,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.40111358180635 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.588257639961686,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.587425269648623 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.452636433022416,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.452870309121554 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.269419912888658,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2691753476708447 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.2801792383978126,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.279738117889461 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.24235881830812755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24234785538035264 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.24778706077782017,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24776185567006329 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.474924261712015,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.474289269346468 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.81488439910429,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.814515692422322 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.26687800919621,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.266581552611209 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.490911551201956,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.489222045336808 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.43953319052029494,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.43953678715601574 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.4456096814504126,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.44560274470599853 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.3653678149655,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.36476485939719 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.528483906438697,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.5281573037447505 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.721713718240757,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.721078795973601 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.370750975289353,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.370831859557629 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350",
+            "value": 1.9569590429684376,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.956910590989891 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.969875870231684,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.9698987119551945 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16",
+            "value": 0.1640711428967401,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.16405610103577317 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.17615304937680334,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17614076573141746 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384",
+            "value": 21.873432529048944,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.872154267202657 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 21.794141299507466,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.79457320872465 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 22.25254393353,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 22.249315501935246 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 21.56279784662534,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.562244012308522 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256",
+            "value": 0.4845130463725574,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.48449088824790143 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.49295821412725116,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4929620497037643 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192",
+            "value": 10.846088993360912,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.84622267699184 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 10.970522852019887,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.970209588887311 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 11.171178996105741,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.171271781392168 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 10.859708697577728,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.859163439187558 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350",
+            "value": 0.29366631068912186,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.29362927210328393 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.29915451367780677,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.29914878407745266 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16",
+            "value": 0.09841033567487233,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09840472624163067 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10317155721224884,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10315652433406201 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384",
+            "value": 2.07554214804751,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.0755731039788077 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.2320248199555652,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2319724651840156 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.8556684118925775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.8555720522125396 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.072901246112246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.072944807514525 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256",
+            "value": 0.11921574204318464,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11920886809802514 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.12469388080841193,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12468956037667848 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192",
+            "value": 1.0808426637874147,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.080776521720142 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.1637458056178462,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1636996051648596 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.432240926139518,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4321949183460831 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.076060955708191,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0759852963724672 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.514770387884383,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.514760322896485 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.5221011034869949,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.522088789133602 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16",
+            "value": 0.17867633109158287,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.17865896745182713 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.18408781346467723,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18407351366930885 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384",
+            "value": 3.881321972559738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.881078285942091 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 4.215532390667767,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.215208548553333 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 4.488707134032061,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.488771312862881 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 3.8857911753071823,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.8856791254452028 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256",
+            "value": 0.24881678734217677,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2488078938562157 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2538121744707822,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2537960680462689 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192",
+            "value": 2.0250969515969777,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.024613707517837 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.187635194088018,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1871694600244838 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.3089062286830146,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3086473666874174 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 2.0302970241894185,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.0302458600565436 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350",
+            "value": 0.3089977228572919,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.30898485794662556 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.31909249516320604,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.31903490510776666 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16",
+            "value": 0.10101187957058588,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10101279472313902 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10627947479182129,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10628117391818856 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384",
+            "value": 2.169986028618036,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1699358126351562 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.3700240243900272,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3699681585365986 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.0322295910334023,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.0317915341748995 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.183578842048844,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.183270255247331 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256",
+            "value": 0.123451185609039,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12344878385055232 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.12902362040358864,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1290210482299014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192",
+            "value": 1.1351663396810623,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1351412636129932 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.2329631330639557,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2329258719293774 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.5113612517655126,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5113808383965128 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.1532240748215539,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1532369995458474 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.4274806978931283,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4275177317241368 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.425317397848675,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4250045524088115 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.576128904595193,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5761181726313057 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.5747471256625563,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5747030017278255 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384",
+            "value": 13.45960365435262,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.458174062370404 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.761993339874673,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.76187100392661 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 14.182159697187567,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.181653568853164 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 13.492138108300471,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.491741192594597 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256",
+            "value": 1.6303329849879984,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6303073401341504 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 1.634784964715715,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6348171440431858 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192",
+            "value": 7.474117785361171,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.473554417897877 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 7.577651356351663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.575819320283943 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 7.777999799152743,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.77783329316315 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 7.466902935136882,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.466487187285862 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.30943820697412,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.309457050708387 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.3194741410677595,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3194483427911747 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.24864655133046062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24864113003495922 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2526099762893478,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2526141795354279 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.834953241657828,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.833491814017354 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.235625876962477,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.23474622234074 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.742113083310986,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.741916905248482 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.842372187332847,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.841844387759627 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.44794093178816724,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.44789028154829874 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.45287977806607865,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.45284889286886276 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.547280153434339,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.5470347231482675 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.735205528432784,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.734730076327797 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.952564119862622,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.952428353336478 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.542321433334815,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.541938442544556 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350",
+            "value": 2.443712494276621,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4435732309103777 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.4602133088053746,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.460173230145291 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16",
+            "value": 0.19500088352918826,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1949898617758837 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.20477649446489238,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2047381033210182 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384",
+            "value": 27.021973423298455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.022538419164697 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 27.330715760119766,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.330304463041863 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 27.856732558144053,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.85515456607944 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 27.033019182997016,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.029128622686137 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256",
+            "value": 0.5942849755677192,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5942297473220226 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.6045999191388003,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6045657506513357 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192",
+            "value": 13.591638667785782,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.591316925005652 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.752410956988907,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.751708350848748 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.983197280362043,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.981352911861254 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 13.600464553796797,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.600219766471062 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350",
+            "value": 0.3257382387621372,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3257253487166514 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.33129692386757154,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.33124727060031534 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16",
+            "value": 0.10353183810599098,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10352194664535734 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.10908559313885288,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10908132894682845 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384",
+            "value": 2.295578122077319,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2955290575306107 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.5302218150856524,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.53016412922893 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.185238790683001,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.1852934412700176 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.303472239184522,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.303427615200284 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256",
+            "value": 0.12756840310061815,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12757028500803042 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.13278781878560444,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.13277642541892026 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192",
+            "value": 1.1891548812416377,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1890563456737147 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.317178007556317,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3171972095179052 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.6129601276831953,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.6129807244139904 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.201950107707691,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2019244063683117 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.5776275272160598,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5776334370141004 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.5833676566443172,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5833510959960349 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16",
+            "value": 0.19647698109264297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.19647211120473906 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.20206021788614176,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2020555706351387 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384",
+            "value": 4.410286978509018,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.4103584070796185 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 4.8040622268072095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.803937748636849 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.086315728243216,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.086409518638195 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 4.414047624409169,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.413904751182676 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256",
+            "value": 0.2794611667654138,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2794456223472228 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2849706728004329,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2849750654910962 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192",
+            "value": 2.2992175691512626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2992648148146846 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.476327587947079,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4762734568214135 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.613355194095275,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.6129715317182267 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 2.298342528924273,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2982935040252954 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350",
+            "value": 0.766640805343715,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7666511593142535 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.7800394176247131,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.7799847595742557 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16",
+            "value": 0.18113390837649293,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18113047888004166 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.18921664969004096,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18920144130319533 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384",
+            "value": 6.955782522059486,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.9551297324233685 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.96648557457442,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.966349633249829 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.312292262353894,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.31182850514112 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.959817452282017,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.959632771833459 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256",
+            "value": 0.27957699477788717,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2795608623895069 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2899173752622485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.28990851818759733 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192",
+            "value": 3.565916696993457,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.565795363563639 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.029013832410792,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.029112754161709 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.197783361778788,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.197409633984516 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.582291716884371,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.582123498046326 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 47.177993249721446,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 47.17849903569278 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 47.24874324324446,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 47.24549927606292 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.8875187106192979,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8873446288619387 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.8880500864891403,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.8880769075537738 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 546.8012262571895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 546.7815363128453 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 547.9152681562281,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 547.8735446927705 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 548.0592122905856,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 548.0504916203265 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 547.0405865923324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 547.0148463684557 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256",
+            "value": 10.814128158244898,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.811635915339547 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 10.794942473473702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.79506045535379 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 274.6824299718343,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 274.67255742301666 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 275.00528309858544,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 274.9953605632687 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 274.58077591027256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 274.5845658262341 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 274.2395502793554,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 274.23442318430153 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350",
+            "value": 0.8647275620904576,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8647402542861465 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.8788928446931257,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8789100469274871 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16",
+            "value": 0.27935260028944675,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.279306996353585 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.28960819513174596,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2895984677231837 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384",
+            "value": 7.029877725633739,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.029612382669964 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.078665190647998,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.07672779827677 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.409085311949793,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.409288204098722 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.0454732888123655,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.04538938085216 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256",
+            "value": 0.3766057250737133,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3765074922375054 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.38659805668350633,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3866031510247535 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192",
+            "value": 3.656352255780461,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.6562549589851323 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.127623939410959,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.127738325686032 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.299072621572222,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.298721462067272 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/open_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.6672198879540048,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.666841090283124 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350",
+            "value": 2.155066022614756,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.154991502909045 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.14897388484824,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.148930965734432 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16",
+            "value": 0.22482929299225485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2248337016867616 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.21898317818709537,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.21897782670484198 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384",
+            "value": 23.575849879804604,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.57619543269518 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 23.762940513693295,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.763306881510836 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 23.92676556016194,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.92630668781304 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 23.542126440913027,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 23.541740393850635 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256",
+            "value": 0.5859862485592793,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.585987120528895 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5794075544838371,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5793005897507324 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192",
+            "value": 11.893047333332465,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.891717515151289 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.978958068457215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.978029095352092 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.057905539859272,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.057131003569221 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 11.885188121210156,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.884833090908327 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350",
+            "value": 2.2295874143618297,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2293672002953526 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.223143198279455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2231228044368927 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16",
+            "value": 0.23304435395054285,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23304779621598715 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.22711946331689434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2270990682971182 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384",
+            "value": 24.20547579050649,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.205985301388814 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.41481727656359,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.41344361462814 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 24.567232931734473,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.565249372486335 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.206578973341813,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.204564165844484 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256",
+            "value": 0.6057351403980439,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6056857968466269 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.6006222333881518,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6006283395427515 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192",
+            "value": 12.2160089797918,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.213500311796142 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.30694088113475,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.30674965482657 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.379694055280016,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.37911384577236 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_cbc_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.213111449907792,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.212366583697293 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350",
+            "value": 2.2036105746568255,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.203631784598904 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.2033381628382562,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.202953036064296 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16",
+            "value": 0.1496934574743469,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14969444106100388 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.14514468069659675,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1451465097534734 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384",
+            "value": 24.7512630582891,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.749995584153357 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.9120197050539,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.91233867276909 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.327464968986455,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.32658906411605 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.773095610492135,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.76981962664422 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256",
+            "value": 0.5203941694906018,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5202820086535449 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.514446983061884,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5144228097532728 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192",
+            "value": 12.44270170417882,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.44289952944256 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.503390341923895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.502344092880099 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.703391492939604,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.702765505632147 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.440425681680574,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.43965967025989 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350",
+            "value": 2.2049279201367424,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2049678172803464 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.203515167564979,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2033518739716578 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16",
+            "value": 0.14946783849840095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14944749461346304 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.145111044942379,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1451027684203302 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384",
+            "value": 24.759729914101335,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.75620704901954 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.91616040132434,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.912218186438135 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.345402300339934,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.34466502973019 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.74387547312738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.7437195306592 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256",
+            "value": 0.5198572346807356,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5198501007793441 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5143291249764437,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.514260362259604 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192",
+            "value": 12.445487732010704,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.445687007375737 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.510940137700993,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.510672064257232 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.697271295224787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.696387786853435 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_bluetooth8/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.4369371120982,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.437133882205718 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350",
+            "value": 2.2028003276250994,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2028224311642233 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.204492089887343,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2044384719116055 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16",
+            "value": 0.14744098945474574,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14743190928289424 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.14324838911432963,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14323787716107145 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384",
+            "value": 24.756717171717266,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.750264015148336 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.89145176440612,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.88849378015621 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.336320598848438,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.336809241090698 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.750808082090394,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.749528882696122 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256",
+            "value": 0.5194940782068834,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5194833202386513 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5135422721855998,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5134840770325056 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192",
+            "value": 12.441037533346261,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.440769084211937 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.531616492477816,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.528866046393997 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.704979099046557,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.702469167861862 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ccm_matter/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.443346851991222,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.443464140645656 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.2645397043637145,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2644265233668335 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.2656881269393445,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2655757885213443 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2376445458270829,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23764160093496497 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.23471935479227052,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23472290650433902 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.474152569317663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.472873378274288 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.784138437338207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.784359268483687 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.21135934554512,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.210293024508562 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.46612144128139,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.464601868326548 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256",
+            "value": 0.4303818857937601,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.43036903891690226 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.42696750253959675,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4269728616965763 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.363926902106754,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.363773792524038 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.5038639003862855,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.5025880291095834 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.6952542841552285,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.694572847681305 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.353099296553942,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.352615221779104 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350",
+            "value": 2.2086499842406626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.208679161601047 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.2093136002530245,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2091854744065387 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16",
+            "value": 0.15878968725485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15877691074522865 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.1523757321286424,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.15237777758810764 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384",
+            "value": 24.723553985884312,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.72311932391313 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 24.62404957329647,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.62214646084526 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 25.506846497966883,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25.506172162574536 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 24.699956078532722,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.698673294737493 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256",
+            "value": 0.5234300729333201,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5233667189525961 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.5197124022635264,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5196768545428492 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192",
+            "value": 12.42174854429708,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.42147746835609 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.39994657741561,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.398972152062317 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.800931862941173,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.79991952212151 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 12.414072586783588,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.413711489746564 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350",
+            "value": 0.29704429740115607,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.29702073192575595 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.3067896403542094,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3067919614236313 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16",
+            "value": 0.09055960873118936,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09056065880705091 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.08642965041961251,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08643107715993784 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384",
+            "value": 2.1185038836593497,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.118387679935824 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.4304910320580837,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.43039317742707 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.0047203038233317,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.0045794497473812 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.1920882510789745,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.1920271472974138 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256",
+            "value": 0.11589753131174181,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11589922033988528 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.1097715903376926,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10976515455573259 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192",
+            "value": 1.1018469533772648,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.101653463505667 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.2495800228745908,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.249319506925867 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.4898175483657137,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4897442288114688 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.0957293926873195,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.0956344178477195 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350",
+            "value": 0.569012619368766,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5689996282441359 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.5646152900956901,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5645725829195068 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16",
+            "value": 0.13140803708136234,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1313785951172847 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.12844833301312492,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12844458992492458 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384",
+            "value": 4.5739254218320875,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.5733386314909215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 4.810956907976179,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.810593104295348 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.170237857934769,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.169957601646905 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 4.5742002793962016,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.573905913853762 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256",
+            "value": 0.23640754292037663,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23640232506811518 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.23118995982989382,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23117453498097787 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192",
+            "value": 2.36216017587929,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.362122052569859 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.4686077400318576,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.468628849209118 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 2.6400136528864127,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.639951124275732 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_128_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 2.3571458423670153,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.356910680734122 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350",
+            "value": 0.3109040308044535,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3108585559557614 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.30921283803995386,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.30921745759227154 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16",
+            "value": 0.09554004784036749,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0955234388673891 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09113069530038917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09112804782044326 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384",
+            "value": 2.226230219278132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2260703897035365 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.5625033491821867,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.562451495967168 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.135870172529338,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.135807459259313 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.229114345445469,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2290353693729603 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256",
+            "value": 0.12066312004810956,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12064903058282665 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.11537790668890527,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11537645864865902 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192",
+            "value": 1.1608197639350086,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1608075349188012 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.3153097674979317,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3151832681897888 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.559481278545774,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5591854066225737 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_192_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.1576442334868822,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.1574354565161293 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350",
+            "value": 2.5830132885546915,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.583056315026867 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.57760229123923,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.5775012218190505 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16",
+            "value": 0.24018580119131192,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2401899060728674 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.23355576632260755,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23352202693533802 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384",
+            "value": 28.658828609008246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28.65841729982165 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 28.872061762987308,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28.870569575481664 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 29.06238236164258,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 29.061629624145507 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 28.661547194626184,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28.660898451189134 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256",
+            "value": 0.6757327467919392,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6757387110344867 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.6692374626472132,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.669213051989322 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192",
+            "value": 14.453136892488526,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.45274455081061 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 14.539599481095589,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.53912357302145 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 14.600993516175794,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.601175957670439 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 14.44551237477961,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.445283146726847 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350",
+            "value": 1.3018733758879606,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3018833104565355 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 1.3047024316559606,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3045839433544986 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16",
+            "value": 0.2442169197964253,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24420411395547906 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.2388705484603562,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23886766291583447 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384",
+            "value": 12.826725212277307,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.825140365774748 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 13.205279585800506,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.205478214100733 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 13.689067861627521,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.688790905287851 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 12.818136280411625,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.81829531781138 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256",
+            "value": 0.44006415287918976,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.44004724495884373 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.43432178635129254,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4343128843201046 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192",
+            "value": 6.542867185941158,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.538477797747379 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.710300718686905,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.7096065023959115 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.934645821533351,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.9333183781890595 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_ctr_hmac_sha256/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 6.524799127943775,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.524933297828049 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350",
+            "value": 2.6870102535312594,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.686955933084604 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 2.72220843189084,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.722242284680088 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16",
+            "value": 0.18733971475623112,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1873349876787927 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.18333808368372737,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.18334096062577557 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384",
+            "value": 30.125659460276733,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 30.124957988354375 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 30.30552860656719,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 30.30500861273677 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 31.255812584582536,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 31.255966001354828 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 30.103404199874443,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 30.102162936850743 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256",
+            "value": 0.6320620752196444,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6320474334066554 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.6284665468823735,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6283123198431191 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192",
+            "value": 15.128491908142346,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.128136020345783 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 15.173594427245996,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.173209055730357 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 15.53580004703115,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.533978052988655 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_eax/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 15.121260055482974,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.120570041613473 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350",
+            "value": 0.329329010211474,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3293056904555826 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.33202991930058995,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3320238207402413 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16",
+            "value": 0.10038644626109117,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.10038398852510903 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.09651763533569174,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.09651361705845095 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384",
+            "value": 2.3822629005190334,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3822806972727104 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.742248572468387,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.742173459104377 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.321567406229395,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.3216240234047874 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 2.376785143142303,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.3765770924064338 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256",
+            "value": 0.1253683733261018,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12536539602706215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.1197611716314797,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11975803216499044 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192",
+            "value": 1.215812461328626,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2157300952853904 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 1.405655323812172,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.4056231789597757 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 1.6486991374548698,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.648636368955027 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 1.2293638769356057,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.2293692498891757 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350",
+            "value": 0.6460962685237116,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.646044259799657 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.641533843442931,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6414662152902713 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16",
+            "value": 0.14921485928191405,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14921783494252241 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.14616421433694513,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.14615988376418615 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384",
+            "value": 5.251558988913915,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.251110453596196 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 5.534807260519843,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.534649921021762 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 5.965104962764515,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.964914387742454 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 5.216277834007588,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.216163514809921 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256",
+            "value": 0.2565628017810164,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2565668546880578 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.25308900749939844,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.25306622865331313 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192",
+            "value": 2.6934472575579917,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.69325202379004 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 2.840362002028262,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.840361886136199 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 3.034094946660411,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.033788061909478 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_aes_256_gcm_siv/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 2.695511285816111,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.6955434038238963 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350",
+            "value": 0.8087695086643987,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8087757384963247 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.8072283687422693,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8070549736284187 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16",
+            "value": 0.17895663392345895,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1789428708238061 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.17620017391429213,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1761953176091679 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384",
+            "value": 6.9791552817130285,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.978923142673077 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 11.95233134292034,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 11.951458384107836 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.264785705363787,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.265022179178366 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 6.973606817696781,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.973197146751204 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256",
+            "value": 0.27770569253987276,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.27769655389578896 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.2747152596150401,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2747210802958181 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192",
+            "value": 3.5930189082528914,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.592944407907018 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.02636129389432,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.0259107988441905 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.175866765429367,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.175539935701769 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_chacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.589031087044927,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.5888724246061705 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350",
+            "value": 45.92439344262812,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 45.922556440264 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 46.06272007538562,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 46.06001861451304 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16",
+            "value": 1.5559452027581266,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.555869899257014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 1.545298065904006,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.5451794376677221 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384",
+            "value": 545.0138854750456,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 544.9926396647602 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 545.7562651933952,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 545.7601077349435 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 545.6679050280779,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 545.6743016760367 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 545.7926638887518,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 545.7252805555177 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256",
+            "value": 9.558374574625514,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.557692950903107 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 9.542994892001621,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.54217741778565 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192",
+            "value": 273.1340900276868,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 273.12190720215847 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 273.1774427373774,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 273.1700614524807 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 272.7696559889506,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 272.75865181059345 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_des_ede3_cbc_sha1/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 272.7901153845708,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 272.78397664834085 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350",
+            "value": 0.9261667970296458,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9260360131556918 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:1350/IOVecFirst:1350/IOVecOthers:0",
+            "value": 0.9098585051134508,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9098227772256171 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16",
+            "value": 0.29423351352003496,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2942392133068322 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16/IOVecFirst:16/IOVecOthers:0",
+            "value": 0.28899989235101853,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.28900332679575846 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384",
+            "value": 7.0867174135868085,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.086529181313064 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 12.088780632897718,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.088897399731215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 12.378488216759534,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.377667170766738 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:16384/IOVecFirst:16384/IOVecOthers:0",
+            "value": 7.056168233352103,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7.055717063721554 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256",
+            "value": 0.3932098897225427,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.39314742452250456 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:256/IOVecFirst:256/IOVecOthers:0",
+            "value": 0.3891416153243246,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.3891362278605256 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192",
+            "value": 3.708838567743875,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.7088993324231594 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1456/IOVecOthers:1456",
+            "value": 6.142645405435968,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.141843006091754 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:1457/IOVecOthers:1456",
+            "value": 6.306664244841063,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.306394972031608 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAEAD/seal_xchacha20_poly1305/InputSize:8192/IOVecFirst:8192/IOVecOthers:0",
+            "value": 3.7096144491309517,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.709564568844846 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<128>/threads:1",
+            "value": 0.015884016681329154,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.01588271814302871 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecrypt<256>/threads:1",
+            "value": 0.02087008931145784,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.02086728911462756 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<128>/threads:1",
+            "value": 0.020287629349136534,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.020287910614691824 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockDecryptSetup<256>/threads:1",
+            "value": 0.025528498134686207,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.02552788059245814 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<128>/threads:1",
+            "value": 0.015869794953087518,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.015868967866589926 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncrypt<256>/threads:1",
+            "value": 0.020890915324035947,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.02088990250867409 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<128>/threads:1",
+            "value": 0.017843429238863437,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.017843737871536175 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedAESBlockEncryptSetup<256>/threads:1",
+            "value": 0.02096541034428969,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.020965019459343866 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedBase64/threads:1",
+            "value": 2.4962202844529817,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.4960900977951015 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedCurve25519ArbitraryPointMultiply/threads:1",
+            "value": 35.57220898224363,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 35.5716905106923 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedCurve25519BasePointMultiply/threads:1",
+            "value": 14.876728092787596,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 14.87582936628181 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p224/threads:1",
+            "value": 197.86361717172332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 197.8525909090891 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p256/threads:1",
+            "value": 50.95969942648289,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 50.95406230448118 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p384/threads:1",
+            "value": 511.72194764395454,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 511.70574607333765 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHComputeKey/p521/threads:1",
+            "value": 1211.986969135425,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1211.9155308642034 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p224/threads:1",
+            "value": 391.79938400002357,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 391.788226000017 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p256/threads:1",
+            "value": 64.17906721309441,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 64.18026688524911 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p384/threads:1",
+            "value": 1020.324958333004,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1020.3153802081182 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHEphemeral/p521/threads:1",
+            "value": 2432.7585750000935,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2432.4956125006734 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p224/threads:1",
+            "value": 181.95486759264278,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 181.95707314813743 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p256/threads:1",
+            "value": 8.594354243703394,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.594116966013107 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p384/threads:1",
+            "value": 475.43410679603005,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 475.4108155340019 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDHKeyGen/p521/threads:1",
+            "value": 1112.7113636365234,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1112.479721591019 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p224/threads:1",
+            "value": 209.58459829063696,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 209.5705940169912 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p256/threads:1",
+            "value": 19.40860940675485,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.408915887852608 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p384/threads:1",
+            "value": 547.3455444445108,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 547.320144444304 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSASign/p521/threads:1",
+            "value": 1302.2573466666167,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1302.2674000001189 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p224/threads:1",
+            "value": 214.79168231264325,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 214.76630349230155 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p256/threads:1",
+            "value": 59.72558348491244,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 59.69462522846303 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p384/threads:1",
+            "value": 561.441864162127,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 561.3944884390521 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedECDSAVerify/p521/threads:1",
+            "value": 1346.9401917775517,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1346.7703219200225 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedEd25519/threads:1",
+            "value": 15.84904444804159,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.849262243412037 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedEd25519Sign/threads:1",
+            "value": 16.021561112926157,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.021802219317173 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedEd25519Verify/threads:1",
+            "value": 57.5534985405544,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 57.55073584354674 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHRSSDecap/threads:1",
+            "value": 27.6643456564514,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 27.661505903846653 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHRSSEncap/threads:1",
+            "value": 8.061584553985089,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.060628044766101 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHRSSGenerate/threads:1",
+            "value": 137.23040384611764,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 137.22830917159834 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:1350/threads:1",
+            "value": 2.272725937933257,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.2725634784624007 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16/threads:1",
+            "value": 0.2374093161126624,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.23740441963713388 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:16384/threads:1",
+            "value": 26.08415209882322,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 26.0817563762014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:256/threads:1",
+            "value": 0.44311973735289395,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.4431142298003815 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/blake2b256/InputSize:8192/threads:1",
+            "value": 13.05838707962547,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 13.058193074568866 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:1350/threads:1",
+            "value": 0.8870368387737267,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8869131114929825 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16/threads:1",
+            "value": 0.0843789047831231,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.08437606091775739 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:16384/threads:1",
+            "value": 9.73484733977966,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 9.734276904475669 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:256/threads:1",
+            "value": 0.24673352375343782,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.24673239934403607 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha1/InputSize:8192/threads:1",
+            "value": 4.914058499172226,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.913849290689762 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:1350/threads:1",
+            "value": 0.9441811748016476,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.9440278648823777 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16/threads:1",
+            "value": 0.0875713843618202,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.0875589882830676 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:16384/threads:1",
+            "value": 10.377158852784921,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 10.376487723568964 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:256/threads:1",
+            "value": 0.2607897542284836,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2607710793737932 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha256/InputSize:8192/threads:1",
+            "value": 5.236654080324158,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 5.23561359752215 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:1350/threads:1",
+            "value": 2.656733692269805,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2.656575823165407 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16/threads:1",
+            "value": 0.2807279692119334,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.2807008111157049 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:16384/threads:1",
+            "value": 30.589009975058694,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 30.586862375316986 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:256/threads:1",
+            "value": 0.7584386956927102,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.758449074578318 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHash/sha512/InputSize:8192/threads:1",
+            "value": 15.452809587526502,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 15.453069033371666 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P256_XMD:SHA-256_SSWU_RO_/threads:1",
+            "value": 28.658116081874702,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28.63814415204585 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-curve P384_XMD:SHA-384_SSWU_RO_/threads:1",
+            "value": 77.08416144199421,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 77.07870885578303 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedHashToCurve/hash-to-scalar P384_XMD:SHA-512/threads:1",
+            "value": 1.3453851825987062,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.3453322447248066 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_44/threads:1",
+            "value": 46.81157688540419,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 46.81042066601843 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_65/threads:1",
+            "value": 76.86502190926578,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 76.85281377151347 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAKeyGen/ml_dsa_87/threads:1",
+            "value": 114.84940562717945,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 114.85163130132386 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_44/threads:1",
+            "value": 4.470392496457306,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4.470212128136337 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_65/threads:1",
+            "value": 6.664896930125403,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.6648742991925545 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAParsePubKey/ml_dsa_87/threads:1",
+            "value": 8.813690324601794,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8.813153694405433 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_44/threads:1",
+            "value": 166.40623343148332,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 166.40334683357844 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_65/threads:1",
+            "value": 256.0422251908875,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 256.03419847332157 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSASign/ml_dsa_87/threads:1",
+            "value": 298.32150542004734,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 298.3242967479413 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_44/threads:1",
+            "value": 39.20790303878517,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 39.208455817674604 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_65/threads:1",
+            "value": 61.195849003719744,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.19349097136063 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerify/ml_dsa_87/threads:1",
+            "value": 96.48330098523141,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 96.48116896547394 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_44/threads:1",
+            "value": 39.0646143712533,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 39.06012654690226 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_65/threads:1",
+            "value": 61.14617716781286,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 61.13422426699138 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLDSAVerifyBadSignature/ml_dsa_87/threads:1",
+            "value": 96.75383976265388,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 96.75588476750688 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024DecapOnly/threads:1",
+            "value": 33.8088955760269,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 33.80750445779516 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024EncapOnly/threads:1",
+            "value": 21.638583168363738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21.629375907742734 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenDecap/threads:1",
+            "value": 66.26464759647399,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 66.25559614081529 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024KeyGenOnly/threads:1",
+            "value": 33.35941301392009,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 33.35898318042355 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseEncap/threads:1",
+            "value": 38.80571487655679,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 38.80195580064104 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024ParseOnly/threads:1",
+            "value": 17.9875589579326,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.96481151821508 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM1024PrivateKeyFromSeedOnly/threads:1",
+            "value": 33.616649026728496,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 33.6455580404906 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768DecapOnly/threads:1",
+            "value": 26.98234828966896,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 26.980449658253747 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768EncapOnly/threads:1",
+            "value": 17.675467092224256,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 17.67023916547763 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenDecap/threads:1",
+            "value": 50.60748915288902,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 50.60589850206035 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768KeyGenOnly/threads:1",
+            "value": 24.38413451018031,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.382728866219285 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseEncap/threads:1",
+            "value": 29.237198452169032,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 29.231192203701813 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768ParseOnly/threads:1",
+            "value": 12.380593746256334,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 12.366191770619768 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedMLKEM768PrivateKeyFromSeedOnly/threads:1",
+            "value": 24.46431043924545,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 24.486045080788973 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/2048/threads:1",
+            "value": 748.1099090906548,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 748.0923560605656 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/3072/threads:1",
+            "value": 2182.9880555559257,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2182.9682444440045 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndSign/4096/threads:1",
+            "value": 4839.653650002163,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4839.0984000008075 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/2048/threads:1",
+            "value": 19.227666208518738,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19.227280384845272 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/3072/threads:1",
+            "value": 40.51838815245009,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 40.5187613918705 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAImportKeyAndVerify/4096/threads:1",
+            "value": 70.57545039538601,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 70.5759018691526 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/2048/threads:1",
+            "value": 92.7384435946365,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 92.73996271508861 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/3072/threads:1",
+            "value": 177.85784919214709,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 177.84858258525014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAParsePrivateKey/4096/threads:1",
+            "value": 297.09763323348295,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 297.1003652695361 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSASign/2048/threads:1",
+            "value": 642.328628289665,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 642.3342697366469 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSASign/3072/threads:1",
+            "value": 1975.826919999406,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1975.7997700003393 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSASign/4096/threads:1",
+            "value": 4492.602749998944,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4492.327772727526 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/2048/threads:1",
+            "value": 16.84390226143683,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 16.843349665923842 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/3072/threads:1",
+            "value": 36.3479394220122,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 36.34615357539674 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRSAVerify/4096/threads:1",
+            "value": 63.19417654640874,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 63.18716784794866 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:1350/threads:1",
+            "value": 0.8627012552599209,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.8627095473670143 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16/threads:1",
+            "value": 0.6320760282535942,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6320837715736396 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:16384/threads:1",
+            "value": 3.1074179185578457,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.1067603400882278 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:256/threads:1",
+            "value": 0.662493250276992,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.6624135819160457 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedRandom/InputSize:8192/threads:1",
+            "value": 1.8544968429434985,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1.854451459072014 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSLHDSA/threads:1",
+            "value": 19409.97570000604,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 19408.215299999654 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSLHDSASign/threads:1",
+            "value": 143572.05849999844,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 143569.63600002712 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSLHDSAVerify/threads:1",
+            "value": 144.29403425654783,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 144.28166545197317 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSPAKE2/threads:1",
+            "value": 126.23934793810095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 126.23385373708467 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 1024, r = 8, p = 16)/threads:1",
+            "value": 28415.61666665863,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28407.812666666625 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedScrypt/(N = 16384, r = 8, p = 1)/threads:1",
+            "value": 28307.103666672145,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 28304.708666671755 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSelfTest",
+            "value": 4214.944478261289,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 4214.79556521831 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSipHash/1350/threads:1",
+            "value": 0.53164719171728,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.5316372176683073 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSipHash/16/threads:1",
+            "value": 0.02118849679433934,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.021187365101375737 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSipHash/16384/threads:1",
+            "value": 6.2338191901878215,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6.233456712435174 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSipHash/256/threads:1",
+            "value": 0.11197522413356101,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.1119648394598299 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedSipHash/8192/threads:1",
+            "value": 3.1238594989948387,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.123727220574661 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v1",
+            "value": 996.7730303032746,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 996.7655858594702 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_pmb",
+            "value": 996.708035353408,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 996.640808081201 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedTrustTokenKeyGen/SpeedTrustTokenKeyGen experiment_v2_voprf",
+            "value": 510.7137421873631,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 510.6747526040975 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "BM_SpeedX509/threads:1",
+            "value": 3.497802888032792,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 3.497682279001668 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch1",
+            "value": 623.5662824672266,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 623.5180162335963 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginIssueBatch10",
+            "value": 6237.3758437495035,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6237.255000000719 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch1",
+            "value": 0.12447108036049823,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12446154944769458 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1BeginRedeemBatch10",
+            "value": 0.12529278106151334,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.12528787812895253 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch1",
+            "value": 7070.904607145069,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7070.956285715064 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1FinishIssueBatch10",
+            "value": 25237.321875003716,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25237.291625000325 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch1",
+            "value": 6048.327374999829,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6047.760625000009 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1IssueBatch10",
+            "value": 21809.75549999431,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21808.56850000623 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch1",
+            "value": 1714.0488947369813,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1714.0575877187548 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v1RedeemBatch10",
+            "value": 1715.13286842066,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1715.1317017543643 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch1",
+            "value": 625.2114968153138,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 625.2100605099264 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginIssueBatch10",
+            "value": 6237.882531248573,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6237.969781249574 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch1",
+            "value": 0.11786413720673408,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11784985976178478 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbBeginRedeemBatch10",
+            "value": 0.11788441228950988,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11787744464669947 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch1",
+            "value": 7102.987964283816,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 7101.324678572496 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbFinishIssueBatch10",
+            "value": 25242.628249998234,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 25241.60962500588 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch1",
+            "value": 6070.978218751577,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6071.0659374993975 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbIssueBatch10",
+            "value": 21775.776625005958,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 21773.400374982542 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch1",
+            "value": 1714.835315789985,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1714.7354385966544 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_pmbRedeemBatch10",
+            "value": 1714.9311491220546,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 1714.8343070175044 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch1",
+            "value": 624.8907275640464,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 624.903423076904 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginIssueBatch10",
+            "value": 6238.737031248221,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 6238.245874998994 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch1",
+            "value": 0.11435876734857095,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11436033470874789 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfBeginRedeemBatch10",
+            "value": 0.11540414779494543,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 0.11537787133323504 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch1",
+            "value": 2424.270599999545,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2424.307962500194 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfFinishIssueBatch10",
+            "value": 8971.154818180014,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8970.723590909558 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch1",
+            "value": 2327.7438571437324,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 2327.549583333572 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfIssueBatch10",
+            "value": 8895.047818183146,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 8894.818409089567 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch1",
+            "value": 553.6906977402532,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 553.6431920903284 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
+          },
+          {
+            "name": "TrustTokenFixture/BM_SpeedTrustToken_experiment_v2_voprfRedeemBatch10",
+            "value": 553.9571497175814,
+            "unit": "us/iter",
+            "extra": "iterations: 10\ncpu: 553.9568587571556 us\nthreads: 1\nazure_vmsize: Standard_D4ads_v5\ncpu_model: AMD EPYC 7763 64-Core Processor\ncpu_cores: 4\ncpu_bogomips: 4890.86"
           }
         ]
       }
